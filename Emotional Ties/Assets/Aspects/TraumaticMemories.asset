@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d8e64f11d550004a8a9899811aa33a4, type: 3}
+  m_Name: TraumaticMemories
+  m_EditorClassIdentifier: 
+  icon: {fileID: -8938914584598323866, guid: bc85eabcce2fffc46b3471eb4470b0a7, type: 3}
+  color: {r: 1, g: 1, b: 1, a: 1}
+  name: Traumatic Memories
+  description: You have a traumatic memory buried here. It is best to not acknowledge
+    it.
