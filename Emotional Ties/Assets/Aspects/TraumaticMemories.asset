@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d8e64f11d550004a8a9899811aa33a4, type: 3}
   m_Name: TraumaticMemories
   m_EditorClassIdentifier: 
-  icon: {fileID: -8938914584598323866, guid: bc85eabcce2fffc46b3471eb4470b0a7, type: 3}
-  color: {r: 1, g: 1, b: 1, a: 1}
+  icon: {fileID: 21300000, guid: 58a483933ffea804ca63208cb1076364, type: 3}
+  color: {r: 0, g: 0, b: 0, a: 0}
   name: Traumatic Memories
-  description: You have a traumatic memory buried here. It is best to not acknowledge
-    it.
+  description: "You have a traumatic memory buried here. It\u2019s best to not acknowledge
+    it."

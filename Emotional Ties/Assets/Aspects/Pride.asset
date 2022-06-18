@@ -10,9 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8d8e64f11d550004a8a9899811aa33a4, type: 3}
-  m_Name: Focus
+  m_Name: Pride
   m_EditorClassIdentifier: 
-  icon: {fileID: 21300000, guid: 8fec8876bf8274e43a1d104059d58e57, type: 3}
+  icon: {fileID: 21300000, guid: e3b826f2834e72a4ba59bbb14b4dde00, type: 3}
   color: {r: 0, g: 0, b: 0, a: 0}
-  name: Focus
-  description: You see the flame, you are the flame, there is nothing but the flame.
+  name: Pride
+  description: Intelligence, money, and youth. Having all three gives Mr. Adams a
+    sense of importance.

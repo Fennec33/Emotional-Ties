@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8d8e64f11d550004a8a9899811aa33a4, type: 3}
-  m_Name: Focus
+  m_Name: SuperiorityComplex
   m_EditorClassIdentifier: 
-  icon: {fileID: 21300000, guid: 8fec8876bf8274e43a1d104059d58e57, type: 3}
+  icon: {fileID: 21300000, guid: a923192c2f74cf748af0d68c13d526e7, type: 3}
   color: {r: 0, g: 0, b: 0, a: 0}
-  name: Focus
-  description: You see the flame, you are the flame, there is nothing but the flame.
+  name: Superiority Complex
+  description: "Mr. Adams\u2019s pride has been coaxed into a full on complex."

@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8d8e64f11d550004a8a9899811aa33a4, type: 3}
-  m_Name: Focus
+  m_Name: Stress
   m_EditorClassIdentifier: 
-  icon: {fileID: 21300000, guid: 8fec8876bf8274e43a1d104059d58e57, type: 3}
+  icon: {fileID: 21300000, guid: bb134fe48c630344da27bd9b71cbf9a9, type: 3}
   color: {r: 0, g: 0, b: 0, a: 0}
-  name: Focus
-  description: You see the flame, you are the flame, there is nothing but the flame.
+  name: Stress
+  description: "Mr. Adams is on edge and can\u2019t focus."
