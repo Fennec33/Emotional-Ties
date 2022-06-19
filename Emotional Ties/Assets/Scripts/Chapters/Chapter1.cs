@@ -6,11 +6,9 @@ namespace Chapters
 {
     public class Chapter1 : Chapter
     {
-        
         [SerializeField] private AspectData traumaticMemories;
         [SerializeField] private AspectData focus;
         [SerializeField] private AspectData emotionalVortex;
-        
         
         [SerializeField] private Conversation areYouAbleToAnswerSomeQuestionsForMe1;
         [SerializeField] private Conversation areYouAbleToAnswerSomeQuestionsForMe2;

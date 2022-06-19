@@ -36,7 +36,6 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DialogueSystem/Conversation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DialogueSystem/LineOfDialogue.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/EncounterSystem/ActionMenuManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/EncounterSystem/Aspect.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.spriteshape@4.1.2/Runtime/SpriteShapeController.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -156,7 +155,7 @@
       <workItem from="1633972310832" duration="7308000" />
       <workItem from="1645596437413" duration="10000" />
       <workItem from="1655531117631" duration="1199000" />
-      <workItem from="1655604971483" duration="907000" />
+      <workItem from="1655604971483" duration="11883000" />
     </task>
     <servers />
   </component>

@@ -7,7 +7,7 @@ namespace DialogueSystem
     {
         [SerializeField] string _name; 
     
-        [TextArea(3, 10)]
+        [TextArea(4, 10)]
         [SerializeField] string _sentence;
 
         public string GetName()

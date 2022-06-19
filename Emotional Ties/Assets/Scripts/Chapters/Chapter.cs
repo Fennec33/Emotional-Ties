@@ -11,7 +11,7 @@ namespace Chapters
         [SerializeField] protected Conversation preEncounterConversation;
         [SerializeField] protected Encounter encounter;
         [SerializeField] protected Conversation postEncounterConversation;
-        [SerializeField] protected int chapterTitleWaitTime = 3;
+        [SerializeField] protected int chapterTitleWaitTime = 4;
 
         public int GetChapterNumber()
         {

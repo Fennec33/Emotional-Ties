@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Globalization;
 using Chapters;
 using TMPro;
 using UnityEngine;
@@ -76,10 +77,14 @@ namespace DialogueSystem
 
         IEnumerator TypeSentence(string sentence)
         {
-            dialogueText.text = "";
-            foreach (char letter in sentence.ToCharArray())
+            dialogueText.text = sentence;
+            dialogueText.ForceMeshUpdate();
+            
+            int charCount = dialogueText.textInfo.characterCount;
+            
+            for (int i = 0; i < charCount + 1; i++)
             {
-                dialogueText.text += letter;
+                dialogueText.maxVisibleCharacters = i;
                 yield return new WaitForSeconds(typingSpeed);
             }
         }
