@@ -360,7 +360,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -0.0001564, y: 346568}
+  m_AnchoredPosition: {x: -0.0001564, y: 400901.47}
   m_SizeDelta: {x: 250.08908, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &22674287
@@ -446,7 +446,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8376061dfd403e2499989c25dd04d0f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - _name: David Coyle
+    _sentence: Thank you for your honesty, Ms. Roberts. Before I go, I just want
+      to make sure that you really told us everything this time. No more secrets
+      or lies?
+  - _name: Janet Roberts
+    _sentence: No. I have told you everything I could possibly think of.
 --- !u!1 &38451126
 GameObject:
   m_ObjectHideFlags: 0
@@ -888,13 +894,13 @@ MonoBehaviour:
   - _name: David Coyle
     _sentence: Well thank you, Ms. Roberts. I have other people to interview, but
       if you think of any other important information, please let me know.
-  - _name: Ms. Roberts
+  - _name: Janet Roberts
     _sentence: "Sniff\u2026 Thank you, Officer Coyle, I definitely will. Is it okay
       for me to leave now?"
   - _name: David Coyle
     _sentence: No, we need to keep everyone here onsite for a bit longer. We might
       need to ask you some more questions later.
-  - _name: Ms. Roberts
+  - _name: Janet Roberts
     _sentence: "Oh\u2026 okay\u2026 well, bye Officer Coyle. Please find whoever
       did this."
   - _name: David Coyle
@@ -948,25 +954,25 @@ MonoBehaviour:
       strange or suspicious activity?
 
 '
-  - _name: Ms. Roberts
+  - _name: Janet Roberts
     _sentence: We have been planning a wedding, Officer Coyle. Everything has been
       crazy and neither of us were doing our normal routines.
   - _name: David Coyle
     _sentence: Yes, but think carefully. Did you notice anything abnormal beyond
       wedding stuff?
-  - _name: Ms. Robberts
+  - _name: Janet Roberts
     _sentence: "Well\u2026 he was pretty busy with work. But that\u2019s nothing
       new. He had a lot of late nights at the office and was reading a lot of books."
   - _name: David Coyle
     _sentence: Books? Was it abnormal for him to be doing a lot of reading?
-  - _name: Ms. Robberts
+  - _name: Janet Roberts
     _sentence: "No, he\u2019s always read a lot. He tells me about all the interesting
       stuff he\u2019s reading, but most of it goes over my head. So I don\u2019t
       listen very carefully."
-  - _name: Ms. Robberts
+  - _name: Janet Roberts
     _sentence: But usually it is a lot of biology and chemistry he reads. Over the
       last few months he has started reading more about psychology and sociology.
-  - _name: Ms. Robberts
+  - _name: Janet Roberts
     _sentence: "But I\u2019m not sure that\u2019s relevant?"
   - _name: David Coyle
     _sentence: It probably doesn't mean anything, but thank you for the information.
@@ -1376,7 +1382,7 @@ MonoBehaviour:
   - _name: David Coyle
     _sentence: Hello, Ms.Roberts. My name is Officer David Coyle, I am here to ask
       you a few questions. Do you think you can help me with that?
-  - _name: Ms. Roberts
+  - _name: Janet Roberts
     _sentence: "Sniff\u2026 Ye\u2026 Yes\u2026 *uncontrollable sobbing*"
 --- !u!1 &253565645
 GameObject:
@@ -1877,18 +1883,18 @@ MonoBehaviour:
   - _name: David Coyle
     _sentence: Did Mr. Baker have any enemies? Anyone who might benefit from him
       being dead?
-  - _name: Ms. Roberts
+  - _name: Janet Roberts
     _sentence: No, not at all. Michael is a kind soul. He would never hurt anyone.
       Everybody loved him.
   - _name: David Coyle
     _sentence: But is there anyone who might benefit from his passing? Any business
       rivals perhaps?
-  - _name: Ms. Roberts
+  - _name: Janet Roberts
     _sentence: "I don\u2019t think so. Everyone was pretty excited about the research
       Michael and Arthur were doing. Everyone wanted him to keep developing the Psymoprofen."
   - _name: David Coyle
     _sentence: Who is Arthur?
-  - _name: Ms. Robberts
+  - _name: Janet Roberts
     _sentence: "Arthur Adams. He\u2019s Michael\u2019s best man and business partner.
       They developed the Psymoprofen together."
   - _name: Ms. Robberts
@@ -1937,7 +1943,75 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8376061dfd403e2499989c25dd04d0f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - _name: David Coyle
+    _sentence: Ms. Roberts. Please tell me about the last time you saw Mr. Baker.
+      The truth this time.
+  - _name: Janet Roberts
+    _sentence: "\u2026 I wanted to see Michael before the ceremony. We had agreed
+      to wait. We wanted the big reveal moment as I walked down the aisle."
+  - _name: 
+    _sentence: A slight smile appeared on Ms. Roberts face. A small moment of joy
+      that fled her face just as fast as it entered.
+  - _name: Janet Roberts
+    _sentence: Well, the nerves and anxiety got to me. I guess I was getting cold
+      feet. I hoped that seeing him before the ceremony might help me.
+  - _name: Janet Roberts
+    _sentence: "So I asked Arthur to help sneak me into Michael\u2019s dressing room.
+      When we got there, he was with a woman."
+  - _name: Officer Hill
+    _sentence: So, you found your fiance cheating on you on your wedding day. No
+      wonder you smashed his head in.
+  - _name: Janet Roberts
+    _sentence: "What? No! I didn\u2019t kill him. And it wasn\u2019t like that, they
+      were just talking."
+  - _name: Janet Roberts
+    _sentence: "Nothing was going on between them, at least\u2026 No. Nothing was
+      going on."
+  - _name: David Coyle
+    _sentence: What happened after you entered the room?
+  - _name: Janet Roberts
+    _sentence: "Well\u2026 Michael was surprised to see me. And after a moment he
+      gave me a big smile and hug\u2026 sniff\u2026"
+  - _name: 
+    _sentence: Ms. Roberts had to take a moment to compose herself.
+  - _name: Janet Roberts
+    _sentence: "Sorry\u2026 The woman told Michael they would have to finish their
+      conversation later. And then she excused herself with a friendly goodbye."
+  - _name: Janet Roberts
+    _sentence: "Michael and I had a short conversation. We didn\u2019t talk about
+      anything important, just our excitement and nerves. I could tell something
+      else was on his mind, though."
+  - _name: Janet Roberts
+    _sentence: He felt distant. That had been happening a lot recently and it was
+      starting to bother me. It made me worried something was going on.
+  - _name: Janet Roberts
+    _sentence: I asked him what it was, but he told me it was nothing. He assured
+      me of his love and then I left to get in place for the wedding.
+  - _name: David Coyle
+    _sentence: So, Mr. Baker was alive when you left him.
+  - _name: Janet Roberts
+    _sentence: Yes.
+  - _name: Officer Hill
+    _sentence: "Oh come on! You don\u2019t really believe that, do you Coyle?"
+  - _name: David Coyle
+    _sentence: Why did you lie to us the first time?
+  - _name: Janet Roberts
+    _sentence: "I was worried about how it would sound if I said I was one of the
+      last people to see him alive, so I lied. I\u2019m sorry. That was very foolish
+      of me."
+  - _name: 
+    _sentence: "I took a moment to look carefully into Ms. Roberts\u2019s eyes. I
+      reached out psychically and as I did, Ms. Roberts looked at me with a subtle
+      intensity."
+  - _name: David Coyle
+    _sentence: Yes, I do believe her.
+  - _name: Officer Hill
+    _sentence: Humph.
+  - _name: Janet Roberts
+    _sentence: Thank you, detective.
+  - _name: David Coyle
+    _sentence: I still have some questions though.
 --- !u!1 &430602536
 GameObject:
   m_ObjectHideFlags: 0
@@ -2226,7 +2300,7 @@ MonoBehaviour:
   - _name: David Coyle
     _sentence: "Ms. Roberts, if you answer my questions, it will help me track down
       Mr. Baker\u2019s killer. Are you up to answering my questions?"
-  - _name: Ms. Roberts
+  - _name: Janet Roberts
     _sentence: Yes, of course. Anything to help.
 --- !u!1 &496509580
 GameObject:
@@ -3219,7 +3293,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8376061dfd403e2499989c25dd04d0f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - _name: 
+    _sentence: We returned to the room where Ms. Roberts was being held. She was
+      sitting on a bench still in her flowing white dress.
+  - _name: 
+    _sentence: Her eyes were swollen, but no longer shedding tears. She looked as
+      though she had been emptied out. And her emotions were very quiet.
+  - _name: Janet Roberts
+    _sentence: Detective Coyle. Did you find who did it?
+  - _name: David Coyle
+    _sentence: No, not yet. I do have a few more questions for you, though.
+  - _name: Janet Roberts
+    _sentence: Oh, okay.
+  - _name: 
+    _sentence: She was in an emotionally vulnerable position. I had to decide how
+      I was going to approach this conversation. Was I going to push on her or try
+      a softer touch?
 --- !u!1 &689299714
 GameObject:
   m_ObjectHideFlags: 0
@@ -3368,7 +3458,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lines:
-  - _name: Ms. Roberts
+  - _name: Janet Roberts
     _sentence: "Sniff\u2026  *uncontrollable sobbing*"
   - _name: 
     _sentence: Ms. Roberts was too emotionally distraught to give me any information.
@@ -3987,7 +4077,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8376061dfd403e2499989c25dd04d0f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - _name: 
+    _sentence: "I extended my psychic senses into Ms. Roberts\u2019s racing mind,
+      connecting her mental exhaustion to her sense of panic."
+  - _name: 
+    _sentence: Hopefully the mental chaos I was creating would overwhelm her and
+      help me get the truth out of her.
 --- !u!1 &904154538
 GameObject:
   m_ObjectHideFlags: 0
@@ -4316,7 +4412,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8376061dfd403e2499989c25dd04d0f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - _name: David Coyle
+    _sentence: "Is there any new information that you\u2019ve remembered? Anything
+      that might help us find your fiance\u2019s killer?"
+  - _name: Janet Roberts
+    _sentence: "No, nothing new\u2026"
 --- !u!1 &949918389
 GameObject:
   m_ObjectHideFlags: 0
@@ -4494,7 +4595,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8376061dfd403e2499989c25dd04d0f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - _name: David Coyle
+    _sentence: You mentioned that you felt like you two were growing distant.
+  - _name: Janet Roberts
+    _sentence: "Yes\u2026 Well, sort of."
+  - _name: David Coyle
+    _sentence: Can you elaborate, please?
+  - _name: Janet Roberts
+    _sentence: Michael was just so busy with his work. He was spending more and more
+      time at the lab and in the library.
+  - _name: Janer Roberts
+    _sentence: Even when we were together he would sometimes seem preoccupied, his
+      mind at work even when his body was at home.
+  - _name: David Coyle
+    _sentence: That sounds frustrating. I can imagine the strain on the relationship
+      that would cause.
+  - _name: Janer Roberts
+    _sentence: Yes, it was hard, but I still loved him. He was so busy because he
+      cared. He would often talk about the good his work could do for psychics less
+      fortunate than him.
+  - _name: Janer Roberts
+    _sentence: He wanted to make the world a better place. It sometimes felt like
+      that was all he would talk about.
 --- !u!1 &956641133
 GameObject:
   m_ObjectHideFlags: 0
@@ -5067,7 +5190,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8376061dfd403e2499989c25dd04d0f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - _name: David Coyle
+    _sentence: Did you see Mr. Baker today?
+  - _name: Janet Roberts
+    _sentence: "No. I don\u2019t know what you\u2019re talking about."
 --- !u!1 &1055661584
 GameObject:
   m_ObjectHideFlags: 0
@@ -5180,7 +5307,7 @@ MonoBehaviour:
   lines:
   - _name: David Coyle
     _sentence: When was the last time you saw Mr. Baker alive?
-  - _name: Ms. Roberts
+  - _name: Janet Roberts
     _sentence: "Sniff\u2026 I haven\u2019t seen him at all today. It\u2019s bad luck
       to see each other on the wedding day\u2026"
 --- !u!1 &1088968773
@@ -6306,7 +6433,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8376061dfd403e2499989c25dd04d0f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - _name: David Coyle
+    _sentence: Tell me, Ms. Roberts, do you know anything else about this case? Did
+      you have a fight with Mr. Baker recently?
+  - _name: Janet Roberts
+    _sentence: No, I didn't do it.
 --- !u!1 &1302252166
 GameObject:
   m_ObjectHideFlags: 0
@@ -6380,7 +6512,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8376061dfd403e2499989c25dd04d0f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - _name: David Coyle
+    _sentence: Look, Ms. Roberts, I am going to be upfront with you. You seem to
+      be hiding some information, and I have good reason to suspect that you have
+      lied to me.
+  - _name: David Coyle
+    _sentence: I know that losing the love of your life is emotionally destructive.
+      And I understand that you might be worried about admitting to lying to the
+      police.
+  - _name: David Coyle
+    _sentence: But I need you to be honest with me.
+  - _name: Janet Roberts
+    _sentence: "\u2026"
+  - _name: David Coyle
+    _sentence: "I believe that you are innocent. But if you don\u2019t give me more
+      information, I\u2019ll have a hard time proving that. Please Janet, I need
+      your help."
+  - _name: Janet Roberts
+    _sentence: "Okay\u2026 I\u2019ll tell you everything."
 --- !u!1 &1316164132
 GameObject:
   m_ObjectHideFlags: 0
@@ -7398,7 +7548,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e93643d944c7ed4c97274ef26a5c031, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: {fileID: 1174880074}
+  text: {fileID: 1647400414}
 --- !u!4 &1613238807
 Transform:
   m_ObjectHideFlags: 0
@@ -7632,7 +7782,48 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8376061dfd403e2499989c25dd04d0f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - _name: 
+    _sentence: Officer Hill and I turned and left the room.
+  - _name: Officer Hill
+    _sentence: I am telling you Coyle, she did it. Michael cheated on her, she found
+      out, she confronted and killed him in a moment of passion, and she caved his
+      head in.
+  - _name: David Coyle
+    _sentence: No, she didn't do it. Something else is going on here.
+  - _name: Officer Hill
+    _sentence: You are just a sucker for a pretty face, Coyle.
+  - _name: David Coyle
+    _sentence: We need to find this Shirley Lewis woman. Mr. Adams mentioned her
+      as well.
+  - _name: Officer Hill
+    _sentence: "We are still holding all possible witnesses on the premises. I\u2019ll
+      go ask around and find her."
+  - _name: David Coyle
+    _sentence: Thank you Hill.
+  - _name: Officer Hill
+    _sentence: Hrumph.
+  - _name: 
+    _sentence: Officer Hill walked over to some of his subordinates and started giving
+      orders. He was a stubborn man, but he was good at his job. If Shirley Lewis
+      was still here, he would find her soon.
+  - _name: 
+    _sentence: In the meantime, I had to think. I wandered into the sanctuary and
+      found a seat in one of the pews. The room was mostly empty, save the few officers
+      combing for evidence.
+  - _name: 
+    _sentence: I was missing something, I knew it. A scientist working on a revolutionary
+      drug was killed at his own wedding.
+  - _name: 
+    _sentence: Hill was right; the fiance killing him was the most likely. But my
+      gut told me it was something else.
+  - _name: 
+    _sentence: I sat there in the pew pondering all the evidence for a while before
+      Officer Hill came up to me.
+  - _name: Officer Hill
+    _sentence: We found her.
+  - _name: David Coyle
+    _sentence: Good, now let's hope she has actual useful information for us.
 --- !u!1 &1685521246
 GameObject:
   m_ObjectHideFlags: 0
@@ -7676,7 +7867,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8376061dfd403e2499989c25dd04d0f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - _name: David Coyle
+    _sentence: "Ms. Roberts, I know you saw your fiance today. You need to tell me
+      what really happened. If you continue to lie to me, then I can\u2019t help
+      you."
+  - _name: Janet Roberts
+    _sentence: '*crying*'
+  - _name: 
+    _sentence: She was about to break, I just needed to push a little more.
+  - _name: David Coyle
+    _sentence: Officer Hill, please cuff the suspect.
+  - _name: 
+    _sentence: Hill made an appropriately dramatic reach for his handcuffs as he
+      started approaching Ms. Roberts.
+  - _name: Janet Roberts
+    _sentence: "Okay, I\u2019ll tell you. I\u2019ll tell you everything."
 --- !u!1 &1702422529
 GameObject:
   m_ObjectHideFlags: 0
@@ -7969,7 +8175,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8376061dfd403e2499989c25dd04d0f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - _name: David Coyle
+    _sentence: You hesitated when asked about Mr. Baker having an affair. Why is
+      that? Did he ever cheat on you?
+  - _name: Janet Roberts
+    _sentence: No, never.
+  - _name: David Coyle
+    _sentence: From everything I have gathered about Mr. Baker, he was spending a
+      lot of late nights at the office. He was talking with a woman alone in his
+      dressing room that you didn't know.
+  - _name: David Coyle
+    _sentence: And you mentioned hesitancy and nervousness about going through with
+      this wedding. Are you sure he never cheated on you?
+  - _name: Janet Roberts
+    _sentence: Yes, it is true that the worry has entered my head before. But I have
+      no evidence to suggest he ever did anything.
+  - _name: Janet Roberts
+    _sentence: He loved me, I know that for sure, and that is all I need to know.
 --- !u!1 &1768199545
 GameObject:
   m_ObjectHideFlags: 0
@@ -8057,7 +8280,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8376061dfd403e2499989c25dd04d0f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - _name: David Coyle
+    _sentence: This woman that you saw talking with Mr. Baker. Have you ever met
+      her before?
+  - _name: Janet Roberts
+    _sentence: "No, I didn\u2019t know who she was. I assumed she was probably just
+      a colleague."
+  - _name: David Coyle
+    _sentence: Did you catch a name?
+  - _name: Janet Roberts
+    _sentence: Yes, Michael called her Shirley, I think.
 --- !u!1 &1816767219
 GameObject:
   m_ObjectHideFlags: 0
@@ -8101,7 +8334,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8376061dfd403e2499989c25dd04d0f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - _name: David Coyle
+    _sentence: Ms. Roberts. Did you kill your fiance?
+  - _name: Janet Roberts
+    _sentence: "No! I didn't do it! I\u2019m innocent!"
 --- !u!1 &1833477841
 GameObject:
   m_ObjectHideFlags: 0
@@ -8269,7 +8506,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8376061dfd403e2499989c25dd04d0f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - _name: David Coyle
+    _sentence: I heard that you and Mr. Baker had a few fights in the past week.
+      Is there anything you should tell us about that?
+  - _name: Janet Roberts
+    _sentence: It was nothing important. Planning a wedding is stressful and sometimes
+      couples have fights.
+  - _name: David Coyle
+    _sentence: Ms. Roberts, any information you could give us might be useful.
+  - _name: Janet Roberts
+    _sentence: "It was nothing\u2026 only personal stuff. Nothing that could help
+      you."
 --- !u!1 &1867523183
 GameObject:
   m_ObjectHideFlags: 0
@@ -8477,7 +8725,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8376061dfd403e2499989c25dd04d0f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - _name: David Coyle
+    _sentence: You mentioned that Mr. Baker seemed to be upset with work. Do you
+      have any details as to why?
+  - _name: Janet Roberts
+    _sentence: "No, I don\u2019t. Michael didn\u2019t share details of what he was
+      working on with me. All I know was he was under a lot of stress."
+  - _name: Janet Roberts
+    _sentence: I know all the public news about Psymoprofen was positive, but something
+      must have not been going right on the inside of the company.
+  - _name: Janet Roberts
+    _sentence: He used to be excited about his work, but as time went by, he got
+      more and more absorbed and upset by it.
+  - _name: Janet Roberts
+    _sentence: "I think he had trouble getting the drug to work right. But that\u2019s
+      all I know."
 --- !u!1 &1897402670
 GameObject:
   m_ObjectHideFlags: 0
@@ -8566,7 +8829,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lines:
-  - _name: Ms. Roberts
+  - _name: Janet Roberts
     _sentence: "Sniff\u2026 I think I\u2019m starting to feel a bit better."
   - _name: David Coyle
     _sentence: "I\u2019m glad to hear it."
@@ -8958,7 +9221,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8376061dfd403e2499989c25dd04d0f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - _name: David Coyle
+    _sentence: So, Ms. Roberts, you said you didn't see Mr. Baker at all today, is
+      that correct?
+  - _name: Janet Roberts
+    _sentence: "Um, yes\u2026 that\u2019s correct\u2026"
+  - _name: David Coyle
+    _sentence: Well, I was asking around and I heard that you snuck into his dressing
+      room to see him before the ceremony.
+  - _name: Janet Roberts
+    _sentence: "What! Who said that? I mean\u2026"
+  - _name: David Coyle
+    _sentence: Why would you lie to me, Ms. Roberts?
+  - _name: Janet Roberts
+    _sentence: No, why would I lie to you?
+  - _name: 
+    _sentence: "I could feel Ms. Roberts\u2019s mind begin to race with frantic activity."
 --- !u!1 &2078787245
 GameObject:
   m_ObjectHideFlags: 0
