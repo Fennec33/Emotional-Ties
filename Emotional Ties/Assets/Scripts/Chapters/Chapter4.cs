@@ -23,7 +23,7 @@ namespace Chapters
         [SerializeField] private Conversation removeDesire;
         [SerializeField] private Conversation professionalRespect;
         [SerializeField] private Conversation michaelInMob;
-        [SerializeField] private Conversation whoWasTheConnection;
+        [SerializeField] private Conversation whatWasTheConnection;
         [SerializeField] private Conversation conversations;
         [SerializeField] private Conversation drugConversations;
         [SerializeField] private Conversation noAffair;
