@@ -360,7 +360,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -0.0001564, y: 519867.6}
+  m_AnchoredPosition: {x: -0.0001564, y: 558447.1}
   m_SizeDelta: {x: 250.08908, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &22674287
@@ -2348,7 +2348,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8376061dfd403e2499989c25dd04d0f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - _name: David Coyle
+    _sentence: You have no way out of this, Mr. Adams. Put the gun down before you
+      do something stupid.
+  - _name: Arthur Adams
+    _sentence: "Don\u2019t order me around! You need to drop your guns now!"
+  - _name: David Coyle
+    _sentence: We know you killed Mr. Baker. You will be brought to justice the easy
+      way or the hard way. Whatever you choose.
+  - _name: 
+    _sentence: I slowly leaned down and placed my gun on the ground.
+  - _name: David Coyle
+    _sentence: "Okay, how\u2019s that? Maybe we can have a rational conversation
+      now."
+  - _name: Arthur Adams
+    _sentence: Now you in the back, your gun too.
+  - _name: 
+    _sentence: "There was no way Hill could put down his gun. One of us had to be
+      the \u201CGood Cop\u201D and distract him while the other was ready for action.
+      I had to keep Mr. Adams occupied."
 --- !u!1 &473697708
 GameObject:
   m_ObjectHideFlags: 0
@@ -2836,7 +2855,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8376061dfd403e2499989c25dd04d0f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - _name: 
+    _sentence: I reached deep into my mind to uncover something I had buried long
+      ago.
+  - _name: 
+    _sentence: "I let forth all the pain, fear, and regret from a long suppressed
+      experience. The mental scar I could never forget, I channeled all that horror
+      straight into Mr. Adams\u2019s psyche."
+  - _name: 
+    _sentence: It was a risky move, but it was the only one I had left.
+  - _name: Arthur Adams
+    _sentence: AAAAAA!!!
+  - _name: 
+    _sentence: The wave of condensed emotions shocked his brain and for a split second
+      we had an opening.
 --- !u!1 &565606763
 GameObject:
   m_ObjectHideFlags: 0
@@ -3350,7 +3383,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8817340696013061789, guid: 0e297c662e400ba4fa5e168c7154e73d, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8817340696013061789, guid: 0e297c662e400ba4fa5e168c7154e73d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4074,7 +4107,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8376061dfd403e2499989c25dd04d0f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - _name: 
+    _sentence: There was no way I could get to my gun before he shot me. I needed
+      a way to stun or distract him somehow.
 --- !u!1 &789590832
 GameObject:
   m_ObjectHideFlags: 0
@@ -6486,7 +6522,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8376061dfd403e2499989c25dd04d0f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - _name: 
+    _sentence: The thunder of .40 caliber rounds erupted from Hill's firearm beside
+      me as I snatched my handgun off the ground.
+  - _name: 
+    _sentence: "But by the time I had recovered my weapon, it was all over. Arthur
+      Adams\u2019s lifeless body sprawled on the wet pavement."
 --- !u!1 &1236025565
 GameObject:
   m_ObjectHideFlags: 0
@@ -6905,7 +6947,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1306925522
 GameObject:
@@ -7867,7 +7909,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8376061dfd403e2499989c25dd04d0f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - _name: David Coyle
+    _sentence: "Let\u2019s have a conversation before any of us do something we'll
+      regret."
+  - _name: Arthur Adams
+    _sentence: We have nothing to talk about. You put down your guns and let me go.
+      Then we can all leave this place happy.
+  - _name: David Coyle
+    _sentence: "You know we can\u2019t do that, Mr. Adams. We know you killed Mr.
+      Baker. You need to answer for your crime, but it will be better for you if
+      you come in peacefully."
+  - _name: Arthur Adams
+    _sentence: Not going to happen. Now put down your guns.
+  - _name: David Coyle
+    _sentence: "Mr. Adams, please\u2026"
+  - _name: Arthur Adams
+    _sentence: Put down your guns!
+  - _name: 
+    _sentence: Mr. Adams was extremely on edge. I had to be careful. I slowly leaned
+      down and placed my gun on the ground.
+  - _name: David Coyle
+    _sentence: Okay, how is that? Maybe we can have a rational conversation now.
+  - _name: Arthur Adams
+    _sentence: Now you in the back, your gun too.
+  - _name: 
+    _sentence: "There was no way Hill could put down his gun. One of us had to be
+      the \u201CGood Cop\u201D and distract him while the other was ready for action.
+      I had to keep Mr. Adams occupied."
 --- !u!1 &1482519068
 GameObject:
   m_ObjectHideFlags: 0
@@ -8132,50 +8201,6 @@ MonoBehaviour:
   - _name: 
     _sentence: He was holding something back. I could feel frustration beneath the
       surface of his mind.
---- !u!1 &1613238805
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1613238807}
-  - component: {fileID: 1613238806}
-  m_Layer: 0
-  m_Name: TestText
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1613238806
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1613238805}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e93643d944c7ed4c97274ef26a5c031, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  text: {fileID: 550835314}
---- !u!4 &1613238807
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1613238805}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.003934618, y: 0.18130644, z: -0.7589388}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1623854248
 GameObject:
   m_ObjectHideFlags: 0
@@ -8219,7 +8244,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8376061dfd403e2499989c25dd04d0f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - _name: Officer Hill
+    _sentence: You good, Coyle? Did you get hit?
+  - _name: David Coyle
+    _sentence: "No, I don\u2019t think he got any shots off."
+  - _name: 
+    _sentence: Officer Hill crept closer to Mr. Adams to verify he was dead. It was
+      nothing more than a formality.
+  - _name: 
+    _sentence: "The case was closed, we found the killer, we had delivered\u2026
+      justice."
+  - _name: Officer Hill
+    _sentence: "You sure you're okay, Coyle? You don\u2019t look so good."
+  - _name: 
+    _sentence: I lifted my face up towards the cloudy sky, face soaked with more
+      than just rain.
+  - _name: David Coyle
+    _sentence: "\u2026"
+  - _name: David Coyle
+    _sentence: "Yeah\u2026 I\u2019m good."
+  - _name: 
+    _sentence: I turned back towards the church and started walking away.
+  - _name: David Coyle
+    _sentence: Now that we solved the case, I better get started on all the damn
+      paperwork.
 --- !u!1 &1628600927
 GameObject:
   m_ObjectHideFlags: 0
@@ -8263,7 +8312,43 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8376061dfd403e2499989c25dd04d0f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - _name: David Coyle
+    _sentence: Mr. Baker was going to sink the business wasn't he?
+  - _name: Arthur Adams
+    _sentence: "\u2026"
+  - _name: David Coyle
+    _sentence: Psymoprofen was a failure. He was going to go public with that information.
+      But with all your financial entanglements, that would have left you in ruin.
+      You had some other plan.
+  - _name: Arthur Adams
+    _sentence: We had investors that wanted to buy the company.
+  - _name: Arthur Adams
+    _sentence: All we had to do was sell. With the money we made, we would have been
+      set for life. Then Michael would be free to choose whatever cause he wanted
+      and support it with far more resources.
+  - _name: David Coyle
+    _sentence: But lying and screwing over investors didn't sit well with Mr. Baker's
+      conscience. He insisted on coming clean.
+  - _name: Arthur Adams
+    _sentence: Yes, he did. He was going to go public immediately after the honeymoon.
+      The wedding was my last chance to change his mind, but he was so stubborn.
+  - _name: Arthur Adams
+    _sentence: I didn't want to do it, but he left me no choice.
+  - _name: David Coyle
+    _sentence: You always have a choice, Mr. Adams. And right now I think you should
+      make the choice to come in peacefully.
+  - _name: David Coyle
+    _sentence: The more you cooperate, the better the outcome will be for you.
+  - _name: Arthur Adams
+    _sentence: "No, I didn't have a choice, just like I don\u2019t have a choice
+      right now."
+  - _name: 
+    _sentence: "I noticed Mr. Adams\u2019s hand tighten around the revolver grip.
+      I may have pushed him too far. Mr. Adams was considering shooting us in cold
+      blood."
+  - _name: 
+    _sentence: I had to end this immediately.
 --- !u!1 &1638235818
 GameObject:
   m_ObjectHideFlags: 0
@@ -8307,7 +8392,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8376061dfd403e2499989c25dd04d0f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - _name: David Coyle
+    _sentence: You murdered your firend over money. What kind of person would do
+      that?
+  - _name: Arthur Adams
+    _sentence: I didn't want to. He made me do it!
+  - _name: David Coyle
+    _sentence: Really, did he force you to bury a fire poker in his skull?
+  - _name: Arthur Adams
+    _sentence: He was going to ruin my life.
+  - _name: David Coyle
+    _sentence: "He was going to publicize the failure of your business, right? But
+      you had debts and could\u2019t let that happen. After all, how would you survive
+      without all your money?"
+  - _name: Arthur Adams
+    _sentence: Businesses were lined up to invest heavily in our work. All we had
+      to do was take the investments, sell the company.
+  - _name: Arthur Adams
+    _sentence: We would have been set for life, Michael could have done whatever
+      he wanted with the money.
+  - _name: Arthur Adams
+    _sentence: But instead he insisted on ruining our lives. He told me that he was
+      going to go public with the failure after his honeymoon.
+  - _name: David Coyle
+    _sentence: "And you couldn't have that. You insisted on screwing over investors
+      for profit, but Mr. Baker\u2019s conscience got in the way."
+  - _name: David Coyle
+    _sentence: "So you killed your friend to take control of the business, but now
+      that you\u2019ve been caught, your life is over anyway. How does that feel?"
+  - _name: Arthur Adams
+    _sentence: "I tried one last time to talk him out of it, but he was too stubborn.
+      You're right, my life is ruined. My last hope is to make sure I don\u2019t
+      get taken in."
+  - _name: 
+    _sentence: I noticed Mr. Adams hand tighten around the revolver grip. I may have
+      pushed him too far. Mr. Adams was considering shooting us in cold blood.
+  - _name: 
+    _sentence: I had to end this immediately.
 --- !u!1 &1641888200
 GameObject:
   m_ObjectHideFlags: 0
@@ -8552,7 +8674,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8376061dfd403e2499989c25dd04d0f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - _name: 
+    _sentence: Officer Hill and I strode out of the room with fierce intentionality,
+      leaving Ms. Lewis behind with barely a word.
+  - _name: Officer Hill
+    _sentence: You think Arthur did it?
+  - _name: David Coyle
+    _sentence: I don't know for sure, but it seems likely. He left some important
+      information out of our last conversation and we are going to find out why.
+  - _name: 
+    _sentence: As we headed to the room Mr. Adams was being held in, we heard a gunshot.
+  - _name: 
+    _sentence: Hill and I lept into action, drawing our guns as we ran towards the
+      room. Before we reached the room we heard the distinct sound of a shattering
+      window.
+  - _name: 
+    _sentence: We reached the room at the same time as another cop and the three
+      of us breached the room.
+  - _name: 
+    _sentence: The room contained a shattered exterior window, a cop on the ground
+      with a bullet wound to the shoulder; thankfully still alive, and a notable
+      lack of Arthur Adams.
+  - _name: 
+    _sentence: Hill barked at the officer with us.
+  - _name: Officer Hill
+    _sentence: You! Take care of the injured man! Coyle and I will pursue the suspect!
+  - _name: 
+    _sentence: I extended my senses in search for the mind of a panicking murderer
+      on the run, and lept out the window into the stormy night.
+  - _name: 
+    _sentence: The street was mostly empty, so I was quickly able to both see and
+      sense Mr. Adams swiftly turning the corner down the block.
+  - _name: David Coyle
+    _sentence: This way!
+  - _name: 
+    _sentence: I flew down the street with Hill close behind me. When we reached
+      the end of the block we rounded the corner to find Arthur Adams waiting for
+      us with a snub nose revolver pointed at my chest.
 --- !u!1 &1722505304
 GameObject:
   m_ObjectHideFlags: 0
@@ -9198,7 +9357,7 @@ Transform:
   - {fileID: 2012740758}
   - {fileID: 1249644799}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1871003176
 GameObject:
@@ -9545,7 +9704,6 @@ MonoBehaviour:
   - {fileID: 183113238}
   - {fileID: 918660931}
   - {fileID: 1871003179}
-  test: {fileID: 1613238806}
 --- !u!4 &1975156136
 Transform:
   m_ObjectHideFlags: 0
@@ -10058,7 +10216,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8376061dfd403e2499989c25dd04d0f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - _name: Arthur Adams
+    _sentence: If either one of you so much as twitches your gun arm I will blow
+      your brains out!
+  - _name: 
+    _sentence: Hill and I were both caught off guard with our guns facing the pavement.
+      We stood still as I assessed the situation.
+  - _name: Arthur Adams
+    _sentence: Both of you slowly put your guns on the ground!
+  - _name: 
+    _sentence: Mr. Adams was nervous and erratic. Even in the rain, I could tell
+      he was sweating. Based on the way he was holding his gun, I was pretty sure
+      he had little experience with it.
+  - _name: 
+    _sentence: But at the close range we were, I didn't want to risk him getting
+      a lucky shot. I had to get control of this situation quickly.
 --- !u!1 &2109041646
 GameObject:
   m_ObjectHideFlags: 0

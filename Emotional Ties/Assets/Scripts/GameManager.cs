@@ -12,9 +12,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Canvas DialogueCanvas;
     [SerializeField] private Canvas actionMenuCanvas;
     [SerializeField] private Chapter[] chapters;
-    [SerializeField] private TestingText test;
-    
-    
+
+
     private static Chapter _currentChapter;
 
     private void Awake()
@@ -34,9 +33,7 @@ public class GameManager : MonoBehaviour
         _current.actionMenuCanvas.enabled = true;
 
         _currentChapter = _current.chapters[chapter - 1];
-        
-        _current.test.StartTest();
-        
-        //_currentChapter.PlayChapter();
+
+        _currentChapter.PlayChapter();
     }
 }
