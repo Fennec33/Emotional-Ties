@@ -360,7 +360,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -0.0001564, y: 290027.56}
+  m_AnchoredPosition: {x: -0.0001564, y: 346568}
   m_SizeDelta: {x: 250.08908, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &22674287
@@ -490,7 +490,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8376061dfd403e2499989c25dd04d0f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - _name: David Coyle
+    _sentence: "Mr. Adams, can I ask you about\u2026"
+  - _name: Arthur Adams
+    _sentence: Just give me one minute, sir.
+  - _name: 
+    _sentence: I had wound up his emotions pretty tight. I would have to help him
+      calm down before he could stand still and answer some questions.
 --- !u!1 &63450939
 GameObject:
   m_ObjectHideFlags: 0
@@ -712,7 +719,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8376061dfd403e2499989c25dd04d0f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - _name: 
+    _sentence: Sergeant Hill guided me through the old church hallways. Flowers were
+      perfectly placed everywhere, on tables, over doorways, in pots, hanging from
+      the ceiling, and even in paintings on the wall.
+  - _name: 
+    _sentence: Apparently there were not enough real life flowers to satisfy the
+      bride's appetite.
+  - _name: Sergeant Hill
+    _sentence: The best man is waiting here in this room.
+  - _name: 
+    _sentence: Murmurs of a stressed conversation emanated from inside the room.
+  - _name: 
+    _sentence: As I entered, I nodded to the officer stationed in the small room
+      and then turned my attention to the blond man in a suit arguing on his cell
+      phone.
+  - _name: Arthur Adams
+    _sentence: "I am telling you everything is fine\u2026 No, you listen to me\u2026
+      We still have a week until the board meeting\u2026"
+  - _name: 
+    _sentence: The man I assumed to be Arthur Adams paced back and forth across the
+      room with a stilted nervous energy to him. His coat jacket was tossed over
+      a nearby chair and his tie was pulled loose.
+  - _name: 
+    _sentence: He was preoccupied with his call, but frankly my questions were more
+      important than whatever he was doing.
+  - _name: David Coyle
+    _sentence: "Excuse me sir, I have a few questions for you about\u2026"
+  - _name: 
+    _sentence: "Mr. Adams cut me off with a glare and a single finger held up as
+      if to say \u201Cjust wait there until I\u2019m ready for you.\u201D"
+  - _name: 
+    _sentence: Sergeant Hill chuckled and the other officer gave me a sympathetic
+      shrug. I had no time for his shenanigans. I would have to get him off the phone.
 --- !u!1 &83265920
 GameObject:
   m_ObjectHideFlags: 0
@@ -2275,7 +2315,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8376061dfd403e2499989c25dd04d0f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - _name: David Coyle
+    _sentence: How was your relationship with Mr. Baker?
+  - _name: Arthur Adams
+    _sentence: Michael and I had a good relationship. We have been friends for a
+      long time. Our work together was going well.
+  - _name: David Coyle
+    _sentence: What was it you guys worked on together?
+  - _name: Arthur Adams
+    _sentence: "Michael and I have a research lab where we develop new drugs. In
+      particular, we have developed a new drug we\u2019re getting ready to push to
+      market called Psymoprofen."
+  - _name: Arthur Adams
+    _sentence: "You may have heard of it. We\u2019re going to revolutionize the drug
+      industry with this."
+  - _name: David Coyle
+    _sentence: Sounds like your big break is coming. That can be a lot of pressure.
+      Was everything going smoothly with the development of Psymoprofen?
+  - _name: Arthur Adams
+    _sentence: Everything is going great, as expected.
+  - _name: David Coyle
+    _sentence: Is that really all you have to say about your relationship?
+  - _name: Arthur Adams
+    _sentence: "I\u2019m not sure what else you want to know?"
+  - _name: 
+    _sentence: He was holding something back. I could feel frustration beneath the
+      surface of his mind.
 --- !u!1 &507188143
 GameObject:
   m_ObjectHideFlags: 0
@@ -2319,7 +2385,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8376061dfd403e2499989c25dd04d0f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - _name: David Coyle
+    _sentence: Mr. Adams, I am investigating the murder of Michael Baker. I need
+      to ask you some questions!
+  - _name: Arthur Adams
+    _sentence: Shhh.
+  - _name: 
+    _sentence: The jerk refused to get off the phone. He just kept pacing and talking
+      with increasing frustration. I could feel his mix of emotions rolling off of
+      him.
+  - _name: 
+    _sentence: I would have to use a different approach if I was going to get him
+      off the phone anytime soon.
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -2945,7 +3023,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8817340696013061789, guid: 0e297c662e400ba4fa5e168c7154e73d, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8817340696013061789, guid: 0e297c662e400ba4fa5e168c7154e73d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3092,7 +3170,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8376061dfd403e2499989c25dd04d0f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - _name: David Coyle
+    _sentence: Was Mr. Baker reading any strange books recently?
+  - _name: Arthur Adams
+    _sentence: Strange books? I mean, he was reading all the time. How am I supposed
+      to know if anything he read was strange?
 --- !u!1 &685544757
 GameObject:
   m_ObjectHideFlags: 0
@@ -3648,7 +3731,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8376061dfd403e2499989c25dd04d0f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - _name: 
+    _sentence: Mr. Adams stayed on the phone.
+  - _name: 
+    _sentence: I would have to use a different approach if I was going to get him
+      off the phone anytime soon.
 --- !u!1 &790996847
 GameObject:
   m_ObjectHideFlags: 0
@@ -5182,7 +5270,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8376061dfd403e2499989c25dd04d0f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - _name: David Coyle
+    _sentence: Are you sure Mr. Baker was not reading anything strange recently?
+  - _name: Arthur Adams
+    _sentence: "No, I really can\u2019t think of anything."
+  - _name: 
+    _sentence: I think he is holding something back.
 --- !u!1 &1128774371
 GameObject:
   m_ObjectHideFlags: 0
@@ -5270,7 +5364,54 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8376061dfd403e2499989c25dd04d0f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - _name: David Coyle
+    _sentence: How was your relationship with Mr. Baker really?
+  - _name: Arthur Adams
+    _sentence: Look, why do you keep asking me that?
+  - _name: David Coyle
+    _sentence: "Well, I can tell by talking with you that you\u2019re an expert on
+      psychological medication and have been working hard on this breakthrough of
+      yours for years."
+  - _name: David Coyle
+    _sentence: I know how hard it can be to do all the hard work while someone else
+      takes the credit.
+  - _name: Arthur Adams
+    _sentence: "Oh, Michael\u2019s a great scientist. His insights on the relationship
+      between the brain and psychic senses were invaluable to our work, and him being
+      a psychic himself was useful for testing."
+  - _name: Arthur Adams
+    _sentence: "But just because I\u2019m not a psychic doesn\u2019t mean I don\u2019t
+      know anything about psychic senses. I know just as much as any scientist."
+  - _name: David Coyle
+    _sentence: Well yes, but as a psychic myself, I have access to experiences that
+      you will never understand. Despite all the reading you have done.
+  - _name: Arthur Adams
+    _sentence: Oh really, Mr. Detective, is that what you think? You may be a psychic,
+      but do you know anything about how neurons are fired in the brain?
+  - _name: Arthur Adams
+    _sentence: "Are you familiar with the different theories as to what so-called
+      \u201Cpsychic waves\u201D are and how they manifest themselves in the physical
+      world?"
+  - _name: Arthur Adams
+    _sentence: "Just because I\u2019m not the psychic of the team doesn\u2019t mean
+      I can\u2019t develop psychic drugs just fine."
+  - _name: Arthur Adams
+    _sentence: Michael had no respect for the gifts he was given and got distracted
+      with high-minded philosophizing and activism. We had work to do in the present
+      and he lost track of that.
+  - _name: David Coyle
+    _sentence: "\u2026"
+  - _name: Arthur Adams
+    _sentence: "\u2026"
+  - _name: David Coyle
+    _sentence: Sounds like everything was great.
+  - _name: Arthur Adams
+    _sentence: "Okay, there was some stress and frustration with the work we were
+      doing. But that\u2019s to be expected. We are about to revolutionize the drug
+      industry."
+  - _name: Arthur Adams
+    _sentence: But we really were doing well, I promise. Why would I lie about that?
 --- !u!1 &1157226274
 GameObject:
   m_ObjectHideFlags: 0
@@ -5464,7 +5605,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8376061dfd403e2499989c25dd04d0f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - _name: David Coyle
+    _sentence: Are you sure Mr. Baker was not reading anything strange recently?
+  - _name: Arthur Adams
+    _sentence: Michael was only reading the stuff he always was. Books that made
+      him believe he was smarter than everyone else.
+  - _name: Arthur Adams
+    _sentence: While I was busy working on securing our future, he had his head in
+      the clouds. He was worried about philosophy and the ways we structure society.
+  - _name: Arthur Adams
+    _sentence: We are scientists. We live in the concrete, the testable, the practical.
+  - _name: Arthur Adams
+    _sentence: Our discovery was going to make us rich, but he got caught up in being
+      clever and overcomplicating everything.
+  - _name: David Coyle
+    _sentence: So he was reading strange books? Books on sociology and psychology
+      instead of biology?
+  - _name: Arthur Adams
+    _sentence: "There\u2019s nothing strange or mysterious about them. Just your
+      basic sociology books every libral arts student reads in college."
+  - _name: Arthur Adams
+    _sentence: People have been rehashing those same arguments since the beginning
+      of civilization, but the work we did with Psymoprofen, that was truly cutting
+      edge.
+  - _name: David Coyle
+    _sentence: Well, thank you for sharing that with me, Mr. Adams. I feel like I
+      understand Mr. Baker a little better now.
+  - _name: Arthur Adams
+    _sentence: "Hm...\r"
 --- !u!1 &1172290467
 GameObject:
   m_ObjectHideFlags: 0
@@ -5552,7 +5721,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8376061dfd403e2499989c25dd04d0f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - _name: David Coyle
+    _sentence: Hill, make sure you leave a man to watch Mr. Adams.
+  - _name: Sergeant Hill
+    _sentence: Already done. He seemed pretty shifty. Did he do it?
+  - _name: David Coyle
+    _sentence: "I don\u2019t know. He is definitely a stuck-up jerk. But that doesn\u2019t
+      make him our man."
+  - _name: David Coyle
+    _sentence: The person I need to talk to right now is Ms. Roberts. It appears
+      she lied to me about when she last saw the victim.
+  - _name: Sergeant Hill
+    _sentence: "Yes, I noticed that. And I\u2019ll have my people search for this
+      mysterious Shirley Lewis woman he mentioned. If she\u2019s still present, you\u2019ll
+      probably want to talk to her."
+  - _name: David Coyle
+    _sentence: "Yes, that\u2019s a good idea, Hill. Let me know when she\u2019s found.
+      But first, I have some pointed questions for the bride."
 --- !u!1 &1185874548
 GameObject:
   m_ObjectHideFlags: 0
@@ -5690,7 +5876,7 @@ Transform:
   - {fileID: 918660929}
   - {fileID: 1871003177}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1224486418
 GameObject:
@@ -5913,7 +6099,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8376061dfd403e2499989c25dd04d0f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - _name: 
+    _sentence: "By applying my focus to Arthur\u2019s pride, I was able to stoke
+      it into a full blown superiority complex."
+  - _name: 
+    _sentence: Or rather, I took the superiority complex he already had and brought
+      it to the forefront. This should be helpful to get more information.
 --- !u!1 &1249644798
 GameObject:
   m_ObjectHideFlags: 0
@@ -6143,7 +6335,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1306925522
 GameObject:
@@ -6232,7 +6424,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8376061dfd403e2499989c25dd04d0f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - _name: David Coyle
+    _sentence: So, this Psymoprofen stuff. What does it do, exactly?
+  - _name: Arthur Adams
+    _sentence: "It\u2019s the first drug of its kind. When taken by psychics, it
+      strengthens the brain's ability to cope with the sensory overload."
+  - _name: Arthur Adams
+    _sentence: IT drastically reduces the feeling of overstimulation and mental instability
+      for psychics.
+  - _name: David Coyle
+    _sentence: Are you telling me that you have a cure for psychic instability?
+  - _name: Arthur Adams
+    _sentence: Calling it a cure is oversimplifying, but yes. Most psychics are unable
+      to handle their powers as they develop.
+  - _name: Arthur Adams
+    _sentence: Only a few of you seem to have the mental fortitude to maintain productive
+      lives and use your powers.
+  - _name: Arthur Adams
+    _sentence: Imagine how amazing it would be to use this drug to allow many more
+      psychics to maintain sanity and hone their abilities.
+  - _name: David Coyle
+    _sentence: If that really works, it would be amazing.
+  - _name: Arthur Adams
+    _sentence: Psymoprofen is going to change the world.
+  - _name: 
+    _sentence: Arthur really thought highly of his accomplishments. But if that drug
+      does what he says it will, then it really will be revolutionary.
+  - _name: 
+    _sentence: It will help a lot of people and make Arthur rich in the process.
 --- !u!1 &1322675379
 GameObject:
   m_ObjectHideFlags: 0
@@ -7141,7 +7361,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8376061dfd403e2499989c25dd04d0f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - _name: David Coyle
+    _sentence: How was your relationship with Mr. Baker really?
+  - _name: Arthur Adams
+    _sentence: I already told you. Everything was great.
+  - _name: 
+    _sentence: He was holding something back. I could feel frustration beneath the
+      surface of his mind.
 --- !u!1 &1613238805
 GameObject:
   m_ObjectHideFlags: 0
@@ -7171,7 +7398,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e93643d944c7ed4c97274ef26a5c031, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: {fileID: 4186812}
+  text: {fileID: 1174880074}
 --- !u!4 &1613238807
 Transform:
   m_ObjectHideFlags: 0
@@ -7184,7 +7411,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1623854248
 GameObject:
@@ -7669,7 +7896,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8376061dfd403e2499989c25dd04d0f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - _name: David Coyle
+    _sentence: Do you know of anyone who might want Mr. Baker dead? Business rivals,
+      perhaps?
+  - _name: Arthur Adams
+    _sentence: No, our business rivals are jealous of us. But I highly doubt any
+      of them would want us dead.
+  - _name: Arthur Adams
+    _sentence: Especially because once our research is published, they will all be
+      crawling over each other to work with us.
+  - _name: David Coyle
+    _sentence: So, anyone else who might want him dead? Anyone strange around Mr.
+      Baker recently?
+  - _name: Arthur Adams
+    _sentence: "Well\u2026 he has been having repeated meetings with a strange woman
+      the past couple of months."
+  - _name: David Coyle
+    _sentence: What woman? Do you have a name?
+  - _name: Arthur Adams
+    _sentence: Shirley Lewis, I believe. All I know is they have been talking a lot.
+  - _name: Arthur Adams
+    _sentence: If you ask around, other people probably know about her. Michael never
+      told me any information about who she was.
+  - _name: David Coyle
+    _sentence: Was Mr. Baker having an affair in the leadup to his wedding?
+  - _name: Arthur Adams
+    _sentence: "No\u2026 well\u2026 I don't know for sure. I find it hard to believe.
+      He loved Janet very much."
+  - _name: David Coyle
+    _sentence: Thank you, Mr. Adams. I will look into this further.
 --- !u!1 &1765865894
 GameObject:
   m_ObjectHideFlags: 0
@@ -7889,7 +8145,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8376061dfd403e2499989c25dd04d0f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - _name: 
+    _sentence: Mr. Adams stopped pacing. He took a deep breath and then turned to
+      me.
+  - _name: Arthur Adams
+    _sentence: "I\u2019m sorry. What did you want to ask me?"
 --- !u!1 &1835168806
 GameObject:
   m_ObjectHideFlags: 0
@@ -7933,7 +8194,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8376061dfd403e2499989c25dd04d0f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - _name: David Coyle
+    _sentence: When was the last time you saw Mr. Baker?
+  - _name: Arthur Adams
+    _sentence: Well, Janet asked me to help her sneak into the green room to see
+      Michael before the ceremony.
+  - _name: Arthur Adams
+    _sentence: The original plan was for them to not see each other until the ceremony,
+      but she insisted. So I brought her there and then left them alone.
+  - _name: David Coyle
+    _sentence: So you're telling me that the last time you saw Mr. Baker was at the
+      site of the murder with Ms. Roberts? And nobody else was there in the room
+      with them?
+  - _name: Arthur Adams
+    _sentence: "I know how that sounds, but I can\u2019t believe Janet would do anything
+      to hurt him. They were so happy together."
+  - _name: 
+    _sentence: Ms. Roberts lied to me when I asked her when she had last seen the
+      victim. I needed to speak to her again.
+  - _name: David Coyle
+    _sentence: Do you know of any problems in their relationship? Any major changes
+      recently?
+  - _name: Arthur Adams
+    _sentence: I know they got into a pretty big fight last week. Michael never told
+      me what the fight was about.
+  - _name: Arthur Adams
+    _sentence: "I assumed it was just wedding stress. You don\u2019t think\u2026
+      It\u2019s just hard to believe that\u2026"
+  - _name: David Coyle
+    _sentence: I know it is, I just have to investigate every possibility.
+  - _name: Arthur Adams
+    _sentence: I understand. Thank you, detective.
 --- !u!1 &1862571746
 GameObject:
   m_ObjectHideFlags: 0
@@ -8012,7 +8304,7 @@ Transform:
   - {fileID: 2012740758}
   - {fileID: 1249644799}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1871003176
 GameObject:
@@ -8798,7 +9090,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8376061dfd403e2499989c25dd04d0f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - _name: 
+    _sentence: "Mr. Adams\u2019s nerves got the better of him again."
+  - _name: 
+    _sentence: He began pacing back and forth. Maybe I should have been more careful
+      about what I did to his mind.
 --- !u!1 &2114203088
 GameObject:
   m_ObjectHideFlags: 0
@@ -8886,7 +9183,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8376061dfd403e2499989c25dd04d0f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - _name: 
+    _sentence: I reached out into the mind of Mr. Adams.
+  - _name: 
+    _sentence: He had a mess of emotions and stress. That combined with his natural
+      impatience gave me just what I needed to nudge him into action.
+  - _name: Arthur Adams
+    _sentence: No, you listen to me! I will have everything under control!
+  - _name: Arthur Adams
+    _sentence: "When I need your input I\u2019ll give you a call!"
+  - _name: 
+    _sentence: Mr. Adams hung up and shoved his phone into his pocket. He ran his
+      hand through his hair and continued to pace anxiously.
+  - _name: David Coyle
+    _sentence: Mr. Adams, now that your phone call is over, can we have a conversation?
+  - _name: Arthur Adams
+    _sentence: Just give me one minute.
+  - _name: 
+    _sentence: I had wound up his emotions pretty tight. I would have to help him
+      calm down before he could stand still and answer some questions.
 --- !u!1 &2140077755
 GameObject:
   m_ObjectHideFlags: 0
@@ -9064,4 +9380,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8376061dfd403e2499989c25dd04d0f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - _name: David Coyle
+    _sentence: Well, Mr. Adams, you have been very helpful. I have some more people
+      to question. I will do everything I can to bring Mr. Baker's killer to swift
+      justice.
+  - _name: Arthur Adams
+    _sentence: Yes, I hope you do.
+  - _name: David Coyle
+    _sentence: Please stick around a little longer. I might have more questions for
+      you tonight.
+  - _name: Arthur Adams
+    _sentence: "Oh, umm\u2026 yes, of course."
+  - _name: 
+    _sentence: I nodded to Mr. Adams and then took my leave. Sergeant Hill followed
+      me out the door.
