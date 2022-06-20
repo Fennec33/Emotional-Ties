@@ -168,17 +168,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lines:
   - _name: Sergeant Hill
-    _sentence: Well did she do it? It is almost always a lovers quarrel.
+    _sentence: "Well, did she do it? It\u2019s almost always a lovers\u2019 quarrel."
   - _name: David Coyle
-    _sentence: "I don\u2019t know yet. Her emotions are real but that does not mean
-      she is innocent."
+    _sentence: "I don\u2019t know yet. Her emotions are real, but that doesn\u2019t
+      mean she\u2019s innocent."
   - _name: David Coyle
     _sentence: She would be an emotional wreck whether she tragically lost her fiance
       or she did the deed herself in a moment of passion.
   - _name: Sergeant Hill
-    _sentence: I will have my men watch her so she does not run.
+    _sentence: "I\u2019ll have my men watch her so she doesn't run."
   - _name: David Coyle
-    _sentence: Do you know where the best man is? His name is Arther Adams. I would
+    _sentence: Do you know where the best man is? His name is Arthur Adams. I would
       like to talk with him next.
   - _name: Sergeant Hill
     _sentence: Sure do. Follow me.
@@ -360,7 +360,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -0.0001564, y: 245888.19}
+  m_AnchoredPosition: {x: -0.0001564, y: 290027.56}
   m_SizeDelta: {x: 250.08908, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &22674287
@@ -846,17 +846,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lines:
   - _name: David Coyle
-    _sentence: Well thank you Ms. Roberts. I have other people to interview but if
-      you think of any other important information please let me know.
+    _sentence: Well thank you, Ms. Roberts. I have other people to interview, but
+      if you think of any other important information, please let me know.
   - _name: Ms. Roberts
-    _sentence: "Sniff\u2026 Thank you officer Coyle, I definitely will. Is it ok
+    _sentence: "Sniff\u2026 Thank you, Officer Coyle, I definitely will. Is it okay
       for me to leave now?"
   - _name: David Coyle
-    _sentence: No, we need to keep everyone here on sight for a bit longer. We might
+    _sentence: No, we need to keep everyone here onsite for a bit longer. We might
       need to ask you some more questions later.
   - _name: Ms. Roberts
-    _sentence: "Oh\u2026 Ok\u2026 Well buy officer Coyle. Please find whoever did
-      this."
+    _sentence: "Oh\u2026 okay\u2026 well, bye Officer Coyle. Please find whoever
+      did this."
   - _name: David Coyle
     _sentence: I will do the best I can Ms.
 --- !u!1 &136424746
@@ -904,33 +904,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lines:
   - _name: David Coyle
-    _sentence: 'Did you notice any changes in Mr. Bakers behavior recently? Any strange
-      or suspicious activity?
+    _sentence: 'Did you notice any changes in Mr. Baker''s behavior recently? Any
+      strange or suspicious activity?
 
 '
   - _name: Ms. Roberts
-    _sentence: We have been planning a wedding officer Coyle. Everything has been
-      crazy and neither of us where dong are normal routines.
+    _sentence: We have been planning a wedding, Officer Coyle. Everything has been
+      crazy and neither of us were doing our normal routines.
   - _name: David Coyle
-    _sentence: Yes but think carefully. Did you notice anything abnormal beyond wedding
-      stuff?
+    _sentence: Yes, but think carefully. Did you notice anything abnormal beyond
+      wedding stuff?
   - _name: Ms. Robberts
-    _sentence: "Well\u2026. He was pretty busy with work. But that is nothing new.
-      He had a lot of late nights at the office and was reading a lot of books."
+    _sentence: "Well\u2026 he was pretty busy with work. But that\u2019s nothing
+      new. He had a lot of late nights at the office and was reading a lot of books."
   - _name: David Coyle
     _sentence: Books? Was it abnormal for him to be doing a lot of reading?
   - _name: Ms. Robberts
-    _sentence: "No, he has always read a lot of stuff. He always tells me about all
-      the interesting stuff he is reading, but most of it goes over my head. So I
-      don\u2019t listen very carefully."
+    _sentence: "No, he\u2019s always read a lot. He tells me about all the interesting
+      stuff he\u2019s reading, but most of it goes over my head. So I don\u2019t
+      listen very carefully."
   - _name: Ms. Robberts
-    _sentence: But usually it is a lot of biology and chemistry stuff he reads. Over
-      the last few months he has started reading more stuff about psychology and
-      sociology.
+    _sentence: But usually it is a lot of biology and chemistry he reads. Over the
+      last few months he has started reading more about psychology and sociology.
   - _name: Ms. Robberts
-    _sentence: "But I am not sure that is relevant?\r"
+    _sentence: "But I\u2019m not sure that\u2019s relevant?"
   - _name: David Coyle
-    _sentence: It probably does not mean anything, but thank you for the information.
+    _sentence: It probably doesn't mean anything, but thank you for the information.
 --- !u!1 &153975657
 GameObject:
   m_ObjectHideFlags: 0
@@ -1285,67 +1284,60 @@ MonoBehaviour:
     _sentence: "So, I see I\u2019m stuck with you on yet another case, Coyle. Can
       you do me a favor and just read the mind of the killer so we can wrap this
       up? I have better things to do tonight."
-  - _name: 
-    _sentence: Even among all the psychic noise I recognised the signature stern
-      grumpiness of Sergeant Hill as he approached me.
-  - _name: Sergeant Hill
-    _sentence: So I see I am stuck with you on yet another case Coyle.
-  - _name: Sergeant Hill
-    _sentence: Can you do me a favor and just read the mind of the killer so we can
-      wrap this up. I have better things to do tonight.
   - _name: David Coyle
-    _sentence: Always a pleasure Hill, and you know that is not how it works.
+    _sentence: "Always a pleasure Hill, and you know that isn\u2019t how it works."
   - _name: Sergeant Hill
     _sentence: "I don\u2019t know how any of your woo woo investigation nonsense
-      works. But as long as it helps us bag the jerk I don\u2019t really care."
+      works. But as long as it helps us bag the perp, I don\u2019t really care."
   - _name: Sergeant Hill
-    _sentence: Let's head inside and get out of the rain. I will fill you in on the
-      case.
+    _sentence: "Let's head inside and get out of the rain. I\u2019ll fill you in
+      on the case."
   - _name: David Coyle
     _sentence: "Ugh\u2026 sounds good."
   - _name: Sergeant Hill
-    _sentence: You ok Coyle? You better not have a hangover or something.
+    _sentence: You okay, Coyle? You better not have a hangover or something.
   - _name: David Coyle
-    _sentence: No, I am good. There are just a lot of people and emotions swirling
-      around here.
-  - _name: David Coyle
-    _sentence: I will adjust to it in a minute. Just tell me what we got.
+    _sentence: "No, I\u2019m good. There are just a lot of people and emotions swirling
+      around here. I\u2019ll adjust to it in a minute. Just tell me what we got."
   - _name: 
-    _sentence: As I entered the church I took some deep breaths. I focused on the
-      mental image of a candle and as I did the psychic noise seemed to dampen and
+    _sentence: As I entered the church, I took some deep breaths. I focused on the
+      mental image of a candle and as I did, the psychic noise seemed to dampen and
       fall distant.
   - _name: Sergeant Hill
-    _sentence: Our victome is a man named Michael Baker. He was some pharmaceutical
-      businessman.
-  - _name: Sergeant Hill
-    _sentence: You know the Psymoprofen stuff they have been talking about on the
-      news? I guess he made it.
+    _sentence: Our victim was a man named Michael Baker. Right before the wedding,
+      a bridesmaid found him in the dressing room with a fire poker lodged in his
+      skull.
   - _name: David Coyle
-    _sentence: Yah I have heard about it. It is supposed to help psychics who are
-      being driven mad by their senses right?
+    _sentence: What do we know about him?
+  - _name: Sergeant Hill
+    _sentence: "He was some sort of pharmaceutical scientist. You know the Psymoprofen
+      stuff they\u2019ve been talking about on the news? I guess he made it."
+  - _name: David Coyle
+    _sentence: "Yeah, I\u2019ve heard about it. It\u2019s supposed to help psychics
+      who are being driven mad by their senses, right?"
   - _name: Sergeant Hill
     _sentence: Yep, and it apparently made Mr. Baker a big deal or something.
   - _name: David Coyle
     _sentence: Was Mr. Baker a psychic himself?
   - _name: Sergeant Hill
-    _sentence: Yes he was, and guess what! He was also the groom. Pretty Ironic getting
-      offed at your own wedding huh?
-  - _name: Davis Coyle
+    _sentence: Yes, he was, and guess what! He was also the groom. Pretty ironic
+      getting offed at your own wedding, huh?
+  - _name: David Coyle
     _sentence: Till death do us part.
   - _name: Sergeant Hill
-    _sentence: Exactly. The Bride is right over here. Her name is Janet Roberts.
-      We can hardly get any information out of her. So go do your whatever on her.
+    _sentence: "Exactly. The bride is right over here. Her name is Janet Roberts.
+      We can hardly get any information out of her. So go do your whatever on her.\r"
   - _name: 
-    _sentence: Ms. Roberts was in a beautiful white dress, with a delicate circlet
-      of flowers in her hair, and dark makeup streaming down her face.
+    _sentence: Ms. Roberts was wearing a beautiful white dress, with a delicate circlet
+      of flowers in her hair. Dark makeup streamed down her face.
   - _name: 
-    _sentence: The emotional turmoil radiating from her was intense, an imperceptible
-      blending of sadness, fear, confusion, pain, and numbness.
+    _sentence: The emotional turmoil radiating from her was intense, a chaotic blending
+      of sadness, fear, pain, and numbness.
   - _name: David Coyle
-    _sentence: Hello Ms.Roberts. My name is Officer David Coyle, I am here to ask
+    _sentence: Hello, Ms.Roberts. My name is Officer David Coyle, I am here to ask
       you a few questions. Do you think you can help me with that?
   - _name: Ms. Roberts
-    _sentence: "\u2026 Sniff\u2026. Ye\u2026.. Yes\u2026 *uncontrollable sobbing*"
+    _sentence: "Sniff\u2026 Ye\u2026 Yes\u2026 *uncontrollable sobbing*"
 --- !u!1 &253565645
 GameObject:
   m_ObjectHideFlags: 0
@@ -1846,18 +1838,18 @@ MonoBehaviour:
     _sentence: Did Mr. Baker have any enemies? Anyone who might benefit from him
       being dead?
   - _name: Ms. Roberts
-    _sentence: No, not at all. Michael is a kind sole. He would never hurt anyone.
+    _sentence: No, not at all. Michael is a kind soul. He would never hurt anyone.
       Everybody loved him.
   - _name: David Coyle
     _sentence: But is there anyone who might benefit from his passing? Any business
       rivals perhaps?
   - _name: Ms. Roberts
     _sentence: "I don\u2019t think so. Everyone was pretty excited about the research
-      Michael and Arther were doing. Everyone wanted him to keep developing the Psymoprofen."
+      Michael and Arthur were doing. Everyone wanted him to keep developing the Psymoprofen."
   - _name: David Coyle
-    _sentence: Who is Arther?
+    _sentence: Who is Arthur?
   - _name: Ms. Robberts
-    _sentence: "Arther Adams, he is Michael\u2019s best man and business partner.
+    _sentence: "Arthur Adams. He\u2019s Michael\u2019s best man and business partner.
       They developed the Psymoprofen together."
   - _name: Ms. Robberts
     _sentence: "He would have much more information about Michael\u2019s potential
@@ -2192,8 +2184,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lines:
   - _name: David Coyle
-    _sentence: "Ms. Roberts If you answer my questions than it will help me track
-      down Mr. Baker\u2019s killer. Are you up to answering my questions?"
+    _sentence: "Ms. Roberts, if you answer my questions, it will help me track down
+      Mr. Baker\u2019s killer. Are you up to answering my questions?"
   - _name: Ms. Roberts
     _sentence: Yes, of course. Anything to help.
 --- !u!1 &496509580
@@ -2953,7 +2945,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8817340696013061789, guid: 0e297c662e400ba4fa5e168c7154e73d, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8817340696013061789, guid: 0e297c662e400ba4fa5e168c7154e73d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3294,13 +3286,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lines:
   - _name: Ms. Roberts
-    _sentence: "\u2026 Sniff\u2026.  *uncontrollable sobbing*"
+    _sentence: "Sniff\u2026  *uncontrollable sobbing*"
   - _name: 
     _sentence: Ms. Roberts was too emotionally distraught to give me any information.
-      This is where the psychic in psychic investigator came in handy.
+      That was where the psychic in psychic investigator came in handy.
   - _name: 
-    _sentence: I focused on my senses until I started to see the strong emotional
-      aspects at play.
+    _sentence: ' I focused on my senses until I started to see the strong emotional
+      aspects at play.'
 --- !u!1 &697699349
 GameObject:
   m_ObjectHideFlags: 0
@@ -3349,15 +3341,15 @@ MonoBehaviour:
     _sentence: I could sense specific psychic aspects that belonged to both me and
       Ms. Roberts.
   - _name: 
-    _sentence: Aspects are specific mental concepts that I can make a psychic link
-      between. By making these links I can manipulate the emotional state of the
-      person I am talking to.
+    _sentence: "Aspects are specific mental concepts that I can make a psychic link
+      between. By making these links, I can manipulate the emotional state of the
+      person I\u2019m talking to."
   - _name: 
-    _sentence: "I thought that if I linked my \u201CFocus\u201D to her \u201CEmotional
-      Vortex\u201D then I might be able to calm her down enough to talk to."
+    _sentence: "I thought if I linked my \u201CFocus\u201D to her \u201CEmotional
+      Vortex,\u201D then I might be able to calm her down enough to talk."
   - _name: 
     _sentence: Click on an aspect and drag a connection to another aspect in order
-      to create a link.to.
+      to create a link.
 --- !u!1 &763553024
 GameObject:
   m_ObjectHideFlags: 0
@@ -5052,7 +5044,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1073995207
 GameObject:
@@ -5101,10 +5093,8 @@ MonoBehaviour:
   - _name: David Coyle
     _sentence: When was the last time you saw Mr. Baker alive?
   - _name: Ms. Roberts
-    _sentence: "\u2026 Sniff\u2026. I have not seen him at all today. It is bad luck
-      to see each other on the wedding day\u2026.\r"
-  - _name: 
-    _sentence: '*Awkward silence*'
+    _sentence: "Sniff\u2026 I haven\u2019t seen him at all today. It\u2019s bad luck
+      to see each other on the wedding day\u2026"
 --- !u!1 &1088968773
 GameObject:
   m_ObjectHideFlags: 0
@@ -6153,7 +6143,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1306925522
 GameObject:
@@ -6882,7 +6872,7 @@ Transform:
   - {fileID: 153975658}
   - {fileID: 15828025}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1461529472
 GameObject:
@@ -7181,7 +7171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e93643d944c7ed4c97274ef26a5c031, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: {fileID: 228748645}
+  text: {fileID: 4186812}
 --- !u!4 &1613238807
 Transform:
   m_ObjectHideFlags: 0
@@ -8022,7 +8012,7 @@ Transform:
   - {fileID: 2012740758}
   - {fileID: 1249644799}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1871003176
 GameObject:
@@ -8285,9 +8275,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lines:
   - _name: Ms. Roberts
-    _sentence: "\u2026 Sniff\u2026. I think I am starting to feel a bit better."
+    _sentence: "Sniff\u2026 I think I\u2019m starting to feel a bit better."
   - _name: David Coyle
-    _sentence: I am glad to hear it.
+    _sentence: "I\u2019m glad to hear it."
 --- !u!1 &1975156134
 GameObject:
   m_ObjectHideFlags: 0

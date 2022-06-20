@@ -84,7 +84,7 @@ namespace DialogueSystem
             
             for (int i = 0; i < charCount + 1; i++)
             {
-                dialogueText.maxVisibleCharacters = i;
+                dialogueText.maxVisibleCharacters = charCount;
                 yield return new WaitForSeconds(typingSpeed);
             }
         }
