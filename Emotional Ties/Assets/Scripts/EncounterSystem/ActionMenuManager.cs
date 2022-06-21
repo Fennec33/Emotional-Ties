@@ -28,6 +28,8 @@ public class ActionMenuManager : MonoBehaviour
         newActionButton.GetComponentInChildren<TextMeshProUGUI>().text = actionText;
 
         newActionButton.GetComponent<Button>().onClick.AddListener(() => act());
+        
+        LayoutRebuilder.ForceRebuildLayoutImmediate(_current.scrollableList.GetComponent<RectTransform>());
     }
 
     public static void RemoveActionFromMenu(String actionText)

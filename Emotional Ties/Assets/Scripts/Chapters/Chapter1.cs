@@ -12,6 +12,7 @@ namespace Chapters
         
         [SerializeField] private Conversation areYouAbleToAnswerSomeQuestionsForMe1;
         [SerializeField] private Conversation areYouAbleToAnswerSomeQuestionsForMe2;
+        [SerializeField] private Conversation areYouAbleToAnswerSomeQuestionsForMeRepeat;
         [SerializeField] private Conversation calmDown;
         [SerializeField] private Conversation calmedDownAnswerSomeQuestions;
         [SerializeField] private Conversation lastSeenAlive;
@@ -38,6 +39,10 @@ namespace Chapters
             {
                 _asked1 = true;
                 DialogueManager.StartDialogue(this, areYouAbleToAnswerSomeQuestionsForMe1);
+            }
+            else
+            {
+                DialogueManager.StartDialogue(this, areYouAbleToAnswerSomeQuestionsForMeRepeat);
             }
         }
 
