@@ -47,7 +47,7 @@ namespace Chapters
 
         public virtual void ConversationFinished(Conversation finishedConversation)
         {
-            
+            //nothing
         }
 
         private void AddStartingActions()

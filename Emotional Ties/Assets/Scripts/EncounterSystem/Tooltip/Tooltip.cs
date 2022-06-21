@@ -12,6 +12,14 @@ public class Tooltip : MonoBehaviour
     public TextMeshProUGUI contentField;
     public LayoutElement layoutElement;
     public int characterWrapLimit;
+    public RectTransform rectTransform;
+
+    private Vector2 _newPivot;
+
+    private void Awake()
+    {
+        rectTransform = GetComponent<RectTransform>();
+    }
 
     public void SetText(string header, string content)
     {
@@ -29,5 +37,26 @@ public class Tooltip : MonoBehaviour
     {
         Vector2 position = Input.mousePosition;
         transform.position = position;
+
+        if (position.x / Screen.width > 0.7)
+        {
+            _newPivot.x = 1;
+        }
+        else
+        {
+            _newPivot.x = 0;
+        }
+        
+        if (position.y/ Screen.height > 0.7)
+        {
+            _newPivot.y = 1;
+        }
+        else
+        {
+            _newPivot.y = 0;
+        }
+        
+        rectTransform.pivot = _newPivot;
+        
     }
 }

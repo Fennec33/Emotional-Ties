@@ -15,10 +15,14 @@ public class Aspect : MonoBehaviour
 
     private void Awake()
     {
-        spriteRenderer.sprite = data.icon;
         _camera = Camera.main;
         connection = Connection.GetMainConnection();
         _encounter = GameManager.GetCurrentChapter().GetEncounter();
+    }
+
+    private void Start()
+    {
+        spriteRenderer.sprite = data.icon;
     }
 
     private void FixedUpdate()
@@ -39,13 +43,14 @@ public class Aspect : MonoBehaviour
 
     public void MoveToPositionAroundPoint(Vector3 centerPoint, float radiousAround, float angleInDegrees)
     {
+        Debug.Log("Moving to: " + radiousAround + ", " + angleInDegrees);
         Vector3 destination = Vector3.up * radiousAround;
         destination = Quaternion.Euler(0, 0, angleInDegrees) * destination;
         destination = destination + centerPoint;
 
         _destination = destination;
     }
-    
+
     private void OnMouseDown()
     {
         connection.StartConnection(transform.position, data.name, transform);

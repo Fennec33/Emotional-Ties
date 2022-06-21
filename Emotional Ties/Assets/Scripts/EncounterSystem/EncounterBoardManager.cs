@@ -26,7 +26,7 @@ public class EncounterBoardManager : MonoBehaviour
         GameObject temp = Instantiate(_current.prefab, _centerOfAspectCircle, Quaternion.identity);
         temp.GetComponent<Aspect>().SetAspect(newAspect);
         _current._aspects.Add(temp);
-
+        
         _desiredAngleOfAspects = _current.CalculateDesiredAngleOfAspects(_current._aspects.Count);
         _current.MoveAspectsToDesiredLocations(_desiredAngleOfAspects);
     }
