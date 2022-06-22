@@ -18,9 +18,6 @@ namespace DialogueSystem
 
         public float typingSpeed = 0.02f;
 
-        [SerializeField] private GameObject pauseObject;
-        
-
         private Queue<LineOfDialogue> _sentences;
 
         private Chapter _currentChapter;
@@ -43,7 +40,7 @@ namespace DialogueSystem
         {
             _current.curentConversation = conversation;
             
-            _current.pauseObject.SetActive(true);
+            PauseManager.PauseForDialogue();
             
             _trigger = trigger;
             
@@ -91,7 +88,7 @@ namespace DialogueSystem
 
         private void EndDialogue()
         {
-            _current.pauseObject.SetActive(false);
+            PauseManager.UnpauseForDialogue();
             animator.SetBool("IsOpen", false);
             _trigger.ConversationFinished(_current.curentConversation);
         }
