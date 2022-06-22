@@ -43,7 +43,6 @@ public class Aspect : MonoBehaviour
 
     public void MoveToPositionAroundPoint(Vector3 centerPoint, float radiousAround, float angleInDegrees)
     {
-        Debug.Log("Moving to: " + radiousAround + ", " + angleInDegrees);
         Vector3 destination = Vector3.up * radiousAround;
         destination = Quaternion.Euler(0, 0, angleInDegrees) * destination;
         destination = destination + centerPoint;

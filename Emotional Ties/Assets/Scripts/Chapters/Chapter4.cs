@@ -59,5 +59,194 @@ namespace Chapters
         [SerializeField] private Conversation drugFailingDebt;
         [SerializeField] private Conversation theDebt;
         [SerializeField] private Conversation theDebtFailing;
+        
+        private void AddStartingActions()
+        {
+            //TODO
+        }
+        
+        public override void ConversationFinished(Conversation finishedConversation)
+        {
+            if (finishedConversation == preEncounterConversation)
+            {
+                //TODO
+            }
+            else if (finishedConversation == doNotAccuseHer)
+            {
+                //TODO
+            }
+            else if (finishedConversation == howDidYouKnowMrBaker)
+            {
+                //TODO
+            }
+            else if (finishedConversation == safeWayHome)
+            {
+                //TODO
+            }
+            else if (finishedConversation == psychicRealization)
+            {
+                //TODO
+            }
+            else if (finishedConversation == removeCaution)
+            {
+                //TODO
+            }
+            else if (finishedConversation == removeDesire)
+            {
+                //TODO
+            }
+            else if (finishedConversation == professionalRespect)
+            {
+                //TODO
+            }
+            else if (finishedConversation == michaelInMob)
+            {
+                //TODO
+            }
+            else if (finishedConversation == whatWasTheConnection)
+            {
+                //TODO
+            }
+            else if (finishedConversation == conversations)
+            {
+                //TODO
+            }
+            else if (finishedConversation == drugConversations)
+            {
+                //TODO
+            }
+            else if (finishedConversation == noAffair)
+            {
+                //TODO
+            }
+            else if (finishedConversation == typeOfVolunteering)
+            {
+                //TODO
+            }
+            else if (finishedConversation == iWasSocializing)
+            {
+                //TODO
+            }
+            else if (finishedConversation == nothingSuspicious)
+            {
+                //TODO
+            }
+            else if (finishedConversation == dressingRoomMeeting)
+            {
+                //TODO
+            }
+            else if (finishedConversation == dressingRoomMeetingDrugs)
+            {
+                //TODO
+            }
+            else if (finishedConversation == opinionOfArthur)
+            {
+                //TODO
+            }
+            else if (finishedConversation == opinionOfArthurMob)
+            {
+                //TODO
+            }
+            else if (finishedConversation == whoIsDavid)
+            {
+                //TODO
+            }
+            else if (finishedConversation == justADetective)
+            {
+                //TODO
+            }
+            else if (finishedConversation == iWorkOnBikes)
+            {
+                //TODO
+            }
+            else if (finishedConversation == iRestoreOldBikes)
+            {
+                //TODO
+            }
+            else if (finishedConversation == iRideBikesToo)
+            {
+                //TODO
+            }
+            else if (finishedConversation == dinnerAtParents)
+            {
+                //TODO
+            }
+            else if (finishedConversation == myFamily)
+            {
+                //TODO
+            }
+            else if (finishedConversation == hillInterruption)
+            {
+                //TODO
+            }
+            else if (finishedConversation == psychicManipulation)
+            {
+                //TODO
+            }
+            else if (finishedConversation == inflamedTraumaticMemories)
+            {
+                //TODO
+            }
+            else if (finishedConversation == howAmISupposedToKnow)
+            {
+                //TODO
+            }
+            else if (finishedConversation == youHadMeetingsWithHim)
+            {
+                //TODO
+            }
+            else if (finishedConversation == willNotTalk)
+            {
+                //TODO
+            }
+            else if (finishedConversation == madeTalkative)
+            {
+                //TODO
+            }
+            else if (finishedConversation == lotsOfCompetitionWithDrug)
+            {
+                //TODO
+            }
+            else if (finishedConversation == drugCompetition)
+            {
+                //TODO
+            }
+            else if (finishedConversation == drugMoney)
+            {
+                //TODO
+            }
+            else if (finishedConversation == iKnowThings)
+            {
+                //TODO
+            }
+            else if (finishedConversation == realizeWhoHerFamilyIs)
+            {
+                //TODO
+            }
+            else if (finishedConversation == theMobHasNothingToDoWithIt)
+            {
+                //TODO
+            }
+            else if (finishedConversation == theMobHasNothingToDoWithItAlibi)
+            {
+                //TODO
+            }
+            else if (finishedConversation == drugFailing)
+            {
+                //TODO
+            }
+            else if (finishedConversation == drugFailingDebt)
+            {
+                //TODO
+            }
+            else if (finishedConversation == theDebt)
+            {
+                //TODO
+            }
+            else if (finishedConversation == theDebtFailing)
+            {
+                //TODO
+            }
+        }
     }
 }
