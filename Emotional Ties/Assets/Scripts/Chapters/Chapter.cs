@@ -6,16 +6,17 @@ namespace Chapters
 {
     public abstract class Chapter : MonoBehaviour, IConversationTrigger
     {
-        [SerializeField] protected int champterNumber;
-    
+        [SerializeField] protected int chapterNumber;
+
         [SerializeField] protected Conversation preEncounterConversation;
         [SerializeField] protected Encounter encounter;
+        [SerializeField] protected Connection connection;
         [SerializeField] protected Conversation postEncounterConversation;
         [SerializeField] protected int chapterTitleWaitTime = 4;
 
         public int GetChapterNumber()
         {
-            return champterNumber;
+            return chapterNumber;
         }
 
         public Encounter GetEncounter()
@@ -30,11 +31,14 @@ namespace Chapters
 
         IEnumerator PlayChapterCoroutine()
         {
+            Debug.Log("Starting Chapter: " + chapterNumber);
             yield return new WaitForSeconds(1);
 
-            ChapterTitle.PlayChapterTitle(champterNumber);
+            ChapterTitle.PlayChapterTitle(chapterNumber);
      
             yield return new WaitForSeconds(chapterTitleWaitTime);
+
+            connection.encounter = encounter;
      
             DialogueManager.StartDialogue(this, preEncounterConversation);
         }

@@ -6,6 +6,7 @@ namespace Chapters
 {
     public class Chapter2 : Chapter
     {
+        [Header("Aspects")]
         [SerializeField] private AspectData traumaticMemories;
         [SerializeField] private AspectData focus;
         [SerializeField] private AspectData stress;
@@ -13,6 +14,7 @@ namespace Chapters
         [SerializeField] private AspectData pride;
         [SerializeField] private AspectData superiorityComplex;
 
+        [Header("Conversations")]
         [SerializeField] private Conversation stillOnPhone;
         [SerializeField] private Conversation stillOnPhoneRepeat;
         [SerializeField] private Conversation endPhoneCall;
@@ -30,85 +32,260 @@ namespace Chapters
         [SerializeField] private Conversation noBooksRepeat;
         [SerializeField] private Conversation bookRant;
         [SerializeField] private Conversation endConversation;
+
+        private int _numberOfQuestionsMax = 5;
+        private int _numberOfQuestionsAnswered = 0;
         
-        private void AddStartingActions()
+        private bool _getOffPhoneAlreadyAsked = false;
+        private bool _callEnded = false;
+        private bool _calmedDown = false;
+        private bool _feelingSuperior = false;
+        private bool _alreadyAskedAboutRelationship = false;
+        private bool _addedAskAboutDrug = false;
+        private bool _alreadyAskedAnboutBooks = false;
+
+        private void AddStartingActionsAndAspects()
         {
-            //TODO
+            EncounterBoardManager.AddAspectToBoard(focus);
+            EncounterBoardManager.AddAspectToBoard(traumaticMemories);
+            ActionMenuManager.AddActionToMenu(GetOffPhone, "I need to ask you some questions");
+        }
+
+        private void QuestionAnswered()
+        {
+            _numberOfQuestionsAnswered++;
+            if (_numberOfQuestionsAnswered >= _numberOfQuestionsMax)
+            {
+                DialogueManager.StartDialogue(this, endConversation);
+            }
+        }
+
+        public void GetOffPhone()
+        {
+            if (_getOffPhoneAlreadyAsked)
+            {
+                DialogueManager.StartDialogue(this, stillOnPhoneRepeat);
+            }
+            else
+            {
+                DialogueManager.StartDialogue(this, stillOnPhone);
+            }
+        }
+
+        public void StressArthurOut()
+        {
+            if (_callEnded)
+            {
+                DialogueManager.StartDialogue(this, getsStressedAgain);
+                _calmedDown = false;
+            }
+            else
+            {
+                _callEnded = true;
+                DialogueManager.StartDialogue(this, endPhoneCall);
+            }
+        }
+
+        public void CalmDown()
+        {
+            DialogueManager.StartDialogue(this, calmsDown);
+            _calmedDown = true;
+        }
+
+        public void LastSawMichael()
+        {
+            if (_calmedDown)
+            {
+                DialogueManager.StartDialogue(this, brideAndGroom);
+            }
+            else
+            {
+                DialogueManager.StartDialogue(this, stressedOut);
+            }
+        }
+
+        public void RelationshipWithMichael()
+        {
+            if (_calmedDown)
+            {
+                if (_feelingSuperior)
+                {
+                    DialogueManager.StartDialogue(this, honestRelationship);
+                }
+                else
+                {
+                    if (_alreadyAskedAboutRelationship)
+                    {
+                        DialogueManager.StartDialogue(this, professionalRelationshipRepeat);
+                    }
+                    else
+                    {
+                        DialogueManager.StartDialogue(this, professionalRelationship);
+                    }
+                }
+            }
+            else
+            {
+                DialogueManager.StartDialogue(this, stressedOut);
+            } 
+        }
+
+        public void WantMichaelDead()
+        {
+            if (_calmedDown)
+            {
+                DialogueManager.StartDialogue(this, anyoneWantMichaelDead);
+            }
+            else
+            {
+                DialogueManager.StartDialogue(this, stressedOut);
+            }
+        }
+        
+        public void StrangeBooks()
+        {
+            if (_calmedDown)
+            {
+                if (_feelingSuperior)
+                {
+                    DialogueManager.StartDialogue(this, bookRant);
+                }
+                else
+                {
+                    if (_alreadyAskedAnboutBooks)
+                    {
+                        DialogueManager.StartDialogue(this, noBooksRepeat);
+                    }
+                    else
+                    {
+                        DialogueManager.StartDialogue(this, noBooks);
+                    }
+                }
+            }
+            else
+            {
+                DialogueManager.StartDialogue(this, stressedOut);
+            }
+        }
+
+        public void MakePrideful()
+        {
+            if (_calmedDown)
+            {
+                DialogueManager.StartDialogue(this, feelingSuperior);
+                _feelingSuperior = true;
+            }
+        }
+
+        public void AskAboutPsymoprofen()
+        {
+            DialogueManager.StartDialogue(this, drugExplanation);
         }
         
         public override void ConversationFinished(Conversation finishedConversation)
         {
             if (finishedConversation == preEncounterConversation)
             {
-                //TODO
+                AddStartingActionsAndAspects();
+                encounter.StartEncounter(this);
             }
             else if (finishedConversation == stillOnPhone)
             {
-                //TODO
+                _getOffPhoneAlreadyAsked = true;
+                EncounterBoardManager.AddAspectToBoard(stress);
+                EncounterBoardManager.AddAspectToBoard(impatience);
             }
             else if (finishedConversation == stillOnPhoneRepeat)
             {
-                //TODO
+                //nothing
             }
             else if (finishedConversation == endPhoneCall)
             {
-                //TODO
+                ActionMenuManager.RemoveActionFromMenu("I need to ask you some questions");
+                ActionMenuManager.AddActionToMenu(LastSawMichael, "When did you last see Mr. Baker");
+                ActionMenuManager.AddActionToMenu(RelationshipWithMichael, "How was your relationship with Mr. Baker");
+                ActionMenuManager.AddActionToMenu(WantMichaelDead, "Did anyone want Mr. Baker dead");
+                ActionMenuManager.AddActionToMenu(StrangeBooks, "Do you know anything about strange books");
             }
             else if (finishedConversation == calmsDown)
             {
-                //TODO
+                //nothing
             }
             else if (finishedConversation == getsStressedAgain)
             {
-                //TODO
+                //nothing
             }
             else if (finishedConversation == stressedOut)
             {
-                //TODO
+                //nothing
             }
             else if (finishedConversation == brideAndGroom)
             {
-                //TODO
+                ActionMenuManager.RemoveActionFromMenu("When did you last see Mr. Baker");
+                QuestionAnswered();
             }
             else if (finishedConversation == professionalRelationship)
             {
-                //TODO
+                _alreadyAskedAboutRelationship = true;
+
+                if (!_addedAskAboutDrug)
+                {
+                    _addedAskAboutDrug = true;
+                    ActionMenuManager.AddActionToMenu(AskAboutPsymoprofen, "What is Psymoprofen");
+                }
             }
             else if (finishedConversation == professionalRelationshipRepeat)
             {
-                //TODO
+                //nothing
             }
             else if (finishedConversation == honestRelationship)
             {
-                //TODO
+                ActionMenuManager.RemoveActionFromMenu("How was your relationship with Mr. Baker");
+                
+                if (!_addedAskAboutDrug)
+                {
+                    _addedAskAboutDrug = true;
+                    ActionMenuManager.AddActionToMenu(AskAboutPsymoprofen, "What is Psymoprofen");
+                }
+
+                QuestionAnswered();
             }
             else if (finishedConversation == drugExplanation)
             {
-                //TODO
+                EncounterBoardManager.AddAspectToBoard(pride);
+                ActionMenuManager.RemoveActionFromMenu("What is Psymoprofen");
+                QuestionAnswered();
             }
             else if (finishedConversation == feelingSuperior)
             {
-                //TODO
+                EncounterBoardManager.RemoveAspectFromBoard(pride);
+                EncounterBoardManager.AddAspectToBoard(superiorityComplex);
             }
             else if (finishedConversation == anyoneWantMichaelDead)
             {
-                //TODO
+                ActionMenuManager.RemoveActionFromMenu("Did anyone want Mr. Baker dead");
+                QuestionAnswered();
             }
             else if (finishedConversation == noBooks)
             {
-                //TODO
+                _alreadyAskedAnboutBooks = true;
             }
             else if (finishedConversation == noBooksRepeat)
             {
-                //TODO
+                //nothing
             }
             else if (finishedConversation == bookRant)
             {
-                //TODO
+                ActionMenuManager.RemoveActionFromMenu("Do you know anything about strange books");
+                QuestionAnswered();
             }
             else if (finishedConversation == endConversation)
             {
                 EndChapter();
+            }
+            else if (finishedConversation == postEncounterConversation)
+            {
+                GameManager.StartChapter(chapterNumber + 1);
             }
         }
     }

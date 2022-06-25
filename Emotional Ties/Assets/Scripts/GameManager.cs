@@ -26,7 +26,7 @@ public class GameManager : MonoBehaviour
         return _currentChapter;
     }
 
-    public static void StartGame(int chapter)
+    public static void StartChapter(int chapter)
     {
         _current.menuCanvas.enabled = false;
         _current.DialogueCanvas.enabled = true;
@@ -35,5 +35,10 @@ public class GameManager : MonoBehaviour
         _currentChapter = _current.chapters[chapter - 1];
 
         _currentChapter.PlayChapter();
+    }
+
+    public static void GoToMainMenu()
+    {
+        //TODO
     }
 }

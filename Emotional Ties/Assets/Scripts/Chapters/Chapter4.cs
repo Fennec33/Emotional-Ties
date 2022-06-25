@@ -6,6 +6,7 @@ namespace Chapters
 {
     public class Chapter4 : Chapter
     {
+        [Header("Aspects")]
         [SerializeField] private AspectData traumaticMemories;
         [SerializeField] private AspectData focus;
         [SerializeField] private AspectData caution;
@@ -15,6 +16,7 @@ namespace Chapters
         [SerializeField] private AspectData flirtatiousness;
         [SerializeField] private AspectData pleasant;
 
+        [Header("Conversations")]
         [SerializeField] private Conversation doNotAccuseHer;
         [SerializeField] private Conversation howDidYouKnowMrBaker;
         [SerializeField] private Conversation safeWayHome;
@@ -60,16 +62,18 @@ namespace Chapters
         [SerializeField] private Conversation theDebt;
         [SerializeField] private Conversation theDebtFailing;
         
-        private void AddStartingActions()
+        private void AddStartingActionsAndAspects()
         {
-            //TODO
+            EncounterBoardManager.AddAspectToBoard(focus);
+            EncounterBoardManager.AddAspectToBoard(traumaticMemories);
         }
         
         public override void ConversationFinished(Conversation finishedConversation)
         {
             if (finishedConversation == preEncounterConversation)
             {
-                //TODO
+                AddStartingActionsAndAspects();
+                encounter.StartEncounter(this);
             }
             else if (finishedConversation == doNotAccuseHer)
             {
@@ -246,6 +250,10 @@ namespace Chapters
             else if (finishedConversation == theDebtFailing)
             {
                 //TODO
+            }
+            else if (finishedConversation == postEncounterConversation)
+            {
+                GameManager.StartChapter(chapterNumber + 1);
             }
         }
     }

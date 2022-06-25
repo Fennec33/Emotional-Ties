@@ -6,10 +6,12 @@ namespace Chapters
 {
     public class Chapter1 : Chapter
     {
+        [Header("Aspects")]
         [SerializeField] private AspectData traumaticMemories;
         [SerializeField] private AspectData focus;
         [SerializeField] private AspectData emotionalVortex;
         
+        [Header("Conversations")]
         [SerializeField] private Conversation areYouAbleToAnswerSomeQuestionsForMe1;
         [SerializeField] private Conversation areYouAbleToAnswerSomeQuestionsForMe2;
         [SerializeField] private Conversation areYouAbleToAnswerSomeQuestionsForMeRepeat;
@@ -85,10 +87,6 @@ namespace Chapters
                 encounter.StartEncounter(this);
                 AddStartingActions();
             }
-            else if (finishedConversation == postEncounterConversation)
-            {
-                //next chapter
-            }
             else if (finishedConversation == areYouAbleToAnswerSomeQuestionsForMe1)
             {
                 EncounterBoardManager.AddAspectToBoard(traumaticMemories);
@@ -121,6 +119,10 @@ namespace Chapters
             else if (finishedConversation == finishConversation)
             {
                 EndChapter();
+            }
+            else if (finishedConversation == postEncounterConversation)
+            {
+                GameManager.StartChapter(chapterNumber + 1);
             }
         }
     }

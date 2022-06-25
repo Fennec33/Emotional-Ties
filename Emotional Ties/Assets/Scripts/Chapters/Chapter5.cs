@@ -6,10 +6,12 @@ namespace Chapters
 {
     public class Chapter5 : Chapter
     {
+        [Header("Aspects")]
         [SerializeField] private AspectData traumaticMemories;
         [SerializeField] private AspectData focus;
         [SerializeField] private AspectData onEdge;
 
+        [Header("Conversations")]
         [SerializeField] private Conversation atGunpoint;
         [SerializeField] private Conversation doNotTellMeWhatToDo;
         [SerializeField] private Conversation nothingToTalkAbout;
@@ -19,16 +21,18 @@ namespace Chapters
         [SerializeField] private Conversation inflictTrauma;
         [SerializeField] private Conversation shootArthur;
         
-        private void AddStartingActions()
+        private void AddStartingActionsAndAspects()
         {
-            //TODO
+            EncounterBoardManager.AddAspectToBoard(focus);
+            EncounterBoardManager.AddAspectToBoard(traumaticMemories);
         }
         
         public override void ConversationFinished(Conversation finishedConversation)
         {
             if (finishedConversation == preEncounterConversation)
             {
-                //TODO
+                AddStartingActionsAndAspects();
+                encounter.StartEncounter(this);
             }
             else if (finishedConversation == atGunpoint)
             {
@@ -61,6 +65,10 @@ namespace Chapters
             else if (finishedConversation == shootArthur)
             {
                 EndChapter();
+            }
+            else if (finishedConversation == postEncounterConversation)
+            {
+                GameManager.GoToMainMenu();
             }
         }
     }

@@ -451,7 +451,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -0.0001564, y: 2215496.8}
+  m_AnchoredPosition: {x: -0.0001564, y: 2247626.8}
   m_SizeDelta: {x: 250.08908, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &22674287
@@ -1801,9 +1801,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3a2646a59f625341bc70c4646c069f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  champterNumber: 3
+  chapterNumber: 3
   preEncounterConversation: {fileID: 685544759}
   encounter: {fileID: 183113237}
+  connection: {fileID: 2006788921}
   postEncounterConversation: {fileID: 1647400414}
   chapterTitleWaitTime: 4
   traumaticMemories: {fileID: 11400000, guid: 3576cce3303cf1548b4edd7b3bee2bcd, type: 2}
@@ -2561,7 +2562,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1975156135}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: StartGame
+        m_MethodName: StartChapter
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3196,7 +3197,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1975156135}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: StartGame
+        m_MethodName: StartChapter
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4111,7 +4112,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1975156135}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: StartGame
+        m_MethodName: StartChapter
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6727,9 +6728,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9169a76bdc3dd6140af0d23764844eba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  champterNumber: 4
+  chapterNumber: 4
   preEncounterConversation: {fileID: 430602538}
   encounter: {fileID: 918660930}
+  connection: {fileID: 2006788921}
   postEncounterConversation: {fileID: 550835314}
   chapterTitleWaitTime: 4
   traumaticMemories: {fileID: 11400000, guid: 3576cce3303cf1548b4edd7b3bee2bcd, type: 2}
@@ -7680,7 +7682,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1975156135}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: StartGame
+        m_MethodName: StartChapter
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9246,9 +9248,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3543ee03ad752e1479c76a8e722f806d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  champterNumber: 1
+  chapterNumber: 1
   preEncounterConversation: {fileID: 228748645}
   encounter: {fileID: 1185874553}
+  connection: {fileID: 2006788921}
   postEncounterConversation: {fileID: 4186812}
   chapterTitleWaitTime: 4
   traumaticMemories: {fileID: 11400000, guid: 3576cce3303cf1548b4edd7b3bee2bcd, type: 2}
@@ -9997,7 +10000,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1975156135}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: StartGame
+        m_MethodName: StartChapter
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13336,7 +13339,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1975156135}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: StartGame
+        m_MethodName: StartChapter
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -14098,9 +14101,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbc7337318588c247a4bfc5f85c065ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  champterNumber: 5
+  chapterNumber: 5
   preEncounterConversation: {fileID: 1702422531}
   encounter: {fileID: 1871003178}
+  connection: {fileID: 2006788921}
   postEncounterConversation: {fileID: 1623854250}
   chapterTitleWaitTime: 4
   traumaticMemories: {fileID: 11400000, guid: 3576cce3303cf1548b4edd7b3bee2bcd, type: 2}
@@ -14564,7 +14568,59 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aspects: []
-  links: []
+  links:
+  - aspect1: Stress
+    aspect2: Impatience
+    startLink:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1997548063}
+          m_TargetAssemblyTypeName: Chapters.Chapter2, Assembly-CSharp
+          m_MethodName: StressArthurOut
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    endLink:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1997548063}
+          m_TargetAssemblyTypeName: Chapters.Chapter2, Assembly-CSharp
+          m_MethodName: CalmDown
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - aspect1: Focus
+    aspect2: Pride
+    startLink:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1997548063}
+          m_TargetAssemblyTypeName: Chapters.Chapter2, Assembly-CSharp
+          m_MethodName: MakePrideful
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    endLink:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!114 &1997548063
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14577,9 +14633,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d27ccfde6234a9b43ba65e40dc6cb104, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  champterNumber: 2
+  chapterNumber: 2
   preEncounterConversation: {fileID: 74918751}
   encounter: {fileID: 1997548062}
+  connection: {fileID: 2006788921}
   postEncounterConversation: {fileID: 1174880074}
   chapterTitleWaitTime: 4
   traumaticMemories: {fileID: 11400000, guid: 3576cce3303cf1548b4edd7b3bee2bcd, type: 2}
@@ -14659,6 +14716,17 @@ MonoBehaviour:
   - _name: Shirley Lewis
     _sentence: Yes, we had many conversations, or debates depending on how you look
       at it.
+--- !u!114 &2006788921 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8817340696013061788, guid: 0e297c662e400ba4fa5e168c7154e73d, type: 3}
+  m_PrefabInstance: {fileID: 634590504}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 754b60d36180fdc45a0a08cee9efa4d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2010695502
 GameObject:
   m_ObjectHideFlags: 0
