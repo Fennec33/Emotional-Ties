@@ -98,12 +98,12 @@ namespace Chapters
             }
         }
 
-        private void PleaseTalkWithUs()
+        public void PleaseTalkWithUs()
         {
             DialogueManager.StartDialogue(this, somethingIDidNotTellYou);
         }
 
-        private void OverwhelmHer()
+        public void OverwhelmHer()
         {
             DialogueManager.StartDialogue(this, breakingDown);
         }

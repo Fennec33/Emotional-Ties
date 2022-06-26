@@ -451,7 +451,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -0.0001564, y: 2249201.8}
+  m_AnchoredPosition: {x: -0.0001564, y: 2256131.8}
   m_SizeDelta: {x: 250.08908, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &22674287
@@ -1788,7 +1788,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aspects: []
-  links: []
+  links:
+  - aspect1: Emotionaly Drained
+    aspect2: Panic
+    startLink:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 183113238}
+          m_TargetAssemblyTypeName: Chapters.Chapter3, Assembly-CSharp
+          m_MethodName: OverwhelmHer
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    endLink:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!114 &183113238
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14088,7 +14108,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aspects: []
-  links: []
+  links:
+  - aspect1: Traumatic Memories
+    aspect2: On Edge
+    startLink:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1871003179}
+          m_TargetAssemblyTypeName: Chapters.Chapter5, Assembly-CSharp
+          m_MethodName: PsychicBlast
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    endLink:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!114 &1871003179
 MonoBehaviour:
   m_ObjectHideFlags: 0
