@@ -54,8 +54,6 @@ public class ActionMenuManager : MonoBehaviour
                 Destroy(child.gameObject);
             }
         }
-
-        Debug.Log("Done removing actions");
     }
 
     public static void TurnMenuOn()

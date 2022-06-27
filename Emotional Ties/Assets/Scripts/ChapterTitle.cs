@@ -26,4 +26,10 @@ public class ChapterTitle : MonoBehaviour
         _current._chapterTitleText.text = Title + chapterNumber;
         _current._animator.SetTrigger(AnimateChapter);
     }
+
+    public static void PlayGameEnd()
+    {
+        _current._chapterTitleText.text = "Thank You For Playing";
+        _current._animator.SetTrigger(AnimateChapter);
+    }
 }

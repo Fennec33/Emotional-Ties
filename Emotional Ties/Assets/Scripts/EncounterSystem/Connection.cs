@@ -32,6 +32,8 @@ public class Connection : MonoBehaviour
         _camera = Camera.main;
         points[0] = transform.position;
         points[0].z = 0;
+        
+        HideConnection();
     }
 
     public static Connection GetMainConnection()
@@ -89,6 +91,11 @@ public class Connection : MonoBehaviour
 
     private void Update()
     {
+        if (_startAspectTransform == null || _endAspectTransform == null)
+        {
+            HideConnection();
+        }
+        
         if (_dragging)
         {
             points[1] = _camera.ScreenToWorldPoint(Input.mousePosition);

@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
 using DialogueSystem;
 using UnityEditor;
 using UnityEngine;
@@ -119,8 +121,19 @@ namespace Chapters
             }
             else if (finishedConversation == postEncounterConversation)
             {
-                GameManager.GoToMainMenu();
+                StartCoroutine(PlayEndCoroutine());
             }
+        }
+        
+        IEnumerator PlayEndCoroutine()
+        {
+            yield return new WaitForSeconds(1);
+
+            ChapterTitle.PlayGameEnd();
+     
+            yield return new WaitForSeconds(chapterTitleWaitTime);
+
+            GameManager.GoToMainMenu();
         }
     }
 }
