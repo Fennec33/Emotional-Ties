@@ -25,6 +25,8 @@ namespace DialogueSystem
         private static IConversationTrigger _trigger;
 
         private Conversation curentConversation;
+
+        private bool _doneTyping = true;
     
         void Start()
         {
@@ -58,12 +60,21 @@ namespace DialogueSystem
 
         public void DisplayNextSentence()
         {
+            if (!_doneTyping)
+            {
+                StopAllCoroutines();
+                _doneTyping = true;
+                dialogueText.maxVisibleCharacters = dialogueText.textInfo.characterCount;
+                dialogueText.ForceMeshUpdate();
+                return;
+            }
+            
             if (_sentences.Count == 0)
             {
                 EndDialogue();
                 return;
             }
-
+            
             LineOfDialogue sentence = _sentences.Dequeue();
         
             _current.nameText.text = sentence.GetName();
@@ -74,6 +85,7 @@ namespace DialogueSystem
 
         IEnumerator TypeSentence(string sentence)
         {
+            _doneTyping = false;
             dialogueText.text = sentence;
             dialogueText.ForceMeshUpdate();
             
@@ -84,6 +96,8 @@ namespace DialogueSystem
                 dialogueText.maxVisibleCharacters = i;
                 yield return new WaitForSeconds(typingSpeed);
             }
+
+            _doneTyping = true;
         }
 
         private void EndDialogue()
