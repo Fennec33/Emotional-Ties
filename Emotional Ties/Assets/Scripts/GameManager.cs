@@ -13,6 +13,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Canvas actionMenuCanvas;
     [SerializeField] private Chapter[] chapters;
 
+    [SerializeField] private Animator titleAnimator;
+    [SerializeField] private Animator menuAnimator;
 
     private static Chapter _currentChapter;
 
@@ -39,6 +41,12 @@ public class GameManager : MonoBehaviour
 
     public static void GoToMainMenu()
     {
-        //TODO
+        _current.menuCanvas.enabled = true;
+
+        _current.titleAnimator.SetTrigger("MenuStart");
+        _current.menuAnimator.SetTrigger("MenuStart");
+        
+        _current.DialogueCanvas.enabled = false;
+        _current.actionMenuCanvas.enabled = false;
     }
 }

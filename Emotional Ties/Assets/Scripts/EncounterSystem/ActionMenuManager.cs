@@ -49,8 +49,13 @@ public class ActionMenuManager : MonoBehaviour
         Transform[] allChildren = _current.scrollableList.GetComponentsInChildren<Transform>();
         foreach (Transform child in allChildren)
         {
-            Destroy(child.gameObject);
+            if (child.transform != _current.scrollableList)
+            {
+                Destroy(child.gameObject);
+            }
         }
+
+        Debug.Log("Done removing actions");
     }
 
     public static void TurnMenuOn()

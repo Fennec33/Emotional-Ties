@@ -72,5 +72,6 @@ public class EncounterBoardManager : MonoBehaviour
         {
             Destroy(aspect);
         }
+        _current._aspects.Clear();
     }
 }

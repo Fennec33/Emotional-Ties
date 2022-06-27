@@ -31,7 +31,6 @@ namespace Chapters
 
         IEnumerator PlayChapterCoroutine()
         {
-            Debug.Log("Starting Chapter: " + chapterNumber);
             yield return new WaitForSeconds(1);
 
             ChapterTitle.PlayChapterTitle(chapterNumber);
