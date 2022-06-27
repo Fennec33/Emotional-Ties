@@ -13,6 +13,7 @@ namespace Chapters
         [SerializeField] protected Connection connection;
         [SerializeField] protected Conversation postEncounterConversation;
         [SerializeField] protected int chapterTitleWaitTime = 4;
+        [SerializeField] private AudioManager audioManager;
 
         public int GetChapterNumber()
         {
@@ -26,6 +27,7 @@ namespace Chapters
     
         public void PlayChapter()
         {
+            audioManager.StartChapterMusic(chapterNumber);
             StartCoroutine(PlayChapterCoroutine());
         }
 

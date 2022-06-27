@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Events;
 
 namespace DialogueSystem
 {
@@ -10,6 +11,8 @@ namespace DialogueSystem
         [TextArea(4, 10)]
         [SerializeField] string _sentence;
 
+        [SerializeField] public UnityEvent lineAudioEffect;
+
         public string GetName()
         {
             return _name;
@@ -18,6 +21,11 @@ namespace DialogueSystem
         public string GetSentence()
         {
             return _sentence;
+        }
+
+        public void TriggerAudioEffect()
+        {
+            lineAudioEffect?.Invoke();
         }
     }
 }

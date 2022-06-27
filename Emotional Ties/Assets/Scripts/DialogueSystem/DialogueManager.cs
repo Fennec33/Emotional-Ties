@@ -27,6 +27,7 @@ namespace DialogueSystem
         private Conversation curentConversation;
 
         private bool _doneTyping = true;
+        private Coroutine _typingCoroutine;
     
         void Start()
         {
@@ -36,6 +37,11 @@ namespace DialogueSystem
         private void Awake()
         {
             _current = this;
+        }
+
+        public void SetTypingSpeed(float value)
+        {
+            typingSpeed = value;
         }
 
         public static void StartDialogue( IConversationTrigger trigger, Conversation conversation)
@@ -62,7 +68,10 @@ namespace DialogueSystem
         {
             if (!_doneTyping)
             {
-                StopAllCoroutines();
+                if (_typingCoroutine != null)
+                {
+                    StopCoroutine(_typingCoroutine);
+                }
                 _doneTyping = true;
                 dialogueText.maxVisibleCharacters = dialogueText.textInfo.characterCount;
                 dialogueText.ForceMeshUpdate();
@@ -79,8 +88,13 @@ namespace DialogueSystem
         
             _current.nameText.text = sentence.GetName();
 
-            StopAllCoroutines();
-            StartCoroutine(TypeSentence(sentence.GetSentence()));
+            if (_typingCoroutine != null)
+            {
+                StopCoroutine(_typingCoroutine);
+            }
+            _typingCoroutine = StartCoroutine(TypeSentence(sentence.GetSentence()));
+            
+            sentence.TriggerAudioEffect();
         }
 
         IEnumerator TypeSentence(string sentence)

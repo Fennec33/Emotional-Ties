@@ -161,7 +161,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 75, y: 75}
+  m_AnchoredPosition: {x: 75, y: 100}
   m_SizeDelta: {x: 350, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &3727243
@@ -207,13 +207,25 @@ MonoBehaviour:
   m_FillRect: {fileID: 1086184500}
   m_HandleRect: {fileID: 1505187327}
   m_Direction: 0
-  m_MinValue: 0
-  m_MaxValue: 1
+  m_MinValue: 0.0001
+  m_MaxValue: 1.5
   m_WholeNumbers: 0
-  m_Value: 0.5
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1869610175}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: SetMasterVolume
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &4186810
 GameObject:
   m_ObjectHideFlags: 0
@@ -260,19 +272,37 @@ MonoBehaviour:
   lines:
   - _name: Sergeant Hill
     _sentence: "Well, did she do it? It\u2019s almost always a lovers\u2019 quarrel."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: "I don\u2019t know yet. Her emotions are real, but that doesn\u2019t
       mean she\u2019s innocent."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: She would be an emotional wreck whether she tragically lost her fiance
       or she did the deed herself in a moment of passion.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Sergeant Hill
     _sentence: "I\u2019ll have my men watch her so she doesn't run."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: Do you know where the best man is? His name is Arthur Adams. I would
       like to talk with him next.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Sergeant Hill
     _sentence: Sure do. Follow me.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &5763646
 GameObject:
   m_ObjectHideFlags: 0
@@ -451,7 +481,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -0.0001564, y: 5275197}
+  m_AnchoredPosition: {x: -0.0001564, y: 5348487}
   m_SizeDelta: {x: 250.08908, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &22674287
@@ -542,8 +572,14 @@ MonoBehaviour:
     _sentence: Thank you for your honesty, Ms. Roberts. Before I go, I just want
       to make sure that you really told us everything this time. No more secrets
       or lies?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Janet Roberts
     _sentence: No. I have told you everything I could possibly think of.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &38451126
 GameObject:
   m_ObjectHideFlags: 0
@@ -590,11 +626,20 @@ MonoBehaviour:
   lines:
   - _name: David Coyle
     _sentence: "Mr. Adams, can I ask you about\u2026"
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Arthur Adams
     _sentence: Just give me one minute, sir.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: I had wound up his emotions pretty tight. I would have to help him
       calm down before he could stand still and answer some questions.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &54726678
 GameObject:
   m_ObjectHideFlags: 0
@@ -628,11 +673,11 @@ RectTransform:
   - {fileID: 155217533}
   - {fileID: 1228374883}
   m_Father: {fileID: 1515612312}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 75, y: -75}
+  m_AnchoredPosition: {x: 75, y: -100}
   m_SizeDelta: {x: 350, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &54726680
@@ -677,14 +722,26 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1212347871}
   m_FillRect: {fileID: 1008780989}
   m_HandleRect: {fileID: 1212347870}
-  m_Direction: 0
-  m_MinValue: 0
-  m_MaxValue: 1
+  m_Direction: 1
+  m_MinValue: 0.001
+  m_MaxValue: 0.06
   m_WholeNumbers: 0
-  m_Value: 0.5
+  m_Value: 0.02
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1482519069}
+        m_TargetAssemblyTypeName: DialogueSystem.DialogueManager, Assembly-CSharp
+        m_MethodName: SetTypingSpeed
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &63450939
 GameObject:
   m_ObjectHideFlags: 0
@@ -866,6 +923,9 @@ MonoBehaviour:
   - _name: 
     _sentence: I focused on the sense of caution she was pushing on me. The psychic
       link she had established fell away.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &71445029
 GameObject:
   m_ObjectHideFlags: 0
@@ -899,7 +959,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: -5.0000153, y: 0}
+  m_AnchoredPosition: {x: 5.0000153, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &74918749
@@ -950,35 +1010,68 @@ MonoBehaviour:
     _sentence: Sergeant Hill guided me through the old church hallways. Flowers were
       perfectly placed everywhere, on tables, over doorways, in pots, hanging from
       the ceiling, and even in paintings on the wall.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: Apparently there were not enough real life flowers to satisfy the
       bride's appetite.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Sergeant Hill
     _sentence: The best man is waiting here in this room.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: Murmurs of a stressed conversation emanated from inside the room.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: As I entered, I nodded to the officer stationed in the small room
       and then turned my attention to the blond man in a suit arguing on his cell
       phone.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Arthur Adams
     _sentence: "I am telling you everything is fine\u2026 No, you listen to me\u2026
       We still have a week until the board meeting\u2026"
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: The man I assumed to be Arthur Adams paced back and forth across the
       room with a stilted nervous energy to him. His coat jacket was tossed over
       a nearby chair and his tie was pulled loose.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: He was preoccupied with his call, but frankly my questions were more
       important than whatever he was doing.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: "Excuse me sir, I have a few questions for you about\u2026"
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: "Mr. Adams cut me off with a glare and a single finger held up as
       if to say \u201Cjust wait there until I\u2019m ready for you.\u201D"
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: Sergeant Hill chuckled and the other officer gave me a sympathetic
       shrug. I had no time for his shenanigans. I would have to get him off the phone.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &83265920
 GameObject:
   m_ObjectHideFlags: 0
@@ -1026,28 +1119,55 @@ MonoBehaviour:
   - _name: David Coyle
     _sentence: You mentioned something earlier about Psymoprofen not working. What
       did you mean by that?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: "It\u2019s something Michael opened up to me about in one of our conversations
       not too long ago. The drug had some promising tests that got everyone excited."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: But over the years working on it, little progress has been made.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: Apparently Psymoprofen only works for a short time and then the body
       develops some sort of immunity. It has no real long term effectiveness.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: Who knows about this?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: "As far as I know, you are the first person outside of Michael\u2019s
       inner circle to know about this."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: "I was not supposed to tell anyone and Arthur will still be working
       on this project. So I would appreciate it if you didn\u2019t go public with
       this information."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: "I won\u2019t go out of my way to spread the news, but if it becomes
       relevant to the case, I\u2019ll expose what I have to."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: "I guess that\u2019s all I can hope to ask for."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &86104568
 GameObject:
   m_ObjectHideFlags: 0
@@ -1229,8 +1349,14 @@ MonoBehaviour:
   - _name: David Coyle
     _sentence: I am a detective. I solve crimes. That is all you really need to know
       about me.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: Oh, that is so boring. Tell me something more interesting.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &116967805
 GameObject:
   m_ObjectHideFlags: 0
@@ -1278,17 +1404,32 @@ MonoBehaviour:
   - _name: David Coyle
     _sentence: Well thank you, Ms. Roberts. I have other people to interview, but
       if you think of any other important information, please let me know.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Janet Roberts
     _sentence: "Sniff\u2026 Thank you, Officer Coyle, I definitely will. Is it okay
       for me to leave now?"
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: No, we need to keep everyone here onsite for a bit longer. We might
       need to ask you some more questions later.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Janet Roberts
     _sentence: "Oh\u2026 okay\u2026 well, bye Officer Coyle. Please find whoever
       did this."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: I will do the best I can Ms.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &117020467
 GameObject:
   m_ObjectHideFlags: 0
@@ -1488,28 +1629,55 @@ MonoBehaviour:
       strange or suspicious activity?
 
 '
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Janet Roberts
     _sentence: We have been planning a wedding, Officer Coyle. Everything has been
       crazy and neither of us were doing our normal routines.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: Yes, but think carefully. Did you notice anything abnormal beyond
       wedding stuff?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Janet Roberts
     _sentence: "Well\u2026 he was pretty busy with work. But that\u2019s nothing
       new. He had a lot of late nights at the office and was reading a lot of books."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: Books? Was it abnormal for him to be doing a lot of reading?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Janet Roberts
     _sentence: "No, he\u2019s always read a lot. He tells me about all the interesting
       stuff he\u2019s reading, but most of it goes over my head. So I don\u2019t
       listen very carefully."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Janet Roberts
     _sentence: But usually it is a lot of biology and chemistry he reads. Over the
       last few months he has started reading more about psychology and sociology.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Janet Roberts
     _sentence: "But I\u2019m not sure that\u2019s relevant?"
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: It probably doesn't mean anything, but thank you for the information.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &153975657
 GameObject:
   m_ObjectHideFlags: 0
@@ -1827,6 +1995,7 @@ MonoBehaviour:
   connection: {fileID: 2006788921}
   postEncounterConversation: {fileID: 1647400414}
   chapterTitleWaitTime: 4
+  audioManager: {fileID: 1869610175}
   traumaticMemories: {fileID: 11400000, guid: 3576cce3303cf1548b4edd7b3bee2bcd, type: 2}
   focus: {fileID: 11400000, guid: ee2afb839bb6e1f42ba3a52746874b30, type: 2}
   emotionallyDrained: {fileID: 11400000, guid: ffa3f2d684f052f48b501f1c2c46db2d, type: 2}
@@ -1894,20 +2063,38 @@ MonoBehaviour:
   - _name: Shirley Lewis
     _sentence: "Am I able to go home? Like you said, it\u2019s getting late and I've
       had such an emotionally exhausting day."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: "Yes, it should be fine if you want\u2026"
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: "I was about to tell her that it was fine for her to leave. But she
       can\u2019t leave, I\u2019ve hardly asked her any questions. What was I doing?"
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: I took a moment to examine my mind and found the problem. I was being
       manipulated by a psychic.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: "Seeing the realization on my face, Shirley\u2019s smile sharpened
       as she gave me a knowing look. It was her."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: She was giving me a strong sense of caution and desire. I had to take
       a moment to break her influence before I allowed myself to continue the conversation.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &206457041
 GameObject:
   m_ObjectHideFlags: 0
@@ -1955,27 +2142,48 @@ MonoBehaviour:
   - _name: David Coyle
     _sentence: You said that Psymoprofen would make Mr. Baker and Mr. Adams a lot
       of money. But how much money are we really talking about?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: Owning the only successful drug that is capable of curing psychics
       from their madness would be lucrative. You could charge whatever you wanted
       and people would buy it.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: "Yeah, but the population of psychics is quite low. With such a small
       customer base, your income is limited. That\u2019s why it\u2019s an underdeveloped
       field of research."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: Yes, but if you could reliably treat psychics and then train them
       to use their powers, then suddenly lots of corporations and governments would
       be incredibly interested.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: Corporations would pay for the drug as long as psychics promised to
       work for them.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: They would be taking advantage of people in need. That is a dark way
       to make money.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: Yes it is, but it is an effective way to make money. All Michael had
       to do was get the drug to actually work.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &219883111
 GameObject:
   m_ObjectHideFlags: 0
@@ -2022,10 +2230,19 @@ MonoBehaviour:
   lines:
   - _name: David Coyle
     _sentence: I mostly work on restoring old bikes.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: Why old bikes?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: I like old bikes, something about them feels so nostalgic you know.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &223224993
 GameObject:
   m_ObjectHideFlags: 0
@@ -2148,89 +2365,191 @@ MonoBehaviour:
   - _name: 
     _sentence: As a psychic investigator I have encountered the darkest of tragedies
       and the bloodiest of crime scenes this godforsaken city has to offer.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: If there is one thing I learned over the years, it is that nothing
       is ever straightforward, and everything sucks.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: This is what I was contemplating as I worked another late shift, driving
       to another crime scene, to see another dead body, and find another violent
       murderer.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: As I took a step out of my car the world welcomed me with the persistent
       downpour of a gentle storm.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: I wrapped my coat closer around myself as I approached the old Catholic
       church.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: Spinning red and blue lights illuminated the stained glass windows.
       A small crowd huddled behind the police tape.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: I could feel people's emotions swirling around me. Pain, fear, curiosity,
       exhaustion.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: "I had to focus on controlling my psychic senses so I wouldn\u2019t
       get overwhelmed and lost in the cacophony of sensations."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: Even among all the psychic noise, I recognized the signature stern
       grumpiness of Sergeant Hill as he approached me.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Sergeant Hill
     _sentence: "So, I see I\u2019m stuck with you on yet another case, Coyle. Can
       you do me a favor and just read the mind of the killer so we can wrap this
       up? I have better things to do tonight."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: "Always a pleasure Hill, and you know that isn\u2019t how it works."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Sergeant Hill
     _sentence: "I don\u2019t know how any of your woo woo investigation nonsense
       works. But as long as it helps us bag the perp, I don\u2019t really care."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Sergeant Hill
     _sentence: "Let's head inside and get out of the rain. I\u2019ll fill you in
       on the case."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: "Ugh\u2026 sounds good."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Sergeant Hill
     _sentence: You okay, Coyle? You better not have a hangover or something.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: "No, I\u2019m good. There are just a lot of people and emotions swirling
       around here. I\u2019ll adjust to it in a minute. Just tell me what we got."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: As I entered the church, I took some deep breaths. I focused on the
       mental image of a candle and as I did, the psychic noise seemed to dampen and
       fall distant.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1869610175}
+          m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+          m_MethodName: StopRainSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - _name: Sergeant Hill
     _sentence: Our victim was a man named Michael Baker. Right before the wedding,
       a bridesmaid found him in the dressing room with a fire poker lodged in his
       skull.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: What do we know about him?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Sergeant Hill
     _sentence: "He was some sort of pharmaceutical scientist. You know the Psymoprofen
       stuff they\u2019ve been talking about on the news? I guess he made it."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: "Yeah, I\u2019ve heard about it. It\u2019s supposed to help psychics
       who are being driven mad by their senses, right?"
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Sergeant Hill
     _sentence: Yep, and it apparently made Mr. Baker a big deal or something.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: Was Mr. Baker a psychic himself?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Sergeant Hill
     _sentence: Yes, he was, and guess what! He was also the groom. Pretty ironic
       getting offed at your own wedding, huh?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: Till death do us part.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Sergeant Hill
     _sentence: "Exactly. The bride is right over here. Her name is Janet Roberts.
       We can hardly get any information out of her. So go do your whatever on her.\r"
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: Ms. Roberts was wearing a beautiful white dress, with a delicate circlet
       of flowers in her hair. Dark makeup streamed down her face.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: The emotional turmoil radiating from her was intense, a chaotic blending
       of sadness, fear, pain, and numbness.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: Hello, Ms.Roberts. My name is Officer David Coyle, I am here to ask
       you a few questions. Do you think you can help me with that?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Janet Roberts
     _sentence: "Sniff\u2026 Ye\u2026 Yes\u2026 *uncontrollable sobbing*"
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &234859638
 GameObject:
   m_ObjectHideFlags: 0
@@ -2402,6 +2721,140 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 165}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &248486984
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 248486985}
+  - component: {fileID: 248486987}
+  - component: {fileID: 248486986}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &248486985
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 248486984}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 578406549}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -250, y: 0}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &248486986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 248486984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Rain
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: e842a8d9ecd0e7e489e0967f733a62d1, type: 2}
+  m_sharedMaterial: {fileID: 2549452778697985385, guid: e842a8d9ecd0e7e489e0967f733a62d1, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 16
+  m_fontSizeBase: 16
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &248486987
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 248486984}
+  m_CullTransparentMesh: 0
 --- !u!1 &253565645
 GameObject:
   m_ObjectHideFlags: 0
@@ -2449,19 +2902,37 @@ MonoBehaviour:
   - _name: David Coyle
     _sentence: You mentioned earlier that Mr. Baker and Mr. Adams are in a lot of
       debt. Can you elaborate?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: "Well, specifically it\u2019s Arthur who is in most of the debt, not
       Michael. Arthur piled up such a big mountain of debt  that he ran out of traditional
       modes of financing."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: "That\u2019s why he turned to my family. We hold a portion of his
       debt."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: So he owes money to the mob. That never turns out well.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: My family runs a professional and perfectly legal business.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: Sure, whatever.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &283397907
 GameObject:
   m_ObjectHideFlags: 0
@@ -2687,6 +3158,42 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1 &304708317
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 304708318}
+  m_Layer: 5
+  m_Name: Handle Slide Area
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &304708318
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 304708317}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1633550880}
+  m_Father: {fileID: 578406549}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: -20, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &321461748
 GameObject:
   m_ObjectHideFlags: 0
@@ -2944,19 +3451,37 @@ MonoBehaviour:
   lines:
   - _name: David Coyle
     _sentence: When was the last time you saw Michael?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: Ms. Lewis was making a face as though she was trying to remember.
       But I was pretty sure she was actually considering whether or not to lie.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: I talked with Michael in his dressing room a little while before the
       ceremony was supposed to start.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: We had a brief conversation and then Janet and Arthur showed up. At
       that point I left and went into the lobby where most people were hanging around.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: What were you and Mr. Baker talking about?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: Personal stuff. Nothing that matters to your case, I promise.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &397576024
 GameObject:
   m_ObjectHideFlags: 0
@@ -3004,23 +3529,171 @@ MonoBehaviour:
   - _name: David Coyle
     _sentence: Did Mr. Baker have any enemies? Anyone who might benefit from him
       being dead?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Janet Roberts
     _sentence: No, not at all. Michael is a kind soul. He would never hurt anyone.
       Everybody loved him.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: But is there anyone who might benefit from his passing? Any business
       rivals perhaps?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Janet Roberts
     _sentence: "I don\u2019t think so. Everyone was pretty excited about the research
       Michael and Arthur were doing. Everyone wanted him to keep developing the Psymoprofen."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: Who is Arthur?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Janet Roberts
     _sentence: "Arthur Adams. He\u2019s Michael\u2019s best man and business partner.
       They developed the Psymoprofen together."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Ms. Robberts
     _sentence: "He would have much more information about Michael\u2019s potential
       business rivals."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &399846087
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 399846088}
+  - component: {fileID: 399846089}
+  m_Layer: 0
+  m_Name: EffectsSource
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &399846088
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 399846087}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1869610174}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &399846089
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 399846087}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 37157178976346643, guid: 7cb0f7ee6a9add243bb344002d217e26, type: 2}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 1
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &410825045
 GameObject:
   m_ObjectHideFlags: 0
@@ -3068,71 +3741,146 @@ MonoBehaviour:
   - _name: David Coyle
     _sentence: Ms. Roberts. Please tell me about the last time you saw Mr. Baker.
       The truth this time.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Janet Roberts
     _sentence: "\u2026 I wanted to see Michael before the ceremony. We had agreed
       to wait. We wanted the big reveal moment as I walked down the aisle."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: A slight smile appeared on Ms. Roberts face. A small moment of joy
       that fled her face just as fast as it entered.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Janet Roberts
     _sentence: Well, the nerves and anxiety got to me. I guess I was getting cold
       feet. I hoped that seeing him before the ceremony might help me.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Janet Roberts
     _sentence: "So I asked Arthur to help sneak me into Michael\u2019s dressing room.
       When we got there, he was with a woman."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Officer Hill
     _sentence: So, you found your fiance cheating on you on your wedding day. No
       wonder you smashed his head in.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Janet Roberts
     _sentence: "What? No! I didn\u2019t kill him. And it wasn\u2019t like that, they
       were just talking."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Janet Roberts
     _sentence: "Nothing was going on between them, at least\u2026 No. Nothing was
       going on."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: What happened after you entered the room?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Janet Roberts
     _sentence: "Well\u2026 Michael was surprised to see me. And after a moment he
       gave me a big smile and hug\u2026 sniff\u2026"
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: Ms. Roberts had to take a moment to compose herself.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Janet Roberts
     _sentence: "Sorry\u2026 The woman told Michael they would have to finish their
       conversation later. And then she excused herself with a friendly goodbye."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Janet Roberts
     _sentence: "Michael and I had a short conversation. We didn\u2019t talk about
       anything important, just our excitement and nerves. I could tell something
       else was on his mind, though."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Janet Roberts
     _sentence: He felt distant. That had been happening a lot recently and it was
       starting to bother me. It made me worried something was going on.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Janet Roberts
     _sentence: I asked him what it was, but he told me it was nothing. He assured
       me of his love and then I left to get in place for the wedding.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: So, Mr. Baker was alive when you left him.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Janet Roberts
     _sentence: Yes.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Officer Hill
     _sentence: "Oh come on! You don\u2019t really believe that, do you Coyle?"
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: Why did you lie to us the first time?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Janet Roberts
     _sentence: "I was worried about how it would sound if I said I was one of the
       last people to see him alive, so I lied. I\u2019m sorry. That was very foolish
       of me."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: "I took a moment to look carefully into Ms. Roberts\u2019s eyes. I
       reached out psychically and as I did, Ms. Roberts looked at me with a subtle
       intensity."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: Yes, I do believe her.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Officer Hill
     _sentence: Humph.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Janet Roberts
     _sentence: Thank you, detective.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: I still have some questions though.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &425280782
 GameObject:
   m_ObjectHideFlags: 0
@@ -3312,32 +4060,65 @@ MonoBehaviour:
   - _name: 
     _sentence: Officer Hill led me into a room with several round tables set up.
       At one of the tables sat a woman, who was, to put it simply, stunning.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: She was adorned in a low-cut red dress and had gently curled blond
       hair hanging down just below her shoulders. I approached her table.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: You must be Shirley Lewis.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: "You would be correct. It\u2019s a pleasure to meet you."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: She gave me a beautiful warm smile and held her hand out. I shook
       it gently before sitting down across from her.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: Officer Hill took a seat at the table next to us so he could listen
       in to the conversation without being too intrusive.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: "Ms. Lewis, I\u2019m the detective looking into the murder of Michael
       Baker. I have a few questions for you."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: Please detective, call me Shirley. And what may I call you?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: Her smile warmed me up inside. I felt like a flustered fool, but I
       guess some women just have that effect on men.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: "Um\u2026 yes\u2026 Shirley, I am Detective Coyle. Um, David Coyle
       that is."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: Well David, please ask me any questions you would like.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &453452414
 GameObject:
   m_ObjectHideFlags: 0
@@ -3481,11 +4262,11 @@ RectTransform:
   - {fileID: 1701947647}
   - {fileID: 1078844711}
   m_Father: {fileID: 1515612312}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 75, y: -25}
+  m_AnchoredPosition: {x: 75, y: -50}
   m_SizeDelta: {x: 350, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &456398858
@@ -3531,13 +4312,25 @@ MonoBehaviour:
   m_FillRect: {fileID: 699850583}
   m_HandleRect: {fileID: 223224994}
   m_Direction: 0
-  m_MinValue: 0
-  m_MaxValue: 1
+  m_MinValue: 0.0001
+  m_MaxValue: 1.5
   m_WholeNumbers: 0
-  m_Value: 0.5
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1869610175}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: SetEffectsVolume
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &473473040
 GameObject:
   m_ObjectHideFlags: 0
@@ -3585,22 +4378,43 @@ MonoBehaviour:
   - _name: David Coyle
     _sentence: You have no way out of this, Mr. Adams. Put the gun down before you
       do something stupid.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Arthur Adams
     _sentence: "Don\u2019t order me around! You need to drop your guns now!"
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: We know you killed Mr. Baker. You will be brought to justice the easy
       way or the hard way. Whatever you choose.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: I slowly leaned down and placed my gun on the ground.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: "Okay, how\u2019s that? Maybe we can have a rational conversation
       now."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Arthur Adams
     _sentence: Now you in the back, your gun too.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: "There was no way Hill could put down his gun. One of us had to be
       the \u201CGood Cop\u201D and distract him while the other was ready for action.
       I had to keep Mr. Adams occupied."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &473697708
 GameObject:
   m_ObjectHideFlags: 0
@@ -3647,10 +4461,19 @@ MonoBehaviour:
   lines:
   - _name: David Coyle
     _sentence: "Well\u2026 I work on bikes in my spare time."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: Bikes? Really, how interesting.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: The conversation with Shirley was really feeling quite pleasant.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &476666023
 GameObject:
   m_ObjectHideFlags: 0
@@ -3698,8 +4521,14 @@ MonoBehaviour:
   - _name: David Coyle
     _sentence: "Ms. Roberts, if you answer my questions, it will help me track down
       Mr. Baker\u2019s killer. Are you up to answering my questions?"
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Janet Roberts
     _sentence: Yes, of course. Anything to help.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &487789088
 GameObject:
   m_ObjectHideFlags: 0
@@ -3821,24 +4650,45 @@ MonoBehaviour:
   lines:
   - _name: David Coyle
     _sentence: So, who wanted Mr. Baker dead?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: "That\u2019s the big question, but how am I supposed to know?"
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: I have reason to believe that you were one of the last people to see
       him alive. That makes me suspect that you have more information than you are
       sharing.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: "I was not involved in some grand conspiracy to kill him if that\u2019s
       what you're suggesting."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: Well, thank you for letting me know. Now I can just cross you off
       the suspect list.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: "I like you, Mr. Triple Threat. But you\u2019re barking up the wrong
       tree."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: I knew she was holding information back. I could feel it, not through
       my psychic senses, but in my gut.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &498035948
 GameObject:
   m_ObjectHideFlags: 0
@@ -3885,30 +4735,60 @@ MonoBehaviour:
   lines:
   - _name: David Coyle
     _sentence: How was your relationship with Mr. Baker?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Arthur Adams
     _sentence: Michael and I had a good relationship. We have been friends for a
       long time. Our work together was going well.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: What was it you guys worked on together?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Arthur Adams
     _sentence: "Michael and I have a research lab where we develop new drugs. In
       particular, we have developed a new drug we\u2019re getting ready to push to
       market called Psymoprofen."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Arthur Adams
     _sentence: "You may have heard of it. We\u2019re going to revolutionize the drug
       industry with this."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: Sounds like your big break is coming. That can be a lot of pressure.
       Was everything going smoothly with the development of Psymoprofen?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Arthur Adams
     _sentence: Everything is going great, as expected.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: Is that really all you have to say about your relationship?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Arthur Adams
     _sentence: "I\u2019m not sure what else you want to know?"
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: He was holding something back. I could feel frustration beneath the
       surface of his mind.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &507188143
 GameObject:
   m_ObjectHideFlags: 0
@@ -3956,15 +4836,27 @@ MonoBehaviour:
   - _name: David Coyle
     _sentence: Mr. Adams, I am investigating the murder of Michael Baker. I need
       to ask you some questions!
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Arthur Adams
     _sentence: Shhh.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: The jerk refused to get off the phone. He just kept pacing and talking
       with increasing frustration. I could feel his mix of emotions rolling off of
       him.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: I would have to use a different approach if I was going to get him
       off the phone anytime soon.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -4227,31 +5119,61 @@ MonoBehaviour:
   - _name: 
     _sentence: I felt that I had all the information I needed, but something was
       not clicking in my head.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: Ms. Lewis was definitely an untrustworthy and shady individual, but
       I was pretty sure she and her family were not involved.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: We had a drug company with lots of debts and financial obligations
       developing a product that would not succeed.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: And then one of the owners wound up dead after suddenly getting into
       charity and sociological study.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: Ms. Lewis, did Mr. Baker ever mention to you what he was planning
       to do about Psymoprofen failing to work? Was he just going to continue development?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: I think he was starting to accept the fact that it was a pipe dream.
       He mentioned that he was going to announce the failure of Psymoprofen to all
       his investors.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: And Mr. Adams would not be able to weather a blow that big to his
       financials.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: Hill!
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Officer Hill
     _sentence: "What? I\u2019m right here."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: We need to go talk with Mr Adams right now.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &561508255
 GameObject:
   m_ObjectHideFlags: 0
@@ -4299,17 +5221,32 @@ MonoBehaviour:
   - _name: 
     _sentence: I reached deep into my mind to uncover something I had buried long
       ago.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: "I let forth all the pain, fear, and regret from a long suppressed
       experience. The mental scar I could never forget, I channeled all that horror
       straight into Mr. Adams\u2019s psyche."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: It was a risky move, but it was the only one I had left.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Arthur Adams
     _sentence: AAAAAA!!!
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: The wave of condensed emotions shocked his brain and for a split second
       we had an opening.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &565606763
 GameObject:
   m_ObjectHideFlags: 0
@@ -4357,6 +5294,9 @@ MonoBehaviour:
   - _name: 
     _sentence: I considered asking her about the murder directly. But it seemed like
       a bad idea to accuse her of anything outright.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &573178327
 GameObject:
   m_ObjectHideFlags: 0
@@ -4578,6 +5518,109 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 574573766}
   m_CullTransparentMesh: 0
+--- !u!1 &578406548
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 578406549}
+  - component: {fileID: 578406550}
+  m_Layer: 5
+  m_Name: RainVolumeSlider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &578406549
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 578406548}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1218595964}
+  - {fileID: 613349286}
+  - {fileID: 304708318}
+  - {fileID: 248486985}
+  - {fileID: 2122011019}
+  m_Father: {fileID: 1515612312}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 75, y: 0}
+  m_SizeDelta: {x: 350, y: 20}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &578406550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 578406548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1633550881}
+  m_FillRect: {fileID: 699429762}
+  m_HandleRect: {fileID: 1633550880}
+  m_Direction: 0
+  m_MinValue: 0.0001
+  m_MaxValue: 1.5
+  m_WholeNumbers: 0
+  m_Value: 1
+  m_OnValueChanged:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1869610175}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: SetRainVolume
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &581092757
 GameObject:
   m_ObjectHideFlags: 0
@@ -4653,6 +5696,169 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 581092757}
   m_CullTransparentMesh: 0
+--- !u!1 &603634236
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 603634237}
+  - component: {fileID: 603634238}
+  m_Layer: 0
+  m_Name: MusicSource
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &603634237
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 603634236}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1869610174}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &603634238
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 603634236}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: -5443220193503655189, guid: 7cb0f7ee6a9add243bb344002d217e26, type: 2}
+  m_audioClip: {fileID: 8300000, guid: 3efdab1db2ab69445826ac35967cd37d, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!1 &613349285
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 613349286}
+  m_Layer: 5
+  m_Name: Fill Area
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &613349286
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 613349285}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 699429762}
+  m_Father: {fileID: 578406549}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.25}
+  m_AnchorMax: {x: 1, y: 0.75}
+  m_AnchoredPosition: {x: -5.0000153, y: 0}
+  m_SizeDelta: {x: -20, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &613978268
 GameObject:
   m_ObjectHideFlags: 0
@@ -4700,16 +5906,31 @@ MonoBehaviour:
   - _name: 
     _sentence: Shirley was really a wonderful person. Talking to her was always so
       pleasant. But why was I talking openly with her? Something felt strange.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: I took a moment to close my eyes and focus on my mind.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: Once I was looking for it, the psychic manipulation from Ms. Lewis
       was obvious. I quickly freed my brain and built up firmer defenses.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: Once I was looking for it, the psychic manipulation from Ms. Lewis
       was obvious. I quickly freed my brain and built up firmer defenses.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: I opened my eyes, determined to not be psychically outdone again.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &621301458
 GameObject:
   m_ObjectHideFlags: 0
@@ -4757,38 +5978,77 @@ MonoBehaviour:
   - _name: David Coyle
     _sentence: What did your conversations Involve? Were you talking about the progress
       of his drug?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: Yes, in part. But that was never the focus of the conversation, just
       a related subject that would come up.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: Mostly we talked about how to help psychics beyond his failing drug.
       The number of psychics that failed to manage their senses and were driven mad
       really bothered him.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: As it should have. We mostly talked about what might be done to help
       the less fortunate.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: So, you and Mr. Baker often had lunch to debate social policy?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: I wouldn't say often, but yes we did, occasionally. More often in
       the last few months.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: Why were they more often recently?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: He had some major meetings with large donors coming up. He was trying
       to decide what the best course of action was.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: He was considering ditching his drug project and trying to get funds
       for charitable psychic therapy organizations instead.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: Was he really considering leaving his work behind?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: No, he was never going to completely leave his research life. He was
       good at it and frankly he made far too much money to consider leaving.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: That is a jaded way to think about medical research.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: Well Mr. Coyle, I am a jaded woman.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &621670335
 GameObject:
   m_ObjectHideFlags: 0
@@ -4835,12 +6095,21 @@ MonoBehaviour:
   lines:
   - _name: David Coyle
     _sentence: I am having dinner with my parents tomorrow.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: "Oh, that sounds nice. It\u2019s good to maintain relationships with
       your family."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: Yeah, they get lonely because the rest of my siblings live out of
       state. So I try to go over for dinner occasionally.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1001 &634590504
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5096,11 +6365,20 @@ MonoBehaviour:
   lines:
   - _name: David Coyle
     _sentence: I also like to ride the bikes I work on.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: Well, I would hope so. It would be a shame to let those refurbished
       bikes just sit and collect dust.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: Shirley really had a wonderful smile.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &657390676
 GameObject:
   m_ObjectHideFlags: 0
@@ -5147,29 +6425,56 @@ MonoBehaviour:
   lines:
   - _name: David Coyle
     _sentence: Did you and Mr. Baker have an affair?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: "Now detective, you can\u2019t just go around accusing young women
       of things like that. Do I look like the kind of woman who would do something
       like that?"
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: She gave me a look of exaggerated shock and ever so slightly arched
       her back. Not that I noticed.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: I think it is a reasonable question that deserves an honest answer.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: You are no fun at all. No, I did not have an affair with him.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: "\u2026"
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: I am being honest. There was never anything between us. He was truly
       in love with Janet. Even if I tried something, which I would not, Michael would
       have done nothing.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: I spent a moment studying her and her mind looking for any sign of
       deceit or nervousness.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: I found nothing, but with Ms. Lewis being a disciplined psychic, it
       was almost impossible to read her at all. My gut said she was telling the truth.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &684270259
 GameObject:
   m_ObjectHideFlags: 0
@@ -5216,9 +6521,15 @@ MonoBehaviour:
   lines:
   - _name: David Coyle
     _sentence: Was Mr. Baker reading any strange books recently?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Arthur Adams
     _sentence: Strange books? I mean, he was reading all the time. How am I supposed
       to know if anything he read was strange?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &685544757
 GameObject:
   m_ObjectHideFlags: 0
@@ -5266,19 +6577,37 @@ MonoBehaviour:
   - _name: 
     _sentence: We returned to the room where Ms. Roberts was being held. She was
       sitting on a bench still in her flowing white dress.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: Her eyes were swollen, but no longer shedding tears. She looked as
       though she had been emptied out. And her emotions were very quiet.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Janet Roberts
     _sentence: Detective Coyle. Did you find who did it?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: No, not yet. I do have a few more questions for you, though.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Janet Roberts
     _sentence: Oh, okay.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: She was in an emotionally vulnerable position. I had to decide how
       I was going to approach this conversation. Was I going to push on her or try
       a softer touch?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &688453864
 GameObject:
   m_ObjectHideFlags: 0
@@ -5461,6 +6790,9 @@ MonoBehaviour:
   - _name: 
     _sentence: I focused on the sense of desire she was pushing on me. It took me
       a moment, but I was eventually able to dislodge her psychic link.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &697632175
 GameObject:
   m_ObjectHideFlags: 0
@@ -5507,12 +6839,21 @@ MonoBehaviour:
   lines:
   - _name: Janet Roberts
     _sentence: "Sniff\u2026  *uncontrollable sobbing*"
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: Ms. Roberts was too emotionally distraught to give me any information.
       That was where the psychic in psychic investigator came in handy.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: ' I focused on my senses until I started to see the strong emotional
       aspects at play.'
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &697699349
 GameObject:
   m_ObjectHideFlags: 0
@@ -5560,16 +6901,103 @@ MonoBehaviour:
   - _name: 
     _sentence: I could sense specific psychic aspects that belonged to both me and
       Ms. Roberts.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: "Aspects are specific mental concepts that I can make a psychic link
       between. By making these links, I can manipulate the emotional state of the
       person I\u2019m talking to."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: "I thought if I linked my \u201CFocus\u201D to her \u201CEmotional
       Vortex,\u201D then I might be able to calm her down enough to talk."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: Click on an aspect and drag a connection to another aspect in order
       to create a link.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &699429761
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 699429762}
+  - component: {fileID: 699429764}
+  - component: {fileID: 699429763}
+  m_Layer: 5
+  m_Name: Fill
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &699429762
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 699429761}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 613349286}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 10, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &699429763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 699429761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &699429764
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 699429761}
+  m_CullTransparentMesh: 0
 --- !u!1 &699850582
 GameObject:
   m_ObjectHideFlags: 0
@@ -6068,12 +7496,24 @@ MonoBehaviour:
   - _name: David Coyle
     _sentence: I have two younger sisters. One is going to university and the other
       is an aerospace engineer.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: Sounds like you have a wonderful family.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: Yes, they have their moments.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: Please tell me more.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &771145620
 GameObject:
   m_ObjectHideFlags: 0
@@ -6196,6 +7636,9 @@ MonoBehaviour:
   - _name: 
     _sentence: There was no way I could get to my gun before he shot me. I needed
       a way to stun or distract him somehow.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &789590832
 GameObject:
   m_ObjectHideFlags: 0
@@ -6242,9 +7685,15 @@ MonoBehaviour:
   lines:
   - _name: 
     _sentence: Mr. Adams stayed on the phone.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: I would have to use a different approach if I was going to get him
       off the phone anytime soon.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &790996847
 GameObject:
   m_ObjectHideFlags: 0
@@ -6292,24 +7741,45 @@ MonoBehaviour:
   - _name: David Coyle
     _sentence: Okay seriously, you seem to know a lot about this. How are you so
       informed?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: Well, with a family like mine, you end up in a variety of business
       dealings with all sorts of people. You get to learn a lot of interesting things.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: I knew she was on the cusp of saying something important. I just had
       to psychically push her a little more.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: What kind of interesting things do you learn?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: "Well, for example, I learned that a certain revolutionary drug is
       failing to work as advertised, I know that the same people making that drug
       are buried in debt, and I\u2026"
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: Ms. Lewis stopped talking as a look of confusion crept onto her face.
       Then sudden flashes of horror, anger, and finally frustration.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: Frustration at herself for missing my psychic touch. I felt her break
       the link and compose herself.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &816328639
 GameObject:
   m_ObjectHideFlags: 0
@@ -6356,17 +7826,35 @@ MonoBehaviour:
   lines:
   - _name: 
     _sentence: Subtlety was never my strong suit.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: Did you or your family kill Michael Baker?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: No.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: "\u2026"
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: "I\u2019m telling the truth. Whatever you think, I liked Michael and
       had no reason to want him dead. And neither did my family for that matter."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: Well, she seemed to be telling the truth as far as I could tell.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &837637284
 GameObject:
   m_ObjectHideFlags: 0
@@ -6488,22 +7976,43 @@ MonoBehaviour:
   lines:
   - _name: 
     _sentence: Subtlety was never my strong suit.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: Did you or your family kill Michael Baker?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: No.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: "\u2026"
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: "I\u2019m telling the truth. Whatever you think, I liked Michael and
       had no reason to want him dead. And neither did my family for that matter."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: Do you have an alibi? Where were you right before the ceremony was
       supposed to start? Were you with anybody?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: "I was busy socializing. I do not have a detailed schedule to hand
       you, if that\u2019s what you\u2019re asking. I don't pay that close attention
       to the time."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &851145945
 GameObject:
   m_ObjectHideFlags: 0
@@ -6587,9 +8096,15 @@ MonoBehaviour:
   - _name: 
     _sentence: "I extended my psychic senses into Ms. Roberts\u2019s racing mind,
       connecting her mental exhaustion to her sense of panic."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: Hopefully the mental chaos I was creating would overwhelm her and
       help me get the truth out of her.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &904154538
 GameObject:
   m_ObjectHideFlags: 0
@@ -6636,14 +8151,26 @@ MonoBehaviour:
   lines:
   - _name: David Coyle
     _sentence: How did you know Mr. Baker?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: "We were acquaintances, not especially close. It\u2019s really a shame
       what happened to him."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: Yes, it is rather sad.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: Well, she did answer my question and it would have been rude to push
       her for more details.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &918660928
 GameObject:
   m_ObjectHideFlags: 0
@@ -6834,6 +8361,7 @@ MonoBehaviour:
   connection: {fileID: 2006788921}
   postEncounterConversation: {fileID: 550835314}
   chapterTitleWaitTime: 4
+  audioManager: {fileID: 1869610175}
   traumaticMemories: {fileID: 11400000, guid: 3576cce3303cf1548b4edd7b3bee2bcd, type: 2}
   focus: {fileID: 11400000, guid: ee2afb839bb6e1f42ba3a52746874b30, type: 2}
   caution: {fileID: 11400000, guid: 5990dfed5f8528743aa716a1a71a0741, type: 2}
@@ -6935,9 +8463,15 @@ MonoBehaviour:
     _sentence: Ms. Lewis was not taking this as seriously as she should be. I thought
       I might be able to subtly push her casual demeanor to make her more open and
       talkative.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: I carefully reached out psychically and started pushing on her mind.
       I had to be subtle or she would definitely notice my interference.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &927565372
 GameObject:
   m_ObjectHideFlags: 0
@@ -7021,8 +8555,14 @@ MonoBehaviour:
   - _name: David Coyle
     _sentence: "Is there any new information that you\u2019ve remembered? Anything
       that might help us find your fiance\u2019s killer?"
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Janet Roberts
     _sentence: "No, nothing new\u2026"
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &936765385
 GameObject:
   m_ObjectHideFlags: 0
@@ -7335,26 +8875,50 @@ MonoBehaviour:
   lines:
   - _name: David Coyle
     _sentence: You mentioned that you felt like you two were growing distant.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Janet Roberts
     _sentence: "Yes\u2026 Well, sort of."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: Can you elaborate, please?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Janet Roberts
     _sentence: Michael was just so busy with his work. He was spending more and more
       time at the lab and in the library.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Janer Roberts
     _sentence: Even when we were together he would sometimes seem preoccupied, his
       mind at work even when his body was at home.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: That sounds frustrating. I can imagine the strain on the relationship
       that would cause.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Janer Roberts
     _sentence: Yes, it was hard, but I still loved him. He was so busy because he
       cared. He would often talk about the good his work could do for psychics less
       fortunate than him.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Janer Roberts
     _sentence: He wanted to make the world a better place. It sometimes felt like
       that was all he would talk about.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &956641133
 GameObject:
   m_ObjectHideFlags: 0
@@ -7693,12 +9257,21 @@ MonoBehaviour:
   lines:
   - _name: Janet Roberts
     _sentence: "Sniff\u2026  *uncontrollable sobbing*"
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: "I thought if I linked my \u201CFocus\u201D to her \u201CEmotional
       Vortex,\u201D then I might be able to calm her down enough to talk."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: Click on an aspect and drag a connection to another aspect in order
       to create a link.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &976275708
 GameObject:
   m_ObjectHideFlags: 0
@@ -7973,10 +9546,16 @@ MonoBehaviour:
   - _name: David Coyle
     _sentence: Where were you right before the ceremony was supposed to start? Were
       you with anybody?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: "I was busy socializing. I don\u2019t have a detailed schedule to
       hand you, if that\u2019s what you\u2019re asking. I don't pay that close attention
       to the time."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &1008780988
 GameObject:
   m_ObjectHideFlags: 0
@@ -8052,6 +9631,133 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1008780988}
   m_CullTransparentMesh: 0
+--- !u!1 &1013262197
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1013262199}
+  - component: {fileID: 1013262198}
+  m_Layer: 0
+  m_Name: RainSource
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &1013262198
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1013262197}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: -3363632231608078310, guid: 7cb0f7ee6a9add243bb344002d217e26, type: 2}
+  m_audioClip: {fileID: 8300000, guid: 84d00d6b7abc76047a086e2830e30967, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1013262199
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1013262197}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1869610174}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1042204413
 GameObject:
   m_ObjectHideFlags: 0
@@ -8197,8 +9903,14 @@ MonoBehaviour:
   lines:
   - _name: David Coyle
     _sentence: Did you see Mr. Baker today?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Janet Roberts
     _sentence: "No. I don\u2019t know what you\u2019re talking about."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &1055661584
 GameObject:
   m_ObjectHideFlags: 0
@@ -8311,9 +10023,15 @@ MonoBehaviour:
   lines:
   - _name: David Coyle
     _sentence: When was the last time you saw Mr. Baker alive?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Janet Roberts
     _sentence: "Sniff\u2026 I haven\u2019t seen him at all today. It\u2019s bad luck
       to see each other on the wedding day\u2026"
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &1078844710
 GameObject:
   m_ObjectHideFlags: 0
@@ -8510,33 +10228,66 @@ MonoBehaviour:
   lines:
   - _name: David Coyle
     _sentence: What did your conversations Involve?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: Michael was very concerned about how to help poor psychics who were
       unable to manage their extra senses.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: But I disagreed with many of his opinions on how to do it. So we often
       debated the point.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: So, you and Mr. Baker often had lunch to debate social policy?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: "I wouldn\u2019t say often, but yes we did, occasionally. More often
       in the last few months."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: Why were they more often recently?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: "\u2026 I don\u2019t know."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: Really.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: "Michael was a very thorough person, and he was bothered when he couldn\u2019t
       understand something."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: He would read all sorts of books on economics or sociology, then we
       would have a meeting to talk over what he thought about them.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: I was able to bring him on my side for some things, but you know how
       stubborn men can be. He was most likely trying to make his mind up about something
       and needed my help.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &1092324152
 GameObject:
   m_ObjectHideFlags: 0
@@ -8717,10 +10468,19 @@ MonoBehaviour:
   lines:
   - _name: David Coyle
     _sentence: Are you sure Mr. Baker was not reading anything strange recently?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Arthur Adams
     _sentence: "No, I really can\u2019t think of anything."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: I think he is holding something back.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &1128774371
 GameObject:
   m_ObjectHideFlags: 0
@@ -8767,17 +10527,32 @@ MonoBehaviour:
   lines:
   - _name: David Coyle
     _sentence: What was your connection to Mr. Baker? Was he involved with your family?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: No, he wasn't involved at all. He was far too much of a goody-two-shoes
       to do anything like that.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: We met doing some charity work downtown. We got to know each other
       pretty well. Often we would have lunch meetings to talk.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: Talk?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: Yes, we had many conversations, or debates depending on how you look
       at it.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &1146914492
 GameObject:
   m_ObjectHideFlags: 0
@@ -8899,51 +10674,99 @@ MonoBehaviour:
   lines:
   - _name: David Coyle
     _sentence: How was your relationship with Mr. Baker really?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Arthur Adams
     _sentence: Look, why do you keep asking me that?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: "Well, I can tell by talking with you that you\u2019re an expert on
       psychological medication and have been working hard on this breakthrough of
       yours for years."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: I know how hard it can be to do all the hard work while someone else
       takes the credit.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Arthur Adams
     _sentence: "Oh, Michael\u2019s a great scientist. His insights on the relationship
       between the brain and psychic senses were invaluable to our work, and him being
       a psychic himself was useful for testing."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Arthur Adams
     _sentence: "But just because I\u2019m not a psychic doesn\u2019t mean I don\u2019t
       know anything about psychic senses. I know just as much as any scientist."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: Well yes, but as a psychic myself, I have access to experiences that
       you will never understand. Despite all the reading you have done.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Arthur Adams
     _sentence: Oh really, Mr. Detective, is that what you think? You may be a psychic,
       but do you know anything about how neurons are fired in the brain?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Arthur Adams
     _sentence: "Are you familiar with the different theories as to what so-called
       \u201Cpsychic waves\u201D are and how they manifest themselves in the physical
       world?"
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Arthur Adams
     _sentence: "Just because I\u2019m not the psychic of the team doesn\u2019t mean
       I can\u2019t develop psychic drugs just fine."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Arthur Adams
     _sentence: Michael had no respect for the gifts he was given and got distracted
       with high-minded philosophizing and activism. We had work to do in the present
       and he lost track of that.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: "\u2026"
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Arthur Adams
     _sentence: "\u2026"
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: Sounds like everything was great.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Arthur Adams
     _sentence: "Okay, there was some stress and frustration with the work we were
       doing. But that\u2019s to be expected. We are about to revolutionize the drug
       industry."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Arthur Adams
     _sentence: But we really were doing well, I promise. Why would I lie about that?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &1157226274
 GameObject:
   m_ObjectHideFlags: 0
@@ -9140,32 +10963,62 @@ MonoBehaviour:
   lines:
   - _name: David Coyle
     _sentence: Are you sure Mr. Baker was not reading anything strange recently?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Arthur Adams
     _sentence: Michael was only reading the stuff he always was. Books that made
       him believe he was smarter than everyone else.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Arthur Adams
     _sentence: While I was busy working on securing our future, he had his head in
       the clouds. He was worried about philosophy and the ways we structure society.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Arthur Adams
     _sentence: We are scientists. We live in the concrete, the testable, the practical.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Arthur Adams
     _sentence: Our discovery was going to make us rich, but he got caught up in being
       clever and overcomplicating everything.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: So he was reading strange books? Books on sociology and psychology
       instead of biology?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Arthur Adams
     _sentence: "There\u2019s nothing strange or mysterious about them. Just your
       basic sociology books every libral arts student reads in college."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Arthur Adams
     _sentence: People have been rehashing those same arguments since the beginning
       of civilization, but the work we did with Psymoprofen, that was truly cutting
       edge.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: Well, thank you for sharing that with me, Mr. Adams. I feel like I
       understand Mr. Baker a little better now.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Arthur Adams
     _sentence: "Hm...\r"
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &1172290467
 GameObject:
   m_ObjectHideFlags: 0
@@ -9212,27 +11065,54 @@ MonoBehaviour:
   lines:
   - _name: David Coyle
     _sentence: When was the last time you saw Michael?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: Ms. Lewis was making a face as though she was trying to remember.
       But I was pretty sure she was actually considering whether or not to lie.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: I talked with Michael in his dressing room a little while before the
       ceremony was supposed to start.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: We had a brief conversation and then Janet and Arthur showed up. At
       that point I left and went into the lobby where most people were hanging around.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: What were you and Mr. Baker talking about?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: Just an extension of our usual conversations. He told me that he had
       decided to officially declare Psymoprofen as a failed project.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: He was going to announce it to his sponsors after his honeymoon.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: Wow, that was a drastic decision.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: Yes, he wanted to tell me because he said I helped convince him it
       was the right thing to do.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &1174880072
 GameObject:
   m_ObjectHideFlags: 0
@@ -9279,21 +11159,39 @@ MonoBehaviour:
   lines:
   - _name: David Coyle
     _sentence: Hill, make sure you leave a man to watch Mr. Adams.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Sergeant Hill
     _sentence: Already done. He seemed pretty shifty. Did he do it?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: "I don\u2019t know. He is definitely a stuck-up jerk. But that doesn\u2019t
       make him our man."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: The person I need to talk to right now is Ms. Roberts. It appears
       she lied to me about when she last saw the victim.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Sergeant Hill
     _sentence: "Yes, I noticed that. And I\u2019ll have my people search for this
       mysterious Shirley Lewis woman he mentioned. If she\u2019s still present, you\u2019ll
       probably want to talk to her."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: "Yes, that\u2019s a good idea, Hill. Let me know when she\u2019s found.
       But first, I have some pointed questions for the bride."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &1185874548
 GameObject:
   m_ObjectHideFlags: 0
@@ -9355,6 +11253,7 @@ MonoBehaviour:
   connection: {fileID: 2006788921}
   postEncounterConversation: {fileID: 4186812}
   chapterTitleWaitTime: 4
+  audioManager: {fileID: 1869610175}
   traumaticMemories: {fileID: 11400000, guid: 3576cce3303cf1548b4edd7b3bee2bcd, type: 2}
   focus: {fileID: 11400000, guid: ee2afb839bb6e1f42ba3a52746874b30, type: 2}
   emotionalVortex: {fileID: 11400000, guid: ef53cbe98b522e14fa41c2baf1300a00, type: 2}
@@ -9439,7 +11338,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 75, y: 25}
+  m_AnchoredPosition: {x: 75, y: 50}
   m_SizeDelta: {x: 350, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1194656702
@@ -9485,13 +11384,25 @@ MonoBehaviour:
   m_FillRect: {fileID: 688453865}
   m_HandleRect: {fileID: 1457856910}
   m_Direction: 0
-  m_MinValue: 0
-  m_MaxValue: 1
+  m_MinValue: 0.0001
+  m_MaxValue: 1.5
   m_WholeNumbers: 0
-  m_Value: 0.5
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1869610175}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: SetMusicVolume
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1212347869
 GameObject:
   m_ObjectHideFlags: 0
@@ -9602,6 +11513,81 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1218595963
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1218595964}
+  - component: {fileID: 1218595966}
+  - component: {fileID: 1218595965}
+  m_Layer: 5
+  m_Name: Background
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1218595964
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1218595963}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 578406549}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.25}
+  m_AnchorMax: {x: 1, y: 0.75}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1218595965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1218595963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1218595966
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1218595963}
+  m_CullTransparentMesh: 0
 --- !u!1 &1224486418
 GameObject:
   m_ObjectHideFlags: 0
@@ -9649,9 +11635,27 @@ MonoBehaviour:
   - _name: 
     _sentence: The thunder of .40 caliber rounds erupted from Hill's firearm beside
       me as I snatched my handgun off the ground.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: "But by the time I had recovered my weapon, it was all over. Arthur
       Adams\u2019s lifeless body sprawled on the wet pavement."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1869610175}
+          m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+          m_MethodName: StartSwapMusic
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 8300000, guid: 3574187b4d9e6f045bbda654005e6a07, type: 3}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1228374882
 GameObject:
   m_ObjectHideFlags: 0
@@ -9987,9 +11991,15 @@ MonoBehaviour:
   - _name: 
     _sentence: "By applying my focus to Arthur\u2019s pride, I was able to stoke
       it into a full blown superiority complex."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: Or rather, I took the superiority complex he already had and brought
       it to the forefront. This should be helpful to get more information.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &1249644798
 GameObject:
   m_ObjectHideFlags: 0
@@ -10341,8 +12351,14 @@ MonoBehaviour:
   - _name: David Coyle
     _sentence: Tell me, Ms. Roberts, do you know anything else about this case? Did
       you have a fight with Mr. Baker recently?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Janet Roberts
     _sentence: No, I didn't do it.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &1302252166
 GameObject:
   m_ObjectHideFlags: 0
@@ -10421,20 +12437,38 @@ MonoBehaviour:
     _sentence: Look, Ms. Roberts, I am going to be upfront with you. You seem to
       be hiding some information, and I have good reason to suspect that you have
       lied to me.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: I know that losing the love of your life is emotionally destructive.
       And I understand that you might be worried about admitting to lying to the
       police.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: But I need you to be honest with me.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Janet Roberts
     _sentence: "\u2026"
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: "I believe that you are innocent. But if you don\u2019t give me more
       information, I\u2019ll have a hard time proving that. Please Janet, I need
       your help."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Janet Roberts
     _sentence: "Okay\u2026 I\u2019ll tell you everything."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &1307993952
 GameObject:
   m_ObjectHideFlags: 0
@@ -10517,32 +12551,65 @@ MonoBehaviour:
   lines:
   - _name: David Coyle
     _sentence: So, this Psymoprofen stuff. What does it do, exactly?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Arthur Adams
     _sentence: "It\u2019s the first drug of its kind. When taken by psychics, it
       strengthens the brain's ability to cope with the sensory overload."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Arthur Adams
     _sentence: IT drastically reduces the feeling of overstimulation and mental instability
       for psychics.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: Are you telling me that you have a cure for psychic instability?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Arthur Adams
     _sentence: Calling it a cure is oversimplifying, but yes. Most psychics are unable
       to handle their powers as they develop.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Arthur Adams
     _sentence: Only a few of you seem to have the mental fortitude to maintain productive
       lives and use your powers.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Arthur Adams
     _sentence: Imagine how amazing it would be to use this drug to allow many more
       psychics to maintain sanity and hone their abilities.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: If that really works, it would be amazing.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Arthur Adams
     _sentence: Psymoprofen is going to change the world.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: Arthur really thought highly of his accomplishments. But if that drug
       does what he says it will, then it really will be revolutionary.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: It will help a lot of people and make Arthur rich in the process.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &1322675379
 GameObject:
   m_ObjectHideFlags: 0
@@ -10590,35 +12657,68 @@ MonoBehaviour:
   - _name: Shirley Lewis
     _sentence: "Well done, Officer Coyle. I didn\u2019t expect you to have the finesse
       for that. I thought you were all brawn."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: I paid little attention to what Ms. Lewis was saying. I was too busy
       trying to put together the puzzle pieces she gave me.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: "What did she mean by \u201Cwith a family like mine.\u201D What kind
       of business dealings was she in? And what was this about debt? Did Mr. Baker
       tell her about that? How else would she have known?"
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: "Detective, it\u2019s normally rude to ignore such a beautiful young
       lady. Imagine what it would do to my confidence if I failed to keep the attention
       of a man?"
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: Your family. You are a member of the Marchetti family aren't you?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: I saw her mouth twitch.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: What makes you think that?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: The visual and psychic reaction you just had when I asked you. It
       was only a hunch before that.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: Ms. Lewis sighed. She knew I had her.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: "Yes, my mother\u2019s maiden name is Marchetti. Now I don\u2019t
       think that the fact that I am related to such an influential and respectable
       family in the city will be a problem will it?."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: We both knew that her family was definitely not respectable. But the
       Marchetti crime family was powerful. Nobody could lay a finger on them.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &1329645458
 GameObject:
   m_ObjectHideFlags: 0
@@ -10707,15 +12807,27 @@ MonoBehaviour:
   - _name: David Coyle
     _sentence: You mentioned that Arthur was there when you left the green room.
       How do you know Arthur?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: "I don\u2019t know him well. I have talked with him briefly a few
       times."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: What is your opinion of him?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: "My opinion of him? Well, I think he\u2019s more clever than wise.
       And I think he\u2019s an A+ jerk. But I think that about most people, so take
       that as you will."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &1370279742
 GameObject:
   m_ObjectHideFlags: 0
@@ -11106,11 +13218,20 @@ MonoBehaviour:
   - _name: David Coyle
     _sentence: "It\u2019s getting late and it\u2019s stormy outside. Do you have
       a safe way to get home? If you need, I can call you a cab."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: She gave me a sweet smile and there was a glint in her eye.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: "That\u2019s so sweet of you to offer, but I have someone to give
       me a ride already."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &1392285821
 GameObject:
   m_ObjectHideFlags: 0
@@ -11158,35 +13279,68 @@ MonoBehaviour:
   - _name: David Coyle
     _sentence: Can you remember anything about Michael that might be important? Even
       information that you think is not relevant to the murder might help.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: I held my psychic connection in place hoping to finally make progress.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: So you want me to just tell you everything I can think of about Michael?
       The shoes he liked to wear, his favorite flavor of pie, his thoughts on current
       events.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: You could start with his work. His Psymoprofen project was a big deal.
       Could that have been involved somehow?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: Now that is the first insightful thing I believe you have said all
       night.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: Psymoprofen was poised to make a lot of money, and shift the field
       of psychic science in the process. Lots of other drug companies were watching
       the project closely.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: So you think that one of these rival drug companies had him killed?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: "It\u2019s possible. Michael and Arthur were set to really shake up
       the industry. Some companies would probably try to position themselves to make
       some money off Psymoprofen."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: But other companies would feel extremely threatened and want to stop
       anything that threatened their business model.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: You seem to know a lot about this.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: I like to stay informed. Knowledge is power after all.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &1428510342
 GameObject:
   m_ObjectHideFlags: 0
@@ -11233,39 +13387,78 @@ MonoBehaviour:
   lines:
   - _name: David Coyle
     _sentence: You got into my mind again.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: You make it so easy, I just couldn't resist.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: You are in a serious situation, Ms. Lewis. I suggest you stop messing
       around.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: But there is so much interesting stuff going on in your brain, Mr.
       Coyle. Like this for example.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: I felt a shift in my mind. I thought I purged all her influence but
       I apparently missed something. She was much more subtle than I was.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: I felt her tapping into something that I had locked away. Old memories
       that I wished to forget. Painful memories.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: She had gone too far. I snapped her connection to my mind. She was
       the master of subtlety, so I was done being subtle. I would use my strength
       instead.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: I let my psychic energy whip back with her connection and strike her
       mind. Her head snapped back with the psychic attack.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: You crossed a line, Ms. Lewis. You should know better than to mess
       around in the mind of another psychic like that.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: Ms. Lewis wiped away a small amount of blood running from her nose.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: I hope we can continue this conversation without any more shenanigans.
       I think that would be best for the both of us.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: Ms. Lewis gave me a glare.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: Agreed.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &1429073313
 GameObject:
   m_ObjectHideFlags: 0
@@ -11483,26 +13676,50 @@ MonoBehaviour:
   - _name: David Coyle
     _sentence: You mentioned you met Mr. Baker when you did some charity work together.
       What type of work?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: "You and I are both very lucky. Despite being born psychic, we have
       managed to maintain our sanity. Most psychics can\u2019t say that."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: Most people think psychic abilities are a blessing. But we know it
       is more often a curse.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: I work with an organization downtown that cares for and consoles the
       psychics that have more trouble with their powers.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: So you give training to poor psychics?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: Sometimes, but more often we are providing care to those that have
       already fallen too far to fully recover.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: Michael came in to help one day.He may have been psychic, but he had
       never seen the realities of psychics on the street up close.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: "He would come back in to help every week or so. That\u2019s how I
       got to know him."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &1457045120
 GameObject:
   m_ObjectHideFlags: 0
@@ -11534,6 +13751,7 @@ Transform:
   - {fileID: 1482519070}
   - {fileID: 153975658}
   - {fileID: 15828025}
+  - {fileID: 1869610174}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -11659,30 +13877,60 @@ MonoBehaviour:
   - _name: David Coyle
     _sentence: "Let\u2019s have a conversation before any of us do something we'll
       regret."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Arthur Adams
     _sentence: We have nothing to talk about. You put down your guns and let me go.
       Then we can all leave this place happy.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: "You know we can\u2019t do that, Mr. Adams. We know you killed Mr.
       Baker. You need to answer for your crime, but it will be better for you if
       you come in peacefully."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Arthur Adams
     _sentence: Not going to happen. Now put down your guns.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: "Mr. Adams, please\u2026"
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Arthur Adams
     _sentence: Put down your guns!
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: Mr. Adams was extremely on edge. I had to be careful. I slowly leaned
       down and placed my gun on the ground.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: Okay, how is that? Maybe we can have a rational conversation now.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Arthur Adams
     _sentence: Now you in the back, your gun too.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: "There was no way Hill could put down his gun. One of us had to be
       the \u201CGood Cop\u201D and distract him while the other was ready for action.
       I had to keep Mr. Adams occupied."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &1465111408
 GameObject:
   m_ObjectHideFlags: 0
@@ -11983,15 +14231,27 @@ MonoBehaviour:
   - _name: David Coyle
     _sentence: You mentioned that Arthur was there when you left the green room.
       How well do you know Arthur?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: Not terribly well. Like I said, he owes some money to my family. My
       general impression of him is that he blows a lot of hot air.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: Ha. You can say that again.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: "Michael considered him a good friend and valuable business partner.
       But I suspect that speaks to Michael\u2019s grace more than to Arthur\u2019s
       ability."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &1515612311
 GameObject:
   m_ObjectHideFlags: 0
@@ -12024,6 +14284,7 @@ RectTransform:
   - {fileID: 117020468}
   - {fileID: 3727242}
   - {fileID: 1194656701}
+  - {fileID: 578406549}
   - {fileID: 456398857}
   - {fileID: 54726679}
   m_Father: {fileID: 1867163307}
@@ -12100,9 +14361,15 @@ MonoBehaviour:
   - _name: David Coyle
     _sentence: Did you notice anything suspicious today at the wedding, anyone who
       seemed out of place?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: "No, nothing noteworthy. I know almost nobody here though, so I\u2019m
       not really the one to ask."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &1576428244
 GameObject:
   m_ObjectHideFlags: 0
@@ -12150,18 +14417,33 @@ MonoBehaviour:
   - _name: David Coyle
     _sentence: "I know Psymoprofen is revolutionary, but do you really think people
       would kill to keep it suppressed?\r"
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 'Shirley Lewis '
     _sentence: 'People have killed for much less. You of all people should understand
       that.
 
 '
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: You have a point there.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 'Shirley Lewis '
     _sentence: I have no information to suggest that it was a corporate assasination,
       nor do I have any particular company in mind that would be worth looking into.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 'Shirley Lewis '
     _sentence: "All I\u2019m saying is that it\u2019s in the realm of possibility."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &1595546310
 GameObject:
   m_ObjectHideFlags: 0
@@ -12342,11 +14624,20 @@ MonoBehaviour:
   lines:
   - _name: David Coyle
     _sentence: How was your relationship with Mr. Baker really?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Arthur Adams
     _sentence: I already told you. Everything was great.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: He was holding something back. I could feel frustration beneath the
       surface of his mind.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &1623854248
 GameObject:
   m_ObjectHideFlags: 0
@@ -12393,28 +14684,58 @@ MonoBehaviour:
   lines:
   - _name: Officer Hill
     _sentence: You good, Coyle? Did you get hit?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: "No, I don\u2019t think he got any shots off."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: Officer Hill crept closer to Mr. Adams to verify he was dead. It was
       nothing more than a formality.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: "The case was closed, we found the killer, we had delivered\u2026
       justice."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Officer Hill
     _sentence: "You sure you're okay, Coyle? You don\u2019t look so good."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: I lifted my face up towards the cloudy sky, face soaked with more
       than just rain.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: "\u2026"
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: "Yeah\u2026 I\u2019m good."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: I turned back towards the church and started walking away.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: Now that we solved the case, I better get started on all the damn
       paperwork.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &1628600927
 GameObject:
   m_ObjectHideFlags: 0
@@ -12461,40 +14782,154 @@ MonoBehaviour:
   lines:
   - _name: David Coyle
     _sentence: Mr. Baker was going to sink the business wasn't he?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Arthur Adams
     _sentence: "\u2026"
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: Psymoprofen was a failure. He was going to go public with that information.
       But with all your financial entanglements, that would have left you in ruin.
       You had some other plan.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Arthur Adams
     _sentence: We had investors that wanted to buy the company.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Arthur Adams
     _sentence: All we had to do was sell. With the money we made, we would have been
       set for life. Then Michael would be free to choose whatever cause he wanted
       and support it with far more resources.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: But lying and screwing over investors didn't sit well with Mr. Baker's
       conscience. He insisted on coming clean.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Arthur Adams
     _sentence: Yes, he did. He was going to go public immediately after the honeymoon.
       The wedding was my last chance to change his mind, but he was so stubborn.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Arthur Adams
     _sentence: I didn't want to do it, but he left me no choice.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: You always have a choice, Mr. Adams. And right now I think you should
       make the choice to come in peacefully.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: The more you cooperate, the better the outcome will be for you.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Arthur Adams
     _sentence: "No, I didn't have a choice, just like I don\u2019t have a choice
       right now."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: "I noticed Mr. Adams\u2019s hand tighten around the revolver grip.
       I may have pushed him too far. Mr. Adams was considering shooting us in cold
       blood."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: I had to end this immediately.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &1633550879
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1633550880}
+  - component: {fileID: 1633550882}
+  - component: {fileID: 1633550881}
+  m_Layer: 5
+  m_Name: Handle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1633550880
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1633550879}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 304708318}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 30, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1633550881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1633550879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1633550882
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1633550879}
+  m_CullTransparentMesh: 0
 --- !u!1 &1638235818
 GameObject:
   m_ObjectHideFlags: 0
@@ -12542,40 +14977,79 @@ MonoBehaviour:
   - _name: David Coyle
     _sentence: You murdered your firend over money. What kind of person would do
       that?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Arthur Adams
     _sentence: I didn't want to. He made me do it!
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: Really, did he force you to bury a fire poker in his skull?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Arthur Adams
     _sentence: He was going to ruin my life.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: "He was going to publicize the failure of your business, right? But
       you had debts and could\u2019t let that happen. After all, how would you survive
       without all your money?"
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Arthur Adams
     _sentence: Businesses were lined up to invest heavily in our work. All we had
       to do was take the investments, sell the company.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Arthur Adams
     _sentence: We would have been set for life, Michael could have done whatever
       he wanted with the money.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Arthur Adams
     _sentence: But instead he insisted on ruining our lives. He told me that he was
       going to go public with the failure after his honeymoon.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: "And you couldn't have that. You insisted on screwing over investors
       for profit, but Mr. Baker\u2019s conscience got in the way."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: "So you killed your friend to take control of the business, but now
       that you\u2019ve been caught, your life is over anyway. How does that feel?"
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Arthur Adams
     _sentence: "I tried one last time to talk him out of it, but he was too stubborn.
       You're right, my life is ruined. My last hope is to make sure I don\u2019t
       get taken in."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: I noticed Mr. Adams hand tighten around the revolver grip. I may have
       pushed him too far. Mr. Adams was considering shooting us in cold blood.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: I had to end this immediately.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &1641888200
 GameObject:
   m_ObjectHideFlags: 0
@@ -12622,17 +15096,32 @@ MonoBehaviour:
   lines:
   - _name: David Coyle
     _sentence: So, who wanted Mr. Baker dead?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: That is the big question, but how am I supposed to know?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: Well, you two were fairly close, with all those meetings you had.
       He talked business with you. Is there anything you can remember that might
       help the investigation?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: No, nothing comes to mind.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: Her response was too quick; she did not take time to think about her
       past conversations. She was holding something back.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &1647400412
 GameObject:
   m_ObjectHideFlags: 0
@@ -12679,45 +15168,90 @@ MonoBehaviour:
   lines:
   - _name: 
     _sentence: Officer Hill and I turned and left the room.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Officer Hill
     _sentence: I am telling you Coyle, she did it. Michael cheated on her, she found
       out, she confronted and killed him in a moment of passion, and she caved his
       head in.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: No, she didn't do it. Something else is going on here.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Officer Hill
     _sentence: You are just a sucker for a pretty face, Coyle.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: We need to find this Shirley Lewis woman. Mr. Adams mentioned her
       as well.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Officer Hill
     _sentence: "We are still holding all possible witnesses on the premises. I\u2019ll
       go ask around and find her."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: Thank you Hill.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Officer Hill
     _sentence: Hrumph.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: Officer Hill walked over to some of his subordinates and started giving
       orders. He was a stubborn man, but he was good at his job. If Shirley Lewis
       was still here, he would find her soon.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: In the meantime, I had to think. I wandered into the sanctuary and
       found a seat in one of the pews. The room was mostly empty, save the few officers
       combing for evidence.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: I was missing something, I knew it. A scientist working on a revolutionary
       drug was killed at his own wedding.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: Hill was right; the fiance killing him was the most likely. But my
       gut told me it was something else.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: I sat there in the pew pondering all the evidence for a while before
       Officer Hill came up to me.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Officer Hill
     _sentence: We found her.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: Good, now let's hope she has actual useful information for us.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &1685521246
 GameObject:
   m_ObjectHideFlags: 0
@@ -12766,17 +15300,35 @@ MonoBehaviour:
     _sentence: "Ms. Roberts, I know you saw your fiance today. You need to tell me
       what really happened. If you continue to lie to me, then I can\u2019t help
       you."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Janet Roberts
     _sentence: '*crying*'
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: She was about to break, I just needed to push a little more.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: Officer Hill, please cuff the suspect.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: Hill made an appropriately dramatic reach for his handcuffs as he
       started approaching Ms. Roberts.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Janet Roberts
     _sentence: "Okay, I\u2019ll tell you. I\u2019ll tell you everything."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &1701947646
 GameObject:
   m_ObjectHideFlags: 0
@@ -12958,40 +15510,91 @@ MonoBehaviour:
   - _name: 
     _sentence: Officer Hill and I strode out of the room with fierce intentionality,
       leaving Ms. Lewis behind with barely a word.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Officer Hill
     _sentence: You think Arthur did it?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: I don't know for sure, but it seems likely. He left some important
       information out of our last conversation and we're going to find out why.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: As we headed to the room Mr. Adams was being held in, we heard a gunshot.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: Hill and I lept into action, drawing our guns as we ran towards the
       room. Before we reached the room we heard the distinct sound of a shattering
       window.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: We reached the room at the same time as another cop and the three
       of us breached the room.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: The room contained a shattered exterior window, a cop on the ground
       with a bullet wound to the shoulder; thankfully still alive, and a notable
       lack of Arthur Adams.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: Hill barked at the officer with us.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Officer Hill
     _sentence: You! Take care of the injured man! Coyle and I will pursue the suspect!
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: I extended my senses in search for the mind of a panicking murderer
       on the run, and lept out the window into the stormy night.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1869610175}
+          m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+          m_MethodName: StartRainSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - _name: 
     _sentence: The street was mostly empty, so I was quickly able to both see and
       sense Mr. Adams swiftly turning the corner down the block.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: This way!
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: I flew down the street with Hill close behind me. When we reached
       the end of the block we rounded the corner to find Arthur Adams waiting for
       us with a snub nose revolver pointed at my chest.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &1722505304
 GameObject:
   m_ObjectHideFlags: 0
@@ -13171,32 +15774,65 @@ MonoBehaviour:
   - _name: David Coyle
     _sentence: Do you know of anyone who might want Mr. Baker dead? Business rivals,
       perhaps?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Arthur Adams
     _sentence: No, our business rivals are jealous of us. But I highly doubt any
       of them would want us dead.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Arthur Adams
     _sentence: Especially because once our research is published, they will all be
       crawling over each other to work with us.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: So, anyone else who might want him dead? Anyone strange around Mr.
       Baker recently?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Arthur Adams
     _sentence: "Well\u2026 he has been having repeated meetings with a strange woman
       the past couple of months."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: What woman? Do you have a name?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Arthur Adams
     _sentence: Shirley Lewis, I believe. All I know is they have been talking a lot.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Arthur Adams
     _sentence: If you ask around, other people probably know about her. Michael never
       told me any information about who she was.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: Was Mr. Baker having an affair in the leadup to his wedding?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Arthur Adams
     _sentence: "No\u2026 well\u2026 I don't know for sure. I find it hard to believe.
       He loved Janet very much."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: Thank you, Mr. Adams. I will look into this further.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &1765865894
 GameObject:
   m_ObjectHideFlags: 0
@@ -13244,20 +15880,38 @@ MonoBehaviour:
   - _name: David Coyle
     _sentence: You hesitated when asked about Mr. Baker having an affair. Why is
       that? Did he ever cheat on you?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Janet Roberts
     _sentence: No, never.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: From everything I have gathered about Mr. Baker, he was spending a
       lot of late nights at the office. He was talking with a woman alone in his
       dressing room that you didn't know.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: And you mentioned hesitancy and nervousness about going through with
       this wedding. Are you sure he never cheated on you?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Janet Roberts
     _sentence: Yes, it is true that the worry has entered my head before. But I have
       no evidence to suggest he ever did anything.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Janet Roberts
     _sentence: He loved me, I know that for sure, and that is all I need to know.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &1768199545
 GameObject:
   m_ObjectHideFlags: 0
@@ -13304,24 +15958,45 @@ MonoBehaviour:
   lines:
   - _name: David Coyle
     _sentence: So, you are a psychic Ms. Lewis.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: And so are you, Mr. Coyle. I hope I did not offend you with what I
       did. I assume a fellow psychic understands.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: Ms. Lewis gave me a mischievous smile. I couldn't believe she got
       one over on me. I was no novice when it came to dealing with other psychics.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: I had always considered myself proficient at resisting the touch of
       others, but she still got through to me without me noticing.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: She was good, and extremely subtle. I would have to be on my guard
       with this one.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: Ms. Lewis, I have some questions I want to ask you. And I would like
       to get answers without any games.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: "I\u2019ll tell you what, if you don\u2019t play any games, then I
       won\u2019t either."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &1777491736
 GameObject:
   m_ObjectHideFlags: 0
@@ -13369,13 +16044,25 @@ MonoBehaviour:
   - _name: David Coyle
     _sentence: This woman that you saw talking with Mr. Baker. Have you ever met
       her before?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Janet Roberts
     _sentence: "No, I didn\u2019t know who she was. I assumed she was probably just
       a colleague."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: Did you catch a name?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Janet Roberts
     _sentence: Yes, Michael called her Shirley, I think.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &1795801409
 GameObject:
   m_ObjectHideFlags: 0
@@ -13688,8 +16375,14 @@ MonoBehaviour:
   lines:
   - _name: David Coyle
     _sentence: Ms. Roberts. Did you kill your fiance?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Janet Roberts
     _sentence: "No! I didn't do it! I\u2019m innocent!"
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &1833477841
 GameObject:
   m_ObjectHideFlags: 0
@@ -13737,8 +16430,14 @@ MonoBehaviour:
   - _name: 
     _sentence: Mr. Adams stopped pacing. He took a deep breath and then turned to
       me.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Arthur Adams
     _sentence: "I\u2019m sorry. What did you want to ask me?"
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &1835168806
 GameObject:
   m_ObjectHideFlags: 0
@@ -13785,35 +16484,68 @@ MonoBehaviour:
   lines:
   - _name: David Coyle
     _sentence: When was the last time you saw Mr. Baker?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Arthur Adams
     _sentence: Well, Janet asked me to help her sneak into the green room to see
       Michael before the ceremony.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Arthur Adams
     _sentence: The original plan was for them to not see each other until the ceremony,
       but she insisted. So I brought her there and then left them alone.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: So you're telling me that the last time you saw Mr. Baker was at the
       site of the murder with Ms. Roberts? And nobody else was there in the room
       with them?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Arthur Adams
     _sentence: "I know how that sounds, but I can\u2019t believe Janet would do anything
       to hurt him. They were so happy together."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: Ms. Roberts lied to me when I asked her when she had last seen the
       victim. I needed to speak to her again.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: Do you know of any problems in their relationship? Any major changes
       recently?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Arthur Adams
     _sentence: I know they got into a pretty big fight last week. Michael never told
       me what the fight was about.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Arthur Adams
     _sentence: "I assumed it was just wedding stress. You don\u2019t think\u2026
       It\u2019s just hard to believe that\u2026"
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: I know it is, I just have to investigate every possibility.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Arthur Adams
     _sentence: I understand. Thank you, detective.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &1846692450
 GameObject:
   m_ObjectHideFlags: 0
@@ -13995,14 +16727,26 @@ MonoBehaviour:
   - _name: David Coyle
     _sentence: I heard that you and Mr. Baker had a few fights in the past week.
       Is there anything you should tell us about that?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Janet Roberts
     _sentence: It was nothing important. Planning a wedding is stressful and sometimes
       couples have fights.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: Ms. Roberts, any information you could give us might be useful.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Janet Roberts
     _sentence: "It was nothing\u2026 only personal stuff. Nothing that could help
       you."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &1867163306
 GameObject:
   m_ObjectHideFlags: 0
@@ -14154,6 +16898,69 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1869610173
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1869610174}
+  - component: {fileID: 1869610175}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1869610174
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1869610173}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 603634237}
+  - {fileID: 1013262199}
+  - {fileID: 399846088}
+  m_Father: {fileID: 1457045121}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1869610175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1869610173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09d73928f5ffeb845af1a1ead64a704b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioMixer: {fileID: 24100000, guid: 7cb0f7ee6a9add243bb344002d217e26, type: 2}
+  fadeTime: 2
+  masterVolume: MasterVolume
+  musicVolume: MusicVolume
+  rainVolume: RainVolume
+  effectsVolume: EffectsVolume
+  musicSource: {fileID: 603634238}
+  rainSource: {fileID: 1013262198}
+  effectsSource: {fileID: 399846089}
+  menuSong: {fileID: 8300000, guid: 3efdab1db2ab69445826ac35967cd37d, type: 3}
+  chapter1Song: {fileID: 8300000, guid: 1ac5a9fd3acc9d24db82e26ea4cad9e2, type: 3}
+  chapter2Song: {fileID: 8300000, guid: 3574187b4d9e6f045bbda654005e6a07, type: 3}
+  chapter3Song: {fileID: 8300000, guid: dcdc847fecc49bc44b7e9020be28d1b0, type: 3}
+  chapter4Song: {fileID: 8300000, guid: 3b652537e292b0244b221d9fca4d9968, type: 3}
+  chapter5Song: {fileID: 8300000, guid: c0ec841f6f79d3c4fbe3e6178412545d, type: 3}
+  chapter5SongPostDeath: {fileID: 8300000, guid: 3574187b4d9e6f045bbda654005e6a07, type: 3}
+  rainSound: {fileID: 8300000, guid: 84d00d6b7abc76047a086e2830e30967, type: 3}
 --- !u!1 &1871003176
 GameObject:
   m_ObjectHideFlags: 0
@@ -14248,6 +17055,7 @@ MonoBehaviour:
   connection: {fileID: 2006788921}
   postEncounterConversation: {fileID: 1623854250}
   chapterTitleWaitTime: 4
+  audioManager: {fileID: 1869610175}
   traumaticMemories: {fileID: 11400000, guid: 3576cce3303cf1548b4edd7b3bee2bcd, type: 2}
   focus: {fileID: 11400000, guid: ee2afb839bb6e1f42ba3a52746874b30, type: 2}
   onEdge: {fileID: 11400000, guid: 942aa181566a76a46acccd7d50cd06a1, type: 2}
@@ -14306,14 +17114,26 @@ MonoBehaviour:
   - _name: Shirley Lewis
     _sentence: Now, you keep asking me all these questions. You are getting to know
       me well, but I still know nothing about you. Who is Investigator David Coyle?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: Shirley sought to gain eye contact with me, but I subtly avoided it.
       I could feel her flirtatious intention.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: "Well\u2026 Ms. Lewis\u2026 nothing much to say."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: Nonsense. Just tell me a little about yourself. It will make me feel
       much more comfortable and open to talking.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &1872086924
 GameObject:
   m_ObjectHideFlags: 0
@@ -14361,18 +17181,33 @@ MonoBehaviour:
   - _name: David Coyle
     _sentence: You mentioned that Mr. Baker seemed to be upset with work. Do you
       have any details as to why?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Janet Roberts
     _sentence: "No, I don\u2019t. Michael didn\u2019t share details of what he was
       working on with me. All I know was he was under a lot of stress."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Janet Roberts
     _sentence: I know all the public news about Psymoprofen was positive, but something
       must have not been going right on the inside of the company.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Janet Roberts
     _sentence: He used to be excited about his work, but as time went by, he got
       more and more absorbed and upset by it.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Janet Roberts
     _sentence: "I think he had trouble getting the drug to work right. But that\u2019s
       all I know."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &1897402670
 GameObject:
   m_ObjectHideFlags: 0
@@ -14420,20 +17255,38 @@ MonoBehaviour:
   - _name: David Coyle
     _sentence: You mentioned earlier that Mr. Baker and Mr. Adams are in a lot of
       debt. Can you elaborate?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: "Well, specifically it\u2019s Arthur who is in most of the debt, not
       Michael. Arthur piled up such a big mountain of debt that he ran out of traditional
       modes of financing."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: "That\u2019s why he turned to my family. We hold a portion of his
       debt."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: So he owes money to the mob. And his business is developing a glorified
       sugar pill. That doesn't sound like a story with a happy ending.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: My family runs a professional and perfectly legal business.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: Sure, whatever.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &1899698254
 GameObject:
   m_ObjectHideFlags: 0
@@ -14591,8 +17444,14 @@ MonoBehaviour:
   lines:
   - _name: Janet Roberts
     _sentence: "Sniff\u2026 I think I\u2019m starting to feel a bit better."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: "I\u2019m glad to hear it."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &1975156134
 GameObject:
   m_ObjectHideFlags: 0
@@ -14782,6 +17641,7 @@ MonoBehaviour:
   connection: {fileID: 2006788921}
   postEncounterConversation: {fileID: 1174880074}
   chapterTitleWaitTime: 4
+  audioManager: {fileID: 1869610175}
   traumaticMemories: {fileID: 11400000, guid: 3576cce3303cf1548b4edd7b3bee2bcd, type: 2}
   focus: {fileID: 11400000, guid: ee2afb839bb6e1f42ba3a52746874b30, type: 2}
   stress: {fileID: 11400000, guid: 541c2cd80add25d4a902157ee8dcfdcd, type: 2}
@@ -14851,14 +17711,26 @@ MonoBehaviour:
   lines:
   - _name: David Coyle
     _sentence: What was your connection with Mr. Baker?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: We were acquaintances. We met doing some charity work downtown. We
       got to know each other pretty well. Often we would have lunch meetings to talk.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: Talk?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: Yes, we had many conversations, or debates depending on how you look
       at it.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!114 &2006788921 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8817340696013061788, guid: 0e297c662e400ba4fa5e168c7154e73d, type: 3}
@@ -14916,27 +17788,54 @@ MonoBehaviour:
   lines:
   - _name: Officer Hill
     _sentence: Coyle!
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: Yes Officer Hill, sir?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Officer Hill
     _sentence: She has you babbling and acting weird.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Officer Hill
     _sentence: "I don\u2019t understand all the psychic whatsit. But she is obviously
       messing with your brain. So you better stop in Ms. before I have to take action."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: Hill was right. I was acting weird. But Shirley could not be doing
       anything, she was too nice and wonderful for that.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: Stop! Think, David. I took a moment to close my eyes and focus on
       my mind.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: Once I was looking for it, the psychic manipulation from Ms. Lewis
       was obvious. I quickly freed my brain and built up firmer defenses.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: "It\u2019s okay Hill. I\u2019m good now."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: Hill sat back down in his chair and I opened my eyes, determined not
       to be psychically outdone again.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &2012740754
 GameObject:
   m_ObjectHideFlags: 0
@@ -15083,19 +17982,40 @@ MonoBehaviour:
   - _name: David Coyle
     _sentence: So, Ms. Roberts, you said you didn't see Mr. Baker at all today, is
       that correct?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Janet Roberts
     _sentence: "Um, yes\u2026 that\u2019s correct\u2026"
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: Well, I was asking around and I heard that you snuck into his dressing
       room to see him before the ceremony.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Janet Roberts
     _sentence: "What! Who said that? I mean\u2026"
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: Why would you lie to me, Ms. Roberts?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Janet Roberts
     _sentence: No, why would I lie to you?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: "I could feel Ms. Roberts\u2019s mind begin to race with frantic activity."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &2078787245
 GameObject:
   m_ObjectHideFlags: 0
@@ -15143,29 +18063,56 @@ MonoBehaviour:
   - _name: David Coyle
     _sentence: You mentioned something earlier about Psymoprofen not working. What
       did you mean by that?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: "It\u2019s something Michael opened up to me about in one of our conversations
       not too long ago. The drug had some promising tests that got everyone excited."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: But over the years working on it, little progress has been made.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: Apparently Psymoprofen only works for a short time and then the body
       develops some sort of immunity. It has no real long term effectiveness.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: And if their company proves to have no legs to stand on, how will
       Arthur pay his debts? Who knows about this?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: "As far as I know, you are the first person outside of Michael\u2019s
       inner circle to know about this."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: "I wasn\u2019t supposed to tell anyone and Arthur will still be working
       on this project. So I would appreciate it if you didn\u2019t go public with
       this information."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: "I won\u2019t go out of my way to spread the news, but if it becomes
       relevant to the case, I\u2019ll expose what I have to."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: I guess that is all I can hope to ask for.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &2094640189
 GameObject:
   m_ObjectHideFlags: 0
@@ -15213,18 +18160,33 @@ MonoBehaviour:
   - _name: Arthur Adams
     _sentence: If either one of you so much as twitches your gun arm I will blow
       your brains out!
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: Hill and I were both caught off guard with our guns facing the pavement.
       We stood still as I assessed the situation.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Arthur Adams
     _sentence: Both of you slowly put your guns on the ground!
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: Mr. Adams was nervous and erratic. Even in the rain, I could tell
       he was sweating. Based on the way he was holding his gun, I was pretty sure
       he had little experience with it.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: But at the close range we were, I didn't want to risk him getting
       a lucky shot. I had to get control of this situation quickly.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &2109041646
 GameObject:
   m_ObjectHideFlags: 0
@@ -15271,9 +18233,15 @@ MonoBehaviour:
   lines:
   - _name: 
     _sentence: "Mr. Adams\u2019s nerves got the better of him again."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: He began pacing back and forth. Maybe I should have been more careful
       about what I did to his mind.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &2114203088
 GameObject:
   m_ObjectHideFlags: 0
@@ -15321,9 +18289,90 @@ MonoBehaviour:
   - _name: David Coyle
     _sentence: Come on, Ms. Lewis. You must have some bit of information that will
       be helpful.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Shirley Lewis
     _sentence: "You just don\u2019t give up, do you? I have a feeling you could go
       all night."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!1 &2122011018
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2122011019}
+  - component: {fileID: 2122011021}
+  - component: {fileID: 2122011020}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2122011019
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2122011018}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 578406549}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -215.8, y: 0}
+  m_SizeDelta: {x: 50, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2122011020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2122011018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 2b63cd13fd7d3ce41839e1d10a7d22cd, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &2122011021
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2122011018}
+  m_CullTransparentMesh: 0
 --- !u!1 &2136978632
 GameObject:
   m_ObjectHideFlags: 0
@@ -15370,23 +18419,47 @@ MonoBehaviour:
   lines:
   - _name: 
     _sentence: I reached out into the mind of Mr. Adams.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: He had a mess of emotions and stress. That combined with his natural
       impatience gave me just what I needed to nudge him into action.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Arthur Adams
     _sentence: No, you listen to me! I will have everything under control!
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Arthur Adams
     _sentence: "When I need your input I\u2019ll give you a call!"
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: Mr. Adams hung up and shoved his phone into his pocket. He ran his
       hand through his hair and continued to pace anxiously.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: Mr. Adams, now that your phone call is over, can we have a conversation?
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Arthur Adams
     _sentence: Just give me one minute.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: I had wound up his emotions pretty tight. I would have to help him
       calm down before he could stand still and answer some questions.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &2140077755
 GameObject:
   m_ObjectHideFlags: 0
@@ -15640,13 +18713,28 @@ MonoBehaviour:
     _sentence: Well, Mr. Adams, you have been very helpful. I have some more people
       to question. I will do everything I can to bring Mr. Baker's killer to swift
       justice.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Arthur Adams
     _sentence: Yes, I hope you do.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: David Coyle
     _sentence: Please stick around a little longer. I might have more questions for
       you tonight.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: Arthur Adams
     _sentence: "Oh, umm\u2026 yes, of course."
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
   - _name: 
     _sentence: I nodded to Mr. Adams and then took my leave. Sergeant Hill followed
       me out the door.
+    lineAudioEffect:
+      m_PersistentCalls:
+        m_Calls: []
