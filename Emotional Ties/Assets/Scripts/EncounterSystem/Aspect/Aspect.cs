@@ -13,6 +13,9 @@ public class Aspect : MonoBehaviour
     private Encounter _encounter;
     private Vector3 _destination;
 
+    [SerializeField] private AudioSource clickSound;
+    
+
     private void Awake()
     {
         _camera = Camera.main;
@@ -53,6 +56,7 @@ public class Aspect : MonoBehaviour
     private void OnMouseDown()
     {
         connection.StartConnection(transform.position, data.name, transform);
+        clickSound.Play();
         SignalLinkIsBroken();
     }
 

@@ -11,6 +11,12 @@ public class  Encounter : MonoBehaviour
     private Chapter _currentChapter;
     private Link _currentLink;
 
+    [SerializeField] private AudioManager audioManager;
+    
+    [SerializeField] private AudioClip connectAudio;
+    [SerializeField] private AudioClip rejectAudio;
+    
+
     public void StartEncounter(Chapter chapter)
     {
         _currentChapter = chapter;
@@ -39,10 +45,11 @@ public class  Encounter : MonoBehaviour
             {
                 _currentLink = link;
                 link.startLink.Invoke();
+                audioManager.PlaySoundEffect(connectAudio);
                 return true;
             }
         }
-        
+        audioManager.PlaySoundEffect(rejectAudio);
         return false;
     }
 
