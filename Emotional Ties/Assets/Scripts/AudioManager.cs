@@ -21,8 +21,7 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private AudioSource musicSource;
     [SerializeField] private AudioSource rainSource;
     [SerializeField] private AudioSource effectsSource;
-    
-    
+
     [Header("Songs")]
     [SerializeField] private AudioClip menuSong;
     [SerializeField] private AudioClip chapter1Song;
@@ -77,7 +76,13 @@ public class AudioManager : MonoBehaviour
         _effectsVolume = Mathf.Log10(value) * 20;
         audioMixer.SetFloat(effectsVolume, _effectsVolume);
     }
-    
+
+    public void PlaySoundEffect(AudioClip soundEffect)
+    {
+        effectsSource.clip = soundEffect;
+        effectsSource.Play();
+    }
+
     public void StartChapterMusic(int chapter)
     {
         switch (chapter)

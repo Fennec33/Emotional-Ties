@@ -1,9 +1,11 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Globalization;
 using Chapters;
 using TMPro;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace DialogueSystem
 {
@@ -15,6 +17,11 @@ namespace DialogueSystem
         public TMP_Text dialogueText;
 
         public Animator animator;
+
+        [SerializeField] private AudioSource typeSound;
+        [SerializeField] private int typingSoundDelay;
+        private int _typingSoundTimer = 0;
+        [SerializeField] private AudioClip[] typingClips;
 
         public float typingSpeed = 0.02f;
 
@@ -108,10 +115,24 @@ namespace DialogueSystem
             for (int i = 0; i < charCount + 1; i++)
             {
                 dialogueText.maxVisibleCharacters = i;
+                _typingSoundTimer++;
+                PlayTypingSound();
                 yield return new WaitForSeconds(typingSpeed);
             }
 
             _doneTyping = true;
+        }
+
+        private void PlayTypingSound()
+        {
+            if (_typingSoundTimer >= typingSoundDelay)
+            {
+                _typingSoundTimer = 0;
+
+                var typeClip = typingClips[Random.Range(0, typingClips.Length - 1)];
+                typeSound.clip = typeClip;
+                typeSound.Play();
+            }
         }
 
         private void EndDialogue()
