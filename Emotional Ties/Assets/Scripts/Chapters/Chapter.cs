@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using DialogueSystem;
 using UnityEngine;
+using UnityEngine.Analytics;
 
 namespace Chapters
 {
@@ -46,6 +47,8 @@ namespace Chapters
     
         public void EndChapter()
         {
+            AnalyticsResult analyticsResult = Analytics.CustomEvent("Finished Chapter " + chapterNumber);
+            Debug.Log(analyticsResult);
             encounter.EndEncounter();
             DialogueManager.StartDialogue(this, postEncounterConversation);
         }

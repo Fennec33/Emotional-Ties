@@ -481,7 +481,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -0.0001564, y: 3638.1414}
+  m_AnchoredPosition: {x: -0.0001564, y: 274.9402}
   m_SizeDelta: {x: 250.08908, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &22674287
@@ -11453,7 +11453,7 @@ MonoBehaviour:
   emotionalVortex: {fileID: 11400000, guid: ef53cbe98b522e14fa41c2baf1300a00, type: 2}
   areYouAbleToAnswerSomeQuestionsForMe1: {fileID: 697632177}
   areYouAbleToAnswerSomeQuestionsForMe2: {fileID: 697699351}
-  areYouAbleToAnswerSomeQuestionsForMeRepeat: {fileID: 0}
+  areYouAbleToAnswerSomeQuestionsForMeRepeat: {fileID: 969847298}
   calmDown: {fileID: 1948726605}
   calmedDownAnswerSomeQuestions: {fileID: 476666025}
   lastSeenAlive: {fileID: 1073995209}
