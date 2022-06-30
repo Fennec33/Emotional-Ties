@@ -24,6 +24,9 @@ namespace Chapters
         [SerializeField] private Conversation inflictTrauma;
         [SerializeField] private Conversation shootArthur;
 
+        [Header("Links")]
+        [SerializeField] private Link tramaLink;
+
         private bool _inflictedTrama = false;
         
         private void AddStartingActionsAndAspects()
@@ -100,11 +103,13 @@ namespace Chapters
             {
                 ActionMenuManager.RemoveAllActionsFromMenu();
                 ActionMenuManager.AddActionToMenu(GrabGun, "Grab your gun");
+                encounter.AddValidLink(tramaLink);
             }
             else if (finishedConversation == heWasRuiningEverything)
             {
                 ActionMenuManager.RemoveAllActionsFromMenu();
                 ActionMenuManager.AddActionToMenu(GrabGun, "Grab your gun");
+                encounter.AddValidLink(tramaLink);
             }
             else if (finishedConversation == badIdea)
             {

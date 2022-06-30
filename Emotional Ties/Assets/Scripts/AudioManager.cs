@@ -81,7 +81,7 @@ public class AudioManager : MonoBehaviour
     {
         effectsSource.clip = soundEffect;
         effectsSource.Play();
-    }
+    } 
 
     public void StartChapterMusic(int chapter)
     {

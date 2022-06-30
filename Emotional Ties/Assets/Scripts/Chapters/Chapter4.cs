@@ -13,7 +13,6 @@ namespace Chapters
         [SerializeField] private AspectData desire;
         [SerializeField] private AspectData confidence;
         [SerializeField] private AspectData playfulness;
-        [SerializeField] private AspectData talkative;
         [SerializeField] private AspectData flirtatiousness;
         [SerializeField] private AspectData pleasant;
 
@@ -331,6 +330,11 @@ namespace Chapters
         {
             DialogueManager.StartDialogue(this, madeTalkative);
         }
+        
+        public void UnmakeTalkitive()
+        {
+            _talkative = false;
+        }
 
         public void WouldDrugCauseViolence()
         {
@@ -611,8 +615,6 @@ namespace Chapters
             }
             else if (finishedConversation == madeTalkative)
             {
-                EncounterBoardManager.AddAspectToBoard(talkative);
-                EncounterBoardManager.RemoveAspectFromBoard(playfulness);
                 _talkative = true;
             }
             else if (finishedConversation == lotsOfCompetitionWithDrug)
@@ -643,7 +645,8 @@ namespace Chapters
             }
             else if (finishedConversation == iKnowThings)
             {
-                EncounterBoardManager.RemoveAspectFromBoard(talkative);
+                ActionMenuManager.RemoveActionFromMenu("How do you know so much");
+                EncounterBoardManager.RemoveAspectFromBoard(playfulness);
                 _talkative = false;
                 DialogueManager.StartDialogue(this, realizeWhoHerFamilyIs);
             }

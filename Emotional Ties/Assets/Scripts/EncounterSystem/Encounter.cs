@@ -30,6 +30,19 @@ public class  Encounter : MonoBehaviour
         ActionMenuManager.TurnMenuOn();
     }
 
+    public void AddValidLink(Link newLink)
+    {
+        Link[] tempLinks = new Link[links.Length + 1];
+
+        for (int i = 0; i < links.Length; i++)
+        {
+            tempLinks[i] = links[i];
+        }
+        
+        tempLinks[tempLinks.Length-1] = newLink;
+        links = tempLinks;
+    }
+
     public void EndEncounter()
     {
         ActionMenuManager.TurnMenuOff();

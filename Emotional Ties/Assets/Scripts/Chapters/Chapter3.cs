@@ -157,7 +157,9 @@ namespace Chapters
             else if (finishedConversation == theyAreLying)
             {
                 EncounterBoardManager.AddAspectToBoard(panic);
+                _paniced = true;
                 _alreadyAskedSawMichael = true;
+                ActionMenuManager.RemoveActionFromMenu("Please talk with us");
             }
             else if (finishedConversation == theyAreLyingRepeat)
             {
@@ -202,6 +204,7 @@ namespace Chapters
             }
             else if (finishedConversation == theRealLastConversation)
             {
+                ActionMenuManager.RemoveActionFromMenu("When was the last time you saw Mr. Baker");
                 ActionMenuManager.AddActionToMenu(UpsetWithWork, "Why was he upset");
                 ActionMenuManager.AddActionToMenu(GrowingDistant, "Why where you growing distant");
                 ActionMenuManager.AddActionToMenu(AfraidOfAffair, "Was there an affair");

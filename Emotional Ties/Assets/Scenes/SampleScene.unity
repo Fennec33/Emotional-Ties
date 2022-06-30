@@ -481,7 +481,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -0.0001564, y: 5409387}
+  m_AnchoredPosition: {x: -0.0001564, y: 5430807}
   m_SizeDelta: {x: 250.08908, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &22674287
@@ -1957,7 +1957,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aspects: []
   links:
-  - aspect1: Emotionaly Drained
+  - aspect1: Emotionally Drained
     aspect2: Panic
     startLink:
       m_PersistentCalls:
@@ -3477,7 +3477,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lines:
   - _name: David Coyle
-    _sentence: When was the last time you saw Michael?
+    _sentence: When was the last time you saw Mr. Baker?
     lineAudioEffect:
       m_PersistentCalls:
         m_Calls: []
@@ -4009,6 +4009,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 8300000, guid: 25a4e4162e19c444e93a1ceed8d3ffca, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1869610175}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: StopRainSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -5080,6 +5092,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 8300000, guid: 25a4e4162e19c444e93a1ceed8d3ffca, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1869610175}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: StopRainSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -6222,7 +6246,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8817340696013061789, guid: 0e297c662e400ba4fa5e168c7154e73d, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8817340696013061789, guid: 0e297c662e400ba4fa5e168c7154e73d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -8434,7 +8458,6 @@ MonoBehaviour:
   desire: {fileID: 11400000, guid: 8e29633041e3eda4dbe6ba59d50a0a57, type: 2}
   confidence: {fileID: 11400000, guid: 8c60d2a93cfae9a4d8079102586856f8, type: 2}
   playfulness: {fileID: 11400000, guid: 0299beae90467364cb9bc5bf332aaca0, type: 2}
-  talkative: {fileID: 11400000, guid: 23355f697cc9eee458f337a1473d6f13, type: 2}
   flirtatiousness: {fileID: 11400000, guid: 32c1466e27d7ba6488ce62d353b13ad8, type: 2}
   pleasant: {fileID: 11400000, guid: c55688973efd45244bf5df3cabdc514c, type: 2}
   doNotAccuseHer: {fileID: 565606765}
@@ -8445,7 +8468,7 @@ MonoBehaviour:
   removeDesire: {fileID: 689715235}
   professionalRespect: {fileID: 1768199547}
   michaelInMob: {fileID: 1128774373}
-  whatWasTheConnection: {fileID: 0}
+  whatWasTheConnection: {fileID: 2004845063}
   conversations: {fileID: 1088968775}
   drugConversations: {fileID: 621301460}
   noAffair: {fileID: 657390678}
@@ -9206,7 +9229,7 @@ MonoBehaviour:
   m_IgnoreLayout: 0
   m_MinWidth: -1
   m_MinHeight: -1
-  m_PreferredWidth: 300
+  m_PreferredWidth: 310
   m_PreferredHeight: -1
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
@@ -9451,6 +9474,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 8300000, guid: 25a4e4162e19c444e93a1ceed8d3ffca, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1869610175}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: StopRainSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -11154,7 +11189,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lines:
   - _name: David Coyle
-    _sentence: When was the last time you saw Michael?
+    _sentence: When was the last time you saw Mr. Baker?
     lineAudioEffect:
       m_PersistentCalls:
         m_Calls: []
@@ -12258,6 +12293,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1869610175}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: StopRainSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1253629039
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12504,7 +12551,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1306925522
 GameObject:
@@ -17294,7 +17341,7 @@ Transform:
   - {fileID: 1249644799}
   - {fileID: 1042204414}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1869610173
 GameObject:
@@ -17414,27 +17461,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aspects: []
-  links:
-  - aspect1: Traumatic Memories
-    aspect2: On Edge
-    startLink:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1871003179}
-          m_TargetAssemblyTypeName: Chapters.Chapter5, Assembly-CSharp
-          m_MethodName: PsychicBlast
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-    endLink:
-      m_PersistentCalls:
-        m_Calls: []
+  links: []
   audioManager: {fileID: 1869610175}
   connectAudio: {fileID: 8300000, guid: ed69de385d09abd45a0900003a293eaa, type: 3}
   rejectAudio: {fileID: 8300000, guid: 9c0e71a97859c454ebbf673e3d1b8bb4, type: 3}
@@ -17468,6 +17495,27 @@ MonoBehaviour:
   badIdea: {fileID: 776784024}
   inflictTrauma: {fileID: 561508257}
   shootArthur: {fileID: 1224486420}
+  tramaLink:
+    aspect1: Traumatic Memories
+    aspect2: On Edge
+    startLink:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1871003179}
+          m_TargetAssemblyTypeName: Chapters.Chapter5, Assembly-CSharp
+          m_MethodName: PsychicBlast
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    endLink:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &1872034812
 GameObject:
   m_ObjectHideFlags: 0
