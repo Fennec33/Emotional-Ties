@@ -206,7 +206,7 @@ namespace Chapters
             {
                 ActionMenuManager.RemoveActionFromMenu("When was the last time you saw Mr. Baker");
                 ActionMenuManager.AddActionToMenu(UpsetWithWork, "Why was he upset");
-                ActionMenuManager.AddActionToMenu(GrowingDistant, "Why where you growing distant");
+                ActionMenuManager.AddActionToMenu(GrowingDistant, "Why were you growing distant");
                 ActionMenuManager.AddActionToMenu(AfraidOfAffair, "Was there an affair");
                 ActionMenuManager.AddActionToMenu(MysteriousWoman, "Who was the woman");
             }
@@ -218,7 +218,7 @@ namespace Chapters
             }
             else if (finishedConversation == growingDistant)
             {
-                ActionMenuManager.RemoveActionFromMenu("Why where you growing distant");
+                ActionMenuManager.RemoveActionFromMenu("Why were you growing distant");
                 _allQuestionsAsked++;
                 CheckIfAllQuestionsAsked();
             }

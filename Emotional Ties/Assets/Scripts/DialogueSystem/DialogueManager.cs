@@ -35,6 +35,7 @@ namespace DialogueSystem
 
         private bool _doneTyping = true;
         private Coroutine _typingCoroutine;
+        private bool _muteTyping = false;
     
         void Start()
         {
@@ -49,6 +50,11 @@ namespace DialogueSystem
         public void SetTypingSpeed(float value)
         {
             typingSpeed = value;
+        }
+
+        public void MuteTyping(bool mute)
+        {
+            _muteTyping = mute;
         }
 
         public static void StartDialogue( IConversationTrigger trigger, Conversation conversation)
@@ -116,7 +122,12 @@ namespace DialogueSystem
             {
                 dialogueText.maxVisibleCharacters = i;
                 _typingSoundTimer++;
-                PlayTypingSound();
+
+                if (!_muteTyping)
+                {
+                    PlayTypingSound();
+                }
+
                 yield return new WaitForSeconds(typingSpeed);
             }
 

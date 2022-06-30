@@ -450,7 +450,7 @@ namespace Chapters
                 _askedAboutConnection = true;
                 ActionMenuManager.RemoveAllActionsFromMenu();
                 ActionMenuManager.AddActionToMenu(WhatDidYourConversationsInvolve, "What did your conversations involve");
-                ActionMenuManager.AddActionToMenu(DidYouHaveAnAfar, "Did you have an afar with Mr. Baker");
+                ActionMenuManager.AddActionToMenu(DidYouHaveAnAfar, "Did you have an affair with Mr. Baker");
                 ActionMenuManager.AddActionToMenu(WhatTypeOfVolunteerWork, "What type of volunteer work did you do");
             }
             else if (finishedConversation == whatWasTheConnection)
@@ -458,7 +458,7 @@ namespace Chapters
                 _askedAboutConnection = true;
                 ActionMenuManager.RemoveAllActionsFromMenu();
                 ActionMenuManager.AddActionToMenu(WhatDidYourConversationsInvolve, "What did your conversations involve");
-                ActionMenuManager.AddActionToMenu(DidYouHaveAnAfar, "Did you have an afar with Mr. Baker");
+                ActionMenuManager.AddActionToMenu(DidYouHaveAnAfar, "Did you have an affair with Mr. Baker");
                 ActionMenuManager.AddActionToMenu(WhatTypeOfVolunteerWork, "What type of volunteer work did you do");
             }
             else if (finishedConversation == conversations)
@@ -476,7 +476,7 @@ namespace Chapters
             else if (finishedConversation == noAffair)
             {
                 _connectionConversationQuestions++;
-                ActionMenuManager.RemoveActionFromMenu("Did you have an afar with Mr. Baker");
+                ActionMenuManager.RemoveActionFromMenu("Did you have an affair with Mr. Baker");
                 IfAllConnectionQuestionsAsked();
             }
             else if (finishedConversation == typeOfVolunteering)
@@ -620,12 +620,12 @@ namespace Chapters
             else if (finishedConversation == lotsOfCompetitionWithDrug)
             {
                 ActionMenuManager.RemoveActionFromMenu("I know you have more information");
-                ActionMenuManager.AddActionToMenu(WouldDrugCauseViolence, "Would thr drug really cause violence");
+                ActionMenuManager.AddActionToMenu(WouldDrugCauseViolence, "Would the drug really cause violence");
                 ActionMenuManager.AddActionToMenu(WasDrugGoingToMakeThemRich, "Was the drug really going to make them rich");
             }
             else if (finishedConversation == drugCompetition)
             {
-                ActionMenuManager.RemoveActionFromMenu("Would thr drug really cause violence");
+                ActionMenuManager.RemoveActionFromMenu("Would the drug really cause violence");
                 _drugInfoQuestions++;
 
                 if (_drugInfoQuestions >= _drugInfoQuestionsMax)
